@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:id="@+id/llDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtFeedOleh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgTo"
+                android:layout_alignTop="@+id/imgTo"
+                android:layout_below="@+id/txtTitle"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:text="Nik Mohd Faris Bin Nik Kamarudin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgTo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@+id/txtFeedOleh"
+                android:src="@drawable/ic_chevron_right_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtMsgType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgTo"
+                android:layout_alignTop="@+id/imgTo"
+                android:gravity="center_vertical"
+                android:text="Pentadbir"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121"
+                android:layout_toRightOf="@+id/imgTo"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtFeedTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-light|bold"
+            android:text="Aplikasi Komunikasi Sekolah dan Ibubapa"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtFeedDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/avatar"
+            android:layout_toRightOf="@+id/avatar"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="5dp"
+            android:text="15 Apr 2016"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#727272"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtFeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFeedDateTime"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/avatar"
+            android:layout_toRightOf="@+id/avatar"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:text="Description"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#727272" />
+    </LinearLayout>
+</RelativeLayout>

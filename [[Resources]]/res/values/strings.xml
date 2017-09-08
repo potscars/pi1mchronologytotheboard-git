@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Dashboard Komuniti</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This ic is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="sessionString">dashboard_session</string>
+    <string name="error_no_internet_connection">No Internet Connection</string>
+    <string name="attachment">Attachment</string>
+    <string name="search">Search</string>
+    <string name="send">Send</string>
+    <string name="delete">Delete</string>
+    <string name="done">DONE</string>
+
+    <!-- API string -->
+    <string name="apiLogin">http://dashboard.pi1m.my/mobile/session/login</string>
+    <string name="apiUploadImage">http://myskoolv2.pi1m.my/api/teacher/annoucement/create</string>
+
+    <!-- My Komuniti -->
+    <string name="apiMyKomunitiFeed">http://dashboard.pi1m.my/api/announcement/user-announcements/</string>
+    <string name="apiMyKomunitiAdminFeed">http://dashboard.pi1m.my/api/announcement/hq-announcements/</string>
+
+    <!-- My Soal -->
+    <string name="apiMySoalAuth">http://mysoal.pi1m.my/messages/login_dashboardv2</string>
+    <string name="apiMySoalPetiMasuk">http://mysoal.pi1m.my/messages/dashboardv2_json_message/inbox/</string>
+    <string name="apiMySoalSentMessage">http://mysoal.pi1m.my/messages/dashboardv2_save_message/</string>
+    <string name="apiMySoalGetPBT">http://mysoal.pi1m.my/messages/mobile_list_site/</string>
+    <!--<string name="apiMySoalPosterList">http://dashboard.pi1m.my/api/myposter/poster?</string>-->
+
+    <!-- My Skool -->
+    <string name="apiMySkoolAuth">http://myskool.pi1m.my/users/dashboardv2_login</string>
+    <string name="apiMySkoolPetiMasuk">http://myskool.pi1m.my/walls/dashboardv2_json_wall/</string>
+
+    <!-- My Health -->
+    <string name="apiMyHealthGetBPRecords">http://dashboard.pi1m.my/api/myhealth/bp-records/</string>
+    <string name="apiMyHealthGetBWRecords">http://dashboard.pi1m.my/api/myhealth/weight-records/</string>
+
+    <!-- My Shop -->
+    <string name="apiMyShopFeed">http://myshop.pi1m.my/api/product/mobile</string>
+    <string name="apiMyShopLocalProduct">http://myshop.pi1m.my/api/product/product-by-site?token=</string>
+    <string name="apiMyShopPopularProduct">http://myshop.pi1m.my/api/product/popular?page=</string>
+    <string name="apiMyShopLatestProduct">http://myshop.pi1m.my/api/product/latest-product-myshop?page=</string>
+    <string name="apiMyShopReviewProduct">http://myshop.pi1m.my/api/product/all-product-review?page=</string>
+    <string name="apiMyShopProductDetail">http://myshop.pi1m.my/api/product/find-product-detail/</string>
+
+    <string name="apiSearchProductByFilter">http://myshop.pi1m.my/api/product/search/filter</string>
+    <string name="apiGetApiCategoryList">http://myshop.pi1m.my/api/category</string>
+    <string name="apiGetApiSubCategoryList">http://myshop.pi1m.my/api/sub-category</string>
+    <string name="apiGetApiStateList">http://myshop.pi1m.my/api/state</string>
+    <string name="apiGetApiSitesList"> http://myshop.pi1m.my/api/sites</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_about">Tentang Kami</string>
+    <string name="action_settings">Tetapan</string>
+    <string name="action_logout">Keluar</string>
+    <string name="action_inbox">Peti Masuk</string>
+    <string name="action_aduan">Aduan Dihantar</string>
+    <string name="title_activity_dashboard_main">Dashboard_MainActivity</string>
+
+    <string-array name="list">
+        <item>MyKomuniti</item>
+        <item>MySoal</item>
+        <item>MySkool</item>
+        <item>MyHealth</item>
+    </string-array>
+    <string-array name="bahasa">
+        <item>Bahasa Malaysia</item>
+    </string-array>
+
+    <string name="clear"><u>clear</u></string>
+</resources>

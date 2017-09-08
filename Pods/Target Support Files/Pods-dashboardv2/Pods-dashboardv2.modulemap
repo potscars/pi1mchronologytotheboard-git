@@ -1,0 +1,6 @@
+framework module Pods_dashboardv2 {
+  umbrella header "Pods-dashboardv2-umbrella.h"
+
+  export *
+  module * { export * }
+}

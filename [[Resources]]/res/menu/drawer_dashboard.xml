@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_myKomuniti"
+                    android:icon="@drawable/mykomuniti"
+                    android:title="MyKomuniti" />
+                <item
+                    android:id="@+id/nav_mySoal"
+                    android:icon="@drawable/mysoal_icon"
+                    android:title="MySoal" />
+                <item
+                    android:id="@+id/nav_mySkool"
+                    android:icon="@drawable/myschool_icon"
+                    android:title="MySkool" />
+                <item
+                    android:id="@+id/nav_myHealth"
+                    android:icon="@drawable/myhealth_icon"
+                    android:title="MyHealth" />
+                <item
+                    android:id="@+id/nav_myShop"
+                    android:icon="@drawable/myshop_icon"
+                    android:title="MyShop" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <!--<item-->
+                <!--android:id="@+id/action_about"-->
+                <!--android:orderInCategory="100"-->
+                <!--android:title="@string/action_about"-->
+                <!--app:showAsAction="never" />-->
+                <!--<item-->
+                    <!--android:id="@+id/action_settings"-->
+                    <!--android:orderInCategory="100"-->
+                    <!--android:title="@string/action_settings"-->
+                    <!--app:showAsAction="never" />-->
+                <item
+                    android:id="@+id/action_logout"
+                    android:orderInCategory="100"
+                    android:title="@string/action_logout"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

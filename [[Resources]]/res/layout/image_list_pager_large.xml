@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="#000000">-->
+
+<uk.co.senab.photoview.PhotoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/largeView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/txtDesc"
+    android:layout_gravity="center"
+    android:src="@drawable/no_signal_internet" />
+
+    <!--<TextView--><!--android:id="@+id/txtDesc"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentBottom="true"--><!--android:background="#663c3c3c"--><!--android:ellipsize="end"--><!--android:singleLine="false"--><!--android:text="Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text"--><!--android:textAppearance="?android:attr/textAppearanceMedium"--><!--android:textColor="#ffffff" />--><!--</RelativeLayout>-->
