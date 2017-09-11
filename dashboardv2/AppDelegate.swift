@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var loginController: UIViewController?
     static var moduleAvailable: NSArray = ["MODULE_MYKOMUNITI","MODULE_MYSOAL","MODULE_MYSKOOL","MODULE_MYHEALTH","MODULE_MYSHOP"]
     let googleMapsAPIKey = "AIzaSyBdOuF3hHPCIwMzsY-sXp6sSIiiMWnsxyU"
+    
+    //testing
 
     //MyQuiz
     var answeredQuestion: NSMutableArray? = nil
