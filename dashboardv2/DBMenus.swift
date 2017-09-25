@@ -19,7 +19,7 @@ class DBMenus: NSObject {
     static func dashboardFrontMenu() -> NSArray {
         
         var dictionaryAdd: NSDictionary = ["MenuString":"NULL","ColorObject":"NULL"]
-        let compiledArrays: NSMutableArray = [dictionaryAdd]
+        let compiledArrays: NSMutableArray = []
         
         dictionaryAdd = ["MenuString":DBStrings.DB_MENU_MYKOMUNITI_MS, "IconString":DBImages.DB_ICON_MYKOMUNITI, "ColorObject": DBColorSet.myKomunitiColor]
         compiledArrays.add(dictionaryAdd)
