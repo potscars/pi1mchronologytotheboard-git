@@ -29,17 +29,17 @@ class TopScorer {
     
     func fetchTopScorer(_ gamesID: Int, eventID: Int, completion: @escaping TopScorerHandler) {
         
-        var idTemp: String!
-        var scoreTemp: String!
-        var fullnameTemp: String!
-        var icnumberTemp: String!
+        var idTemp: String = "0000x000a23000"
+        var scoreTemp: String = "0"
+        var fullnameTemp: String = "Not Available"
+        var icnumberTemp: String = "0"
         
         var topScorer = [TopScorer]()
         
         let dbToken = UserDefaults.standard.object(forKey: "SuccessLoggerDashboardToken") as! String
         
         let urlString = "\(DBSettings.myGamesTopScorerByRegionURL)\(dbToken)/\(gamesID)/\(eventID)"
-        
+        print("GAMES SCORE : \(urlString)")
         let networkProcessor = NetworkProcessor.init(urlString)
         
         networkProcessor.downloadJSONFromUrl { (result, responses) in

@@ -66,7 +66,7 @@ class SettingsTVC: UITableViewController {
     {
         listOfMenus.add(["CELL_TYPE":"SWITCH_TYPE",
                          "MENU_ID":"REMEMBER_ME",
-                         "MENU_TITLE":DBStrings.DB_SETTINGS_REMEMBERME_DESC_MS,
+                         "MENU_TITLE":DBStrings.DB_SETTINGS_REMEMBERME_TITLE_MS,
                          "MENU_DESCRIPTION":DBStrings.DB_SETTINGS_REMEMBERME_DESC_MS,
                          "USERDEFAULTS_ID":"SuccessLoggerSettingsRememberMe",
                          "NOTIFICATION_ID":nil])
