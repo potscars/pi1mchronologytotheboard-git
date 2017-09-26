@@ -115,25 +115,46 @@ class MyHealthBodyWeightTVC: UITableViewController {
             
             let getData: NSArray = unwrapBPData.value(forKey: "data") as! NSArray
             
-            for i in 0...getData.count - 1 {
+            
+            for data in getData {
                 
-                let extractedData: NSDictionary = getData[i] as! NSDictionary
-                
-                let bmiInDouble: Double = Double(String(describing:extractedData.value(forKey: "WeightValue")!))!
-                
-                dataArrays.add(["MYHEALTH_BW_BMI":"\(String(describing:extractedData.value(forKey: "BMI")!)) mata",
-                    "MYHEALTH_BW_BMI_RAW":"\(String(describing:extractedData.value(forKey: "BMI")!))",
-                    "MYHEALTH_BW_WEIGHT":"\(Int(bmiInDouble)) kg",
-                    "MYHEALTH_BW_WEIGHT_RAW":String(describing:extractedData.value(forKey: "WeightValue")!),
-                    "MYHEALTH_BW_BONEMASS":"\(String(describing:extractedData.value(forKey: "BoneValue")!))",
-                    "MYHEALTH_BW_FATWEIGHT":String(describing:extractedData.value(forKey: "FatValue")!),
-                    "MYHEALTH_BW_LEANWEIGHT":String(describing:extractedData.value(forKey: "LeanWeight")!),
-                    "MYHEALTH_BW_MUSCLEMASS":String(describing:extractedData.value(forKey: "MuscaleValue")!),
-                    "MYHEALTH_BW_WATERWEIGHT":String(describing:extractedData.value(forKey: "WaterValue")!),
-                    "MYHEALTH_BW_CHECKEDDATE":String(describing:extractedData.value(forKey: "MdateTime")!)
-                    ])
-                
+                if let data = data as? NSDictionary {
+                    
+                    let bmiInDouble: Double = Double(data.value(forKey: "WeightValue") as! String)!
+                    
+                    dataArrays.add(["MYHEALTH_BW_BMI":"\(data.value(forKey: "BMI")) mata",
+                        "MYHEALTH_BW_BMI_RAW":"\(data.value(forKey: "BMI"))",
+                        "MYHEALTH_BW_WEIGHT":"\(Int(bmiInDouble)) kg",
+                        "MYHEALTH_BW_WEIGHT_RAW":data.value(forKey: "WeightValue"),
+                        "MYHEALTH_BW_BONEMASS":"\(data.value(forKey: "BoneValue"))",
+                        "MYHEALTH_BW_FATWEIGHT":data.value(forKey: "FatValue"),
+                        "MYHEALTH_BW_LEANWEIGHT":data.value(forKey: "LeanWeight"),
+                        "MYHEALTH_BW_MUSCLEMASS":data.value(forKey: "MuscaleValue"),
+                        "MYHEALTH_BW_WATERWEIGHT":data.value(forKey: "WaterValue"),
+                        "MYHEALTH_BW_CHECKEDDATE":data.value(forKey: "MdateTime")
+                        ])
+                }
             }
+            
+//            for i in 0...getData.count - 1 {
+//                
+//                let extractedData: NSDictionary = getData[i] as! NSDictionary
+//                
+//                let bmiInDouble: Double = Double(String(describing:extractedData.value(forKey: "WeightValue")!))!
+//                
+//                dataArrays.add(["MYHEALTH_BW_BMI":"\(String(describing:extractedData.value(forKey: "BMI")!)) mata",
+//                    "MYHEALTH_BW_BMI_RAW":"\(String(describing:extractedData.value(forKey: "BMI")!))",
+//                    "MYHEALTH_BW_WEIGHT":"\(Int(bmiInDouble)) kg",
+//                    "MYHEALTH_BW_WEIGHT_RAW":String(describing:extractedData.value(forKey: "WeightValue")!),
+//                    "MYHEALTH_BW_BONEMASS":"\(String(describing:extractedData.value(forKey: "BoneValue")!))",
+//                    "MYHEALTH_BW_FATWEIGHT":String(describing:extractedData.value(forKey: "FatValue")!),
+//                    "MYHEALTH_BW_LEANWEIGHT":String(describing:extractedData.value(forKey: "LeanWeight")!),
+//                    "MYHEALTH_BW_MUSCLEMASS":String(describing:extractedData.value(forKey: "MuscaleValue")!),
+//                    "MYHEALTH_BW_WATERWEIGHT":String(describing:extractedData.value(forKey: "WaterValue")!),
+//                    "MYHEALTH_BW_CHECKEDDATE":String(describing:extractedData.value(forKey: "MdateTime")!)
+//                    ])
+//                
+//            }
             
             print("[MyHealthBodyWeightTVC] \(paging) to \(pagingMaxFromAPI)")
             

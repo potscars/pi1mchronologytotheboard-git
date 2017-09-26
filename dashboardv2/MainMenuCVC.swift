@@ -94,7 +94,7 @@ class MainMenuCVC: UICollectionViewController {
         
         navigationController?.navigationBar.barTintColor = DBColorSet.dashboardMainColor
         navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName : UIFont(name: "Futura-Bold", size: 20.0)!, NSForegroundColorAttributeName : UIColor.white]
+        //navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName : UIFont(name: "Futura-Bold", size: 20.0)!, NSForegroundColorAttributeName : UIColor.white]
     }
     
     func configureBarButton() {
@@ -281,10 +281,12 @@ extension MainMenuCVC {
         
         let currentIndex = questionAvailable ? indexPath.row - 1 : indexPath.row
         
+        let cellLabel = cell.viewWithTag(3) as! UILabel
         let cellView = cell.viewWithTag(1)! as UIView
         let cellImage = cell.viewWithTag(2) as! UIImageView
         let menuDictionary = menusList.object(at: currentIndex) as! NSDictionary
         
+        cellLabel.text = menuDictionary.value(forKey: "MenuString") as? String
         cellImage.image = menuDictionary.value(forKey: "IconString") as? UIImage
         cellView.backgroundColor = menuDictionary.value(forKey: "ColorObject") as? UIColor
         cellView.roundedCorners(10)

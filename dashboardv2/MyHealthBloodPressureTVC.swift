@@ -21,16 +21,9 @@ class MyHealthBloodPressureTVC: UITableViewController {
     var haveData: Bool = true
     
     var reloadCell: MyHealthIntegratedTVCell? = nil
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         ZUISetup.setupTableViewWithTabView(tableView: self)
         
@@ -116,19 +109,32 @@ class MyHealthBloodPressureTVC: UITableViewController {
             let unwrapBPData: NSDictionary = extractNotificationWrapper.value(forKey: "BP_data") as! NSDictionary
             let pagingMaxFromAPI: Int = unwrapBPData.value(forKey: "last_page") as! Int
             
-            let getData: NSArray = unwrapBPData.value(forKey: "data") as! NSArray
-            
-            for i in 0...getData.count - 1 {
+            if let getData: NSArray = unwrapBPData.value(forKey: "data") as? NSArray {
                 
-                let extractedData: NSDictionary = getData[i] as! NSDictionary
+                for data in getData {
+                    
+                    if let dataDictionary = data as? NSDictionary {
+                        
+                        dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(dataDictionary.value(forKey: "HP"))/\(dataDictionary.value(forKey: "LP")) \(dataDictionary.value(forKey: "BPUnitText"))",
+                            "MYHEALTH_HEART_RATE":"\(dataDictionary.value(forKey: "HR")) denyutan/minit",
+                            "MYHEALTH_BPL":dataDictionary.value(forKey: "BPL")!,
+                            "MYHEALTH_COLOR_INDICATOR":dataDictionary.value(forKey: "color"),
+                            "MYHEALTH_CHECKED_DATE":dataDictionary.value(forKey: "MdateTime")
+                            ])
+                    }
+                }
                 
-                dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(String(describing: extractedData.value(forKey: "HP")!))/\(String(describing:extractedData.value(forKey: "LP")!)) \(String(describing:extractedData.value(forKey: "BPUnitText")!))",
-                    "MYHEALTH_HEART_RATE":"\(String(describing:extractedData.value(forKey: "HR")!)) denyutan/minit",
-                    "MYHEALTH_BPL":String(describing:extractedData.value(forKey: "BPL")!),
-                    "MYHEALTH_COLOR_INDICATOR":String(describing:extractedData.value(forKey: "color")!),
-                    "MYHEALTH_CHECKED_DATE":String(describing:extractedData.value(forKey: "MdateTime")!)
-                    ])
-                
+//                for i in 0...getData.count - 1 {
+//                    
+//                    let extractedData: NSDictionary = getData[i] as! NSDictionary
+//                    
+//                    dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(String(describing: extractedData.value(forKey: "HP")!))/\(String(describing:extractedData.value(forKey: "LP")!)) \(String(describing:extractedData.value(forKey: "BPUnitText")!))",
+//                        "MYHEALTH_HEART_RATE":"\(String(describing:extractedData.value(forKey: "HR")!)) denyutan/minit",
+//                        "MYHEALTH_BPL":String(describing:extractedData.value(forKey: "BPL")!),
+//                        "MYHEALTH_COLOR_INDICATOR":String(describing:extractedData.value(forKey: "color")!),
+//                        "MYHEALTH_CHECKED_DATE":String(describing:extractedData.value(forKey: "MdateTime")!)
+//                        ])
+//                }
             }
             
             print("[MyKomunitiMainTVC] \(paging) to \(pagingMaxFromAPI)")
