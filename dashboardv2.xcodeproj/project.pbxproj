@@ -36,6 +36,7 @@
 		9EDD293A1F1731FF0004DA52 /* MyKomunitiPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD29391F1731FF0004DA52 /* MyKomunitiPostCell.swift */; };
 		9EE2E60B1F4EA0F500041DE3 /* TopScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */; };
 		9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6ECA91F3D67950067C3C0 /* State.swift */; };
+		B70273EA1F6FACE8003F7BD7 /* LoginV3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */; };
 		B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A51E42D53400F1BF99 /* ic_chat.png */; };
 		B72B91A81E42D53400F1BF99 /* ic_view.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A61E42D53400F1BF99 /* ic_view.png */; };
 		B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */; };
@@ -80,6 +81,8 @@
 		B791677C1E36065500383CAD /* MySkoolDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791677B1E36065500383CAD /* MySkoolDetailsTVCell.swift */; };
 		B794CF3D1E3994BF00C40BF9 /* ZDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794CF3C1E3994BF00C40BF9 /* ZDateTime.swift */; };
 		B794CF3F1E39B11B00C40BF9 /* ZHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794CF3E1E39B11B00C40BF9 /* ZHealth.swift */; };
+		B79E923C1F7211B100FBD071 /* ic_loginkey300.png in Resources */ = {isa = PBXBuildFile; fileRef = B79E923B1F7211B100FBD071 /* ic_loginkey300.png */; };
+		B79E92421F7227DD00FBD071 /* ic_logincard300.png in Resources */ = {isa = PBXBuildFile; fileRef = B79E92411F7227DD00FBD071 /* ic_logincard300.png */; };
 		B7A29D4C1E44263B00836C19 /* ZImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A29D4B1E44263B00836C19 /* ZImages.swift */; };
 		B7A3C6F71DE82F5600CB7864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C6F61DE82F5600CB7864 /* AppDelegate.swift */; };
 		B7A3C6F91DE82F5600CB7864 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C6F81DE82F5600CB7864 /* LoginVC.swift */; };
@@ -176,6 +179,7 @@
 		9EDD29391F1731FF0004DA52 /* MyKomunitiPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiPostCell.swift; sourceTree = "<group>"; };
 		9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScorer.swift; sourceTree = "<group>"; };
 		9EE6ECA91F3D67950067C3C0 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginV3VC.swift; sourceTree = "<group>"; };
 		B72B91A51E42D53400F1BF99 /* ic_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chat.png; path = "[[Resources]]/ic_chat.png"; sourceTree = SOURCE_ROOT; };
 		B72B91A61E42D53400F1BF99 /* ic_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_view.png; path = "[[Resources]]/ic_view.png"; sourceTree = SOURCE_ROOT; };
 		B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopLatestProdTVC.swift; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 		B791677B1E36065500383CAD /* MySkoolDetailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySkoolDetailsTVCell.swift; sourceTree = "<group>"; };
 		B794CF3C1E3994BF00C40BF9 /* ZDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZDateTime.swift; path = libraries/ZDateTime.swift; sourceTree = "<group>"; };
 		B794CF3E1E39B11B00C40BF9 /* ZHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZHealth.swift; path = libraries/ZHealth.swift; sourceTree = "<group>"; };
+		B79E923B1F7211B100FBD071 /* ic_loginkey300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_loginkey300.png; sourceTree = "<group>"; };
+		B79E92411F7227DD00FBD071 /* ic_logincard300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_logincard300.png; sourceTree = "<group>"; };
 		B7A29D4B1E44263B00836C19 /* ZImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZImages.swift; path = libraries/ZImages.swift; sourceTree = "<group>"; };
 		B7A3C6F31DE82F5600CB7864 /* dashboardv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dashboardv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A3C6F61DE82F5600CB7864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -442,6 +448,8 @@
 		B74D33721DF5164D00208A03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B79E92411F7227DD00FBD071 /* ic_logincard300.png */,
+				B79E923B1F7211B100FBD071 /* ic_loginkey300.png */,
 				B7DC3A0E1E14CFB500951852 /* Fonts */,
 				B74D33781DF68A3A00208A03 /* Predefined */,
 				B74D33731DF5165300208A03 /* Sprites */,
@@ -483,6 +491,7 @@
 			children = (
 				B7A3C6F81DE82F5600CB7864 /* LoginVC.swift */,
 				B74D337B1DF690E300208A03 /* LoginProcessingVC.swift */,
+				B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -771,6 +780,7 @@
 				B7DC39F91E139F3B00951852 /* ic_myebuku@2x.png in Resources */,
 				B7DC3A071E139F3B00951852 /* ic_mysoal.png in Resources */,
 				B7DC39FB1E139F3B00951852 /* ic_myhealth.png in Resources */,
+				B79E923C1F7211B100FBD071 /* ic_loginkey300.png in Resources */,
 				B74D33751DF5167000208A03 /* ic_logodb.png in Resources */,
 				B7DC3A081E139F3B00951852 /* ic_mysoal@2x.png in Resources */,
 				B7A3C6FE1DE82F5600CB7864 /* Assets.xcassets in Resources */,
@@ -793,6 +803,7 @@
 				B7DC39FF1E139F3B00951852 /* ic_mykomuniti@2x.png in Resources */,
 				B73BD8011E51AF6E0036EBEF /* ic_DBImportancePosTwo in Resources */,
 				B7DC3A0D1E14C72100951852 /* ic_bannerdb in Resources */,
+				B79E92421F7227DD00FBD071 /* ic_logincard300.png in Resources */,
 				B73BD7FF1E51AF6E0036EBEF /* ic_DBImportancePosSix in Resources */,
 				B7DC39FE1E139F3B00951852 /* ic_mykomuniti.png in Resources */,
 				B7DC3A141E14E61D00951852 /* ic_bannerdbshadow.png in Resources */,
@@ -947,6 +958,7 @@
 				9E12E2C61F3B14E9003D15FA /* MyPlaceAddPlaceTVCell.swift in Sources */,
 				B7DC39E01E1268E700951852 /* MMMenuListTVCell.swift in Sources */,
 				B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */,
+				B70273EA1F6FACE8003F7BD7 /* LoginV3VC.swift in Sources */,
 				B7583B4F1E2CB2D600C210AC /* SimplePing.m in Sources */,
 				B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */,
 				B7A3C6F71DE82F5600CB7864 /* AppDelegate.swift in Sources */,
