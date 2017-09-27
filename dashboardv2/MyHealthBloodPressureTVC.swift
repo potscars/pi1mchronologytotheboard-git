@@ -104,12 +104,12 @@ class MyHealthBloodPressureTVC: UITableViewController {
         }
         else {
             
-            self.haveData = true
-            
             let unwrapBPData: NSDictionary = extractNotificationWrapper.value(forKey: "BP_data") as! NSDictionary
             let pagingMaxFromAPI: Int = unwrapBPData.value(forKey: "last_page") as! Int
             
             if let getData: NSArray = unwrapBPData.value(forKey: "data") as? NSArray {
+                
+                haveData = getData.count > 0 ? true : false
                 
                 for data in getData {
                     
@@ -123,18 +123,6 @@ class MyHealthBloodPressureTVC: UITableViewController {
                             ])
                     }
                 }
-                
-//                for i in 0...getData.count - 1 {
-//                    
-//                    let extractedData: NSDictionary = getData[i] as! NSDictionary
-//                    
-//                    dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(String(describing: extractedData.value(forKey: "HP")!))/\(String(describing:extractedData.value(forKey: "LP")!)) \(String(describing:extractedData.value(forKey: "BPUnitText")!))",
-//                        "MYHEALTH_HEART_RATE":"\(String(describing:extractedData.value(forKey: "HR")!)) denyutan/minit",
-//                        "MYHEALTH_BPL":String(describing:extractedData.value(forKey: "BPL")!),
-//                        "MYHEALTH_COLOR_INDICATOR":String(describing:extractedData.value(forKey: "color")!),
-//                        "MYHEALTH_CHECKED_DATE":String(describing:extractedData.value(forKey: "MdateTime")!)
-//                        ])
-//                }
             }
             
             print("[MyKomunitiMainTVC] \(paging) to \(pagingMaxFromAPI)")
@@ -204,11 +192,14 @@ class MyHealthBloodPressureTVC: UITableViewController {
         else if(self.haveData == false) {
 
             let cell: MyHealthIntegratedTVCell = tableView.dequeueReusableCell(withIdentifier: "MyHealthBPErrorCellID") as! MyHealthIntegratedTVCell
+            tableView.separatorStyle = .none
             
             return cell
         }
         else
         {
+            tableView.separatorStyle = .singleLine
+            
             if(self.canReloadMore == true && indexPath.row == dataCount)
             {
                 print("[MyKomunitiMainTVC] Calling loadmore cell")

@@ -24,12 +24,6 @@ class MyHealthBodyWeightTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         ZUISetup.setupTableViewWithTabView(tableView: self)
         
@@ -53,7 +47,6 @@ class MyHealthBodyWeightTVC: UITableViewController {
         super.viewWillDisappear(animated)
         
         NotificationCenter.default.removeObserver(self, name: Notification.Name(registeredNotification), object: nil);
-        
     }
     
     func resetData() {
@@ -108,13 +101,14 @@ class MyHealthBodyWeightTVC: UITableViewController {
         }
         else {
             
-            self.haveData = true
+            //self.haveData = true
             
             let unwrapBPData: NSDictionary = extractNotificationWrapper.value(forKey: "W_data") as! NSDictionary
             let pagingMaxFromAPI: Int = unwrapBPData.value(forKey: "last_page") as! Int
             
             let getData: NSArray = unwrapBPData.value(forKey: "data") as! NSArray
             
+            haveData = getData.count > 0 ? true : false
             
             for data in getData {
                 
@@ -135,26 +129,6 @@ class MyHealthBodyWeightTVC: UITableViewController {
                         ])
                 }
             }
-            
-//            for i in 0...getData.count - 1 {
-//                
-//                let extractedData: NSDictionary = getData[i] as! NSDictionary
-//                
-//                let bmiInDouble: Double = Double(String(describing:extractedData.value(forKey: "WeightValue")!))!
-//                
-//                dataArrays.add(["MYHEALTH_BW_BMI":"\(String(describing:extractedData.value(forKey: "BMI")!)) mata",
-//                    "MYHEALTH_BW_BMI_RAW":"\(String(describing:extractedData.value(forKey: "BMI")!))",
-//                    "MYHEALTH_BW_WEIGHT":"\(Int(bmiInDouble)) kg",
-//                    "MYHEALTH_BW_WEIGHT_RAW":String(describing:extractedData.value(forKey: "WeightValue")!),
-//                    "MYHEALTH_BW_BONEMASS":"\(String(describing:extractedData.value(forKey: "BoneValue")!))",
-//                    "MYHEALTH_BW_FATWEIGHT":String(describing:extractedData.value(forKey: "FatValue")!),
-//                    "MYHEALTH_BW_LEANWEIGHT":String(describing:extractedData.value(forKey: "LeanWeight")!),
-//                    "MYHEALTH_BW_MUSCLEMASS":String(describing:extractedData.value(forKey: "MuscaleValue")!),
-//                    "MYHEALTH_BW_WATERWEIGHT":String(describing:extractedData.value(forKey: "WaterValue")!),
-//                    "MYHEALTH_BW_CHECKEDDATE":String(describing:extractedData.value(forKey: "MdateTime")!)
-//                    ])
-//                
-//            }
             
             print("[MyHealthBodyWeightTVC] \(paging) to \(pagingMaxFromAPI)")
             
@@ -191,7 +165,6 @@ class MyHealthBodyWeightTVC: UITableViewController {
         if(self.haveData == false) {
             
             return 1
-            
         }
         else {
             var dataCount: Int = dataArrays.count
@@ -225,11 +198,14 @@ class MyHealthBodyWeightTVC: UITableViewController {
             //MyHealthBWErrorCellID
             
             let cell: MyHealthIntegratedTVCell = tableView.dequeueReusableCell(withIdentifier: "MyHealthBWErrorCellID") as! MyHealthIntegratedTVCell
+            tableView.separatorStyle = .none
             
             return cell
         }
         else
         {
+            tableView.separatorStyle = .singleLine
+            
             if(self.canReloadMore == true && indexPath.row == dataCount)
             {
                 print("[MyKomunitiMainTVC] Calling loadmore cell")
@@ -286,42 +262,6 @@ class MyHealthBodyWeightTVC: UITableViewController {
         }
         
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     
     // MARK: - Navigation
 
