@@ -291,24 +291,6 @@ extension MyKomunitiMainTVC {
             
             print("Data showed!")
             
-            /*if(self.canReloadMore == true && indexPath.row == dataCount)
-            {
-                print("[MyKomunitiMainTVC] Calling loadmore cell")
-                //MKPublicLoadMoreCellID
-                reloadCell = tableView.dequeueReusableCell(withIdentifier: "MKPublicLoadMoreCellID") as? MyKomunitiLoadMoreDataTVCell
-                
-                return reloadCell!
-            }
-            else {
-                let cell: MyKomunitiMainTVCell = tableView.dequeueReusableCell(withIdentifier: "MyKomunitiMainCellID") as! MyKomunitiMainTVCell
-                
-                cell.selectionStyle = UITableViewCellSelectionStyle.default
-                tableView.allowsSelection = true
-                cell.updateCell(data: dataArrays.object(at: indexPath.row) as! NSDictionary)
-                
-                return cell
-            }*/
-            
             let cell: MyKomunitiMainTVCell = tableView.dequeueReusableCell(withIdentifier: "MyKomunitiMainCellID") as! MyKomunitiMainTVCell
             
             cell.selectionStyle = UITableViewCellSelectionStyle.default

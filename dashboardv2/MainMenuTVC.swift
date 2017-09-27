@@ -23,33 +23,17 @@ class MainMenuTVC: UITableViewController {
     
     var questionAvailable: Bool = false
     
-    
     override func loadView() {
         super.loadView()
-        
-        
         
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        DBWebServices.checkConnectionToDashboard(viewController: self)
         
         AppDelegate.mainMenuController = self
         
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-        self.tableView.estimatedRowHeight = 120.0
-        self.edgesForExtendedLayout = []
-        self.tableView.backgroundColor = DBColorSet.dashboardMainColor
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        configureTableView()
         
         let rightBtnItem: UIBarButtonItem = UIBarButtonItem.init(title: "\u{2699}", style: .plain, target: self, action: #selector(gotoSettings))
         self.navigationItem.rightBarButtonItem = rightBtnItem
@@ -57,7 +41,16 @@ class MainMenuTVC: UITableViewController {
         let backButtonItem: UIBarButtonItem = UIBarButtonItem()
         backButtonItem.title = DBStrings.DB_BUTTON_BACK_LABEL_MS
         self.navigationItem.backBarButtonItem = backButtonItem
+    }
+    
+    func configureTableView() {
         
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.tableView.estimatedRowHeight = 120.0
+        self.edgesForExtendedLayout = []
+        self.tableView.backgroundColor = DBColorSet.dashboardMainColor
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -153,11 +146,10 @@ class MainMenuTVC: UITableViewController {
             return 1
         }
         else {
-            return DBMenus.dashboardFrontMenu().count
+            return DBMenus.dashboardFrontMenu().count + 1
         }
     
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -172,34 +164,15 @@ class MainMenuTVC: UITableViewController {
                 //cell.updateCell()
             
                 return cell
-        
-            
             }
             else if(indexPath.row == 0) {
             
                 //tableView.estimatedRowHeight = 150.0
-            
-                let cell: MMImageTransTVCell = tableView.dequeueReusableCell(withIdentifier: "MMImageCellID") as! MMImageTransTVCell
-            
-                // Configure the cell...
-            
-                cell.updateCell()
-            
-                return cell
-            
+                return createAboutCell(tableView)
             }
             else {
-            
-                //tableView.estimatedRowHeight = 120.0
-            
-                let cell: MMMenuListTVCell = tableView.dequeueReusableCell(withIdentifier: "MMMenuGridCellID") as! MMMenuListTVCell
-
-                // Configure the cell...
-        
-                cell.updateCell(data: DBMenus.dashboardFrontMenu().object(at: indexPath.row) as! NSDictionary)
-
-                return cell
-            
+                
+                return createMenuCell(tableView, index: indexPath.row)
             }
         }
         else {
@@ -207,121 +180,101 @@ class MainMenuTVC: UITableViewController {
             if(indexPath.row == 0) {
                 
                 //tableView.estimatedRowHeight = 150.0
-                
-                let cell: MMImageTransTVCell = tableView.dequeueReusableCell(withIdentifier: "MMImageCellID") as! MMImageTransTVCell
-                
-                // Configure the cell...
-                
-                cell.updateCell()
-                
-                return cell
-                
+                return createAboutCell(tableView)
             }
             else {
                 
                 //tableView.estimatedRowHeight = 120.0
-                
-                let cell: MMMenuListTVCell = tableView.dequeueReusableCell(withIdentifier: "MMMenuGridCellID") as! MMMenuListTVCell
-                
-                // Configure the cell...
-                
-                cell.updateCell(data: DBMenus.dashboardFrontMenu().object(at: indexPath.row) as! NSDictionary)
-                
-                return cell
-                
+                return createMenuCell(tableView, index: indexPath.row)
             }
         }
+    }
+    
+    //func to create the about cell
+    func createAboutCell(_ tableView: UITableView) -> UITableViewCell {
+        
+        let cell: MMImageTransTVCell = tableView.dequeueReusableCell(withIdentifier: "MMImageCellID") as! MMImageTransTVCell
+        
+        // Configure the cell...
+        
+        cell.updateCell()
+        
+        return cell
+    }
+    
+    //func to create the cell for menu cell, func created to reduce the redundant code.
+    func createMenuCell(_ tableView: UITableView, index: Int) -> UITableViewCell {
+        
+        let cell: MMMenuListTVCell = tableView.dequeueReusableCell(withIdentifier: "MMMenuGridCellID") as! MMMenuListTVCell
+        
+        // Configure the cell...
+        
+        cell.updateCell(data: DBMenus.dashboardFrontMenu().object(at: index - 1) as! NSDictionary)
+        
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if(questionAvailable == true) {
-            
-            if(indexPath.row == 0 && indexPath.section == 0 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                if(self.myQuizVerifiedUser == false) { self.getPhoneAlert(retry:false) }
-                else { self.performSegue(withIdentifier: "DB_GOTO_QUIZ", sender: self) }
-            }
-            else if(indexPath.row == 0 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_ABOUT", sender: self)
-            }
-            else if(indexPath.row == 1 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYKOMUNITI", sender: self)
-            
-            }
-            else if(indexPath.row == 2 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYSOAL", sender: self)
-            
-            }
-            else if(indexPath.row == 3 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYSKOOL", sender: self)
-            
-            }
-            else if(indexPath.row == 4 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYHEALTH", sender: self)
-            
-            }
-            else if(indexPath.row == 5 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYSHOP", sender: self)
-            
-            } else if(indexPath.row == 6 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYPLACES", sender: self)
+        if DBWebServices.checkConnectionToDashboard(viewController: self) {
+           
+            if(questionAvailable == true) {
                 
-            } else if(indexPath.row == 7 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYGAMES", sender: self)
-                
+                if indexPath.row == 0 && indexPath.section == 0
+                {
+                    if(self.myQuizVerifiedUser == false) { self.getPhoneAlert(retry:false) }
+                    else { self.performSegue(withIdentifier: "DB_GOTO_QUIZ", sender: self) }
+                } else {
+                    
+                    performSegueWithIndex(indexPath.row)
+                }
             }
+            else {
+                
+                performSegueWithIndex(indexPath.row)
+            }
+        }
+    }
+    
+    func performSegueWithIndex(_ index: Int) {
+        
+        if index == 0
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_ABOUT", sender: self)
+        }
+        else if index == 1
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_MYKOMUNITI", sender: self)
             
         }
-        else {
+        else if index == 2
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_MYSOAL", sender: self)
             
-            if(indexPath.row == 0 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_ABOUT", sender: self)
-            }
-            else if(indexPath.row == 1 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYKOMUNITI", sender: self)
-                
-            }
-            else if(indexPath.row == 2 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYSOAL", sender: self)
-                
-            }
-            else if(indexPath.row == 3 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYSKOOL", sender: self)
-                
-            }
-            else if(indexPath.row == 4 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYHEALTH", sender: self)
-                
-            }
-            else if(indexPath.row == 5 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYSHOP", sender: self)
-                
-            } else if(indexPath.row == 6 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYPLACES", sender: self)
-                
-            } else if(indexPath.row == 7 && DBWebServices.checkConnectionToDashboard(viewController: self) == true)
-            {
-                self.performSegue(withIdentifier: "DB_GOTO_MYGAMES", sender: self)
-                
-            }
+        }
+        else if index == 3
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_MYSKOOL", sender: self)
+            
+        }
+        else if index == 4
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_MYHEALTH", sender: self)
+            
+        }
+        else if index == 5
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_MYSHOP", sender: self)
+            
+        } else if index == 6
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_MYPLACES", sender: self)
+            
+        } else if index == 7
+        {
+            self.performSegue(withIdentifier: "DB_GOTO_MYGAMES", sender: self)
             
         }
     }
@@ -387,8 +340,6 @@ class MainMenuTVC: UITableViewController {
         })
         
         self.present(phoneAlertController, animated: true, completion: nil)
-
-        
     }
 
     func myQuizVerifyUser(data: NSDictionary) {
@@ -428,50 +379,10 @@ class MainMenuTVC: UITableViewController {
             
         }
     }
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+
+
+
+

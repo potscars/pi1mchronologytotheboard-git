@@ -13,10 +13,7 @@ class Location {
     var title: String?
     var id: Int?
     
-    init() {
-    
-        
-    }
+    init() { }
     
     init(_ id: Int, title: String) {
         
