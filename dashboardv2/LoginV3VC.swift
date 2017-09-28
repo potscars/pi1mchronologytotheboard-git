@@ -62,6 +62,15 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
         uibLV3VCLoginBtn.layer.cornerRadius = 10
         uibLV3VCLoginBtn.clipsToBounds = true
         
+        //loginprocess
+        uibLV3VCLoginBtn.addTarget(self, action: #selector(gotoLoginProcess(_:)), for: UIControlEvents.touchUpInside)
+        
+    }
+    
+    func gotoLoginProcess(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "DB_PROCESS_LOGIN", sender: self)
+        
     }
     
     func keyboardWillShow(notification: NSNotification) {
