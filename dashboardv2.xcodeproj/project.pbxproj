@@ -105,6 +105,7 @@
 		B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */; };
 		B7BB51861E24912400F9EB3E /* ZUISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51851E24912400F9EB3E /* ZUISetup.swift */; };
 		B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */; };
+		B7D8DE161F7CB8ED00C0B6C7 /* ic_loadingColor.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */; };
 		B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D71E1258F200951852 /* AfterLoginNC.swift */; };
 		B7DC39DA1E125F0900951852 /* BeforeLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D91E125F0900951852 /* BeforeLoginNC.swift */; };
 		B7DC39DE1E12678E00951852 /* MMImageTransTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39DD1E12678E00951852 /* MMImageTransTVCell.swift */; };
@@ -255,6 +256,7 @@
 		B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiLoadingTVCell.swift; sourceTree = "<group>"; };
 		B7BB51851E24912400F9EB3E /* ZUISetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZUISetup.swift; path = libraries/ZUISetup.swift; sourceTree = "<group>"; };
 		B7D8DE101F7CB13000C0B6C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainV3.storyboard; sourceTree = "<group>"; };
+		B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ic_loadingColor.gif; sourceTree = "<group>"; };
 		B7DC39D71E1258F200951852 /* AfterLoginNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterLoginNC.swift; sourceTree = "<group>"; };
 		B7DC39D91E125F0900951852 /* BeforeLoginNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeLoginNC.swift; sourceTree = "<group>"; };
 		B7DC39DD1E12678E00951852 /* MMImageTransTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMImageTransTVCell.swift; sourceTree = "<group>"; };
@@ -454,19 +456,16 @@
 		B74D33721DF5164D00208A03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B79E92411F7227DD00FBD071 /* ic_logincard300.png */,
-				B79E923B1F7211B100FBD071 /* ic_loginkey300.png */,
 				B7DC3A0E1E14CFB500951852 /* Fonts */,
 				B74D33781DF68A3A00208A03 /* Predefined */,
-				B74D33731DF5165300208A03 /* Sprites */,
+				B7D8DE131F7CB76700C0B6C7 /* Sprites */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		B74D33731DF5165300208A03 /* Sprites */ = {
+		B74D33731DF5165300208A03 /* V2 */ = {
 			isa = PBXGroup;
 			children = (
-				B7350F261E52D99A007884B2 /* ic_dbkomunitiico.png */,
 				B73BD7F51E51AEF60036EBEF /* AboutIcons */,
 				B72B91A41E42D52200F1BF99 /* MyShopIcons */,
 				B7DC39E51E139F1000951852 /* MenuIcons */,
@@ -475,7 +474,7 @@
 				B7DC3A0C1E14C72100951852 /* ic_bannerdb */,
 				B74D33741DF5167000208A03 /* ic_logodb.png */,
 			);
-			name = Sprites;
+			name = V2;
 			sourceTree = "<group>";
 		};
 		B74D33781DF68A3A00208A03 /* Predefined */ = {
@@ -644,6 +643,34 @@
 			name = Main_Menu;
 			sourceTree = "<group>";
 		};
+		B7D8DE121F7CB75C00C0B6C7 /* V3 */ = {
+			isa = PBXGroup;
+			children = (
+				B7D8DE141F7CB79400C0B6C7 /* Loading */,
+				B79E92411F7227DD00FBD071 /* ic_logincard300.png */,
+				B79E923B1F7211B100FBD071 /* ic_loginkey300.png */,
+			);
+			name = V3;
+			sourceTree = "<group>";
+		};
+		B7D8DE131F7CB76700C0B6C7 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				B7350F261E52D99A007884B2 /* ic_dbkomunitiico.png */,
+				B7D8DE121F7CB75C00C0B6C7 /* V3 */,
+				B74D33731DF5165300208A03 /* V2 */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		B7D8DE141F7CB79400C0B6C7 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
 		B7DC39D61E1258CB00951852 /* NaviControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,6 +824,7 @@
 				B7350F271E52D99A007884B2 /* ic_dbkomunitiico.png in Resources */,
 				B7DC3A041E139F3B00951852 /* ic_myskool.png in Resources */,
 				B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */,
+				B7D8DE161F7CB8ED00C0B6C7 /* ic_loadingColor.gif in Resources */,
 				B7DC39FA1E139F3B00951852 /* ic_myebuku@3x.png in Resources */,
 				B7DC3A121E14E3BD00951852 /* ic_bannerdbi.png in Resources */,
 				B7DC39FC1E139F3B00951852 /* ic_myhealth@2x.png in Resources */,
