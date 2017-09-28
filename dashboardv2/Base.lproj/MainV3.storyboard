@@ -177,7 +177,6 @@
                             <constraint firstItem="PEl-aN-g7s" firstAttribute="top" secondItem="d7L-Lt-mgM" secondAttribute="bottom" constant="241" id="6qr-X0-4bU"/>
                             <constraint firstItem="d7L-Lt-mgM" firstAttribute="trailing" secondItem="pRR-ai-anK" secondAttribute="trailingMargin" id="Kdm-SX-gEz"/>
                             <constraint firstItem="d7L-Lt-mgM" firstAttribute="leading" secondItem="pRR-ai-anK" secondAttribute="leadingMargin" id="O2E-aA-uMH"/>
-                            <constraint firstItem="d7L-Lt-mgM" firstAttribute="top" secondItem="Ld7-nh-xgX" secondAttribute="bottom" constant="221" id="yUg-48-qci"/>
                         </constraints>
                     </view>
                     <connections>
