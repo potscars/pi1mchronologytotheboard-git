@@ -269,7 +269,7 @@ class DBWebServices: NSObject {
         let getTokenParams = String(format: "%@", token)
         let getTokenURL = NSURL.init(string: "\(DBSettings.myQuizGetQuestionURL)/\(getTokenParams)")
         
-        print("[DBWebServices] URL set: ",getTokenURL ?? "")
+        print("[DBWebServices] Token params",getTokenParams," URL set: ",getTokenURL?.description ?? "")
         
         ZNetwork.performGetData(urlWithParameters: getTokenURL!, notificationName: registeredNotification)
     }

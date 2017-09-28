@@ -104,6 +104,7 @@
 		B7B9A6E71E2F47EC006689C9 /* MySoalIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9A6E61E2F47EC006689C9 /* MySoalIntegratedTVCell.swift */; };
 		B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */; };
 		B7BB51861E24912400F9EB3E /* ZUISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51851E24912400F9EB3E /* ZUISetup.swift */; };
+		B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */; };
 		B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D71E1258F200951852 /* AfterLoginNC.swift */; };
 		B7DC39DA1E125F0900951852 /* BeforeLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D91E125F0900951852 /* BeforeLoginNC.swift */; };
 		B7DC39DE1E12678E00951852 /* MMImageTransTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39DD1E12678E00951852 /* MMImageTransTVCell.swift */; };
@@ -253,6 +254,7 @@
 		B7B9A6E61E2F47EC006689C9 /* MySoalIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySoalIntegratedTVCell.swift; sourceTree = "<group>"; };
 		B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiLoadingTVCell.swift; sourceTree = "<group>"; };
 		B7BB51851E24912400F9EB3E /* ZUISetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZUISetup.swift; path = libraries/ZUISetup.swift; sourceTree = "<group>"; };
+		B7D8DE101F7CB13000C0B6C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainV3.storyboard; sourceTree = "<group>"; };
 		B7DC39D71E1258F200951852 /* AfterLoginNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterLoginNC.swift; sourceTree = "<group>"; };
 		B7DC39D91E125F0900951852 /* BeforeLoginNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeLoginNC.swift; sourceTree = "<group>"; };
 		B7DC39DD1E12678E00951852 /* MMImageTransTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMImageTransTVCell.swift; sourceTree = "<group>"; };
@@ -551,6 +553,7 @@
 				B7A3C6FD1DE82F5600CB7864 /* Assets.xcassets */,
 				B7A3C6FF1DE82F5600CB7864 /* LaunchScreen.storyboard */,
 				B7A3C7021DE82F5600CB7864 /* Info.plist */,
+				B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */,
 			);
 			path = dashboardv2;
 			sourceTree = "<group>";
@@ -793,6 +796,7 @@
 				B73BD8001E51AF6E0036EBEF /* ic_DBImportancePosThree in Resources */,
 				B7350F271E52D99A007884B2 /* ic_dbkomunitiico.png in Resources */,
 				B7DC3A041E139F3B00951852 /* ic_myskool.png in Resources */,
+				B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */,
 				B7DC39FA1E139F3B00951852 /* ic_myebuku@3x.png in Resources */,
 				B7DC3A121E14E3BD00951852 /* ic_bannerdbi.png in Resources */,
 				B7DC39FC1E139F3B00951852 /* ic_myhealth@2x.png in Resources */,
@@ -991,6 +995,14 @@
 				B7A3C7001DE82F5600CB7864 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D8DE101F7CB13000C0B6C7 /* Base */,
+			);
+			name = MainV3.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

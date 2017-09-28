@@ -36,6 +36,9 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
         let rect: CGRect = CGRect.init(x: 0, y: 0, width: 30, height: 30)
         
         let iconImage: UIImage = UIImage.init(named: "ic_logincard300.png")!
@@ -61,9 +64,28 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
         
     }
     
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
+    }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
-        ZGraphics.moveViewYPosition(view: self.view, yPosition: 100, animationDuration: 0.4, moveToUp: true)
+        //ZGraphics.moveViewYPosition(view: self.view, yPosition: 100, animationDuration: 0.4, moveToUp: true)
+        
+        //self.view.frame = CGRect.init(x: 0, y: -110, width: self.view.bounds.width, height: self.view.bounds.height)
+        //self.view.frame = CGRect.init(x: 0, y: -110, width: self.view.bounds.width, height: self.view.bounds.height)
         
     }
     
