@@ -1,5 +1,6 @@
 # OS X
 .DS_Store
+.ds_store
 
 # Standard .gitignore file for Swift from github.com
 # Xcode
@@ -65,5 +66,3 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
-
-.ds_store
