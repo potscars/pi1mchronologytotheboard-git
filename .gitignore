@@ -1,5 +1,6 @@
 # OS X
 .DS_Store
+.ds_store
 
 # Standard .gitignore file for Swift from github.com
 # Xcode

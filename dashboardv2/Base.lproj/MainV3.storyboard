@@ -15,7 +15,7 @@
         <scene sceneID="Dgf-oI-gAv">
             <objects>
                 <navigationController navigationBarHidden="YES" id="n4g-d8-gwa" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6Dh-d1-jdW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Dh-d1-jdW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -121,7 +121,7 @@
                         <outlet property="uibLV3VCLoginBtn" destination="yrR-As-lHc" id="vbS-Ej-ET2"/>
                         <outlet property="uitfLV3VCPassword" destination="gpH-5u-BOm" id="rlM-tJ-Fxh"/>
                         <outlet property="uitfLV3VCUsername" destination="5ai-tV-fUg" id="wbB-8Y-Pag"/>
-                        <segue destination="ttM-oj-ZLt" kind="show" id="15v-jX-0Jy"/>
+                        <segue destination="ttM-oj-ZLt" kind="show" identifier="DB_PROCESS_LOGIN" id="15v-jX-0Jy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zy-Dj-FVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,7 +139,45 @@
                     <view key="view" contentMode="scaleToFill" id="pRR-ai-anK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7L-Lt-mgM">
+                                <rect key="frame" x="16" y="241" width="343" height="185"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_loadingColor.gif" translatesAutoresizingMaskIntoConstraints="NO" id="pqv-3a-UNT">
+                                        <rect key="frame" x="8" y="8" width="327" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="AmU-cA-6DA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sedang Memuatkan..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYw-Dp-JSs">
+                                        <rect key="frame" x="8" y="144" width="327" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="Sal-n8-0SL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GYw-Dp-JSs" secondAttribute="trailing" constant="8" id="OGQ-ic-lyy"/>
+                                    <constraint firstItem="GYw-Dp-JSs" firstAttribute="leading" secondItem="d7L-Lt-mgM" secondAttribute="leading" constant="8" id="R3V-jd-uVd"/>
+                                    <constraint firstItem="GYw-Dp-JSs" firstAttribute="top" secondItem="pqv-3a-UNT" secondAttribute="bottom" constant="8" id="V3w-Dj-ndR"/>
+                                    <constraint firstAttribute="trailing" secondItem="pqv-3a-UNT" secondAttribute="trailing" constant="8" id="XPL-hJ-EAh"/>
+                                    <constraint firstItem="pqv-3a-UNT" firstAttribute="top" secondItem="d7L-Lt-mgM" secondAttribute="top" constant="8" id="awG-74-y60"/>
+                                    <constraint firstItem="pqv-3a-UNT" firstAttribute="leading" secondItem="d7L-Lt-mgM" secondAttribute="leading" constant="8" id="gZf-lb-JBG"/>
+                                    <constraint firstAttribute="height" constant="185" id="vXZ-Gg-vUJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="GYw-Dp-JSs" secondAttribute="bottom" constant="8" id="wqU-kG-a4T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PEl-aN-g7s" firstAttribute="top" secondItem="d7L-Lt-mgM" secondAttribute="bottom" constant="241" id="6qr-X0-4bU"/>
+                            <constraint firstItem="d7L-Lt-mgM" firstAttribute="trailing" secondItem="pRR-ai-anK" secondAttribute="trailingMargin" id="Kdm-SX-gEz"/>
+                            <constraint firstItem="d7L-Lt-mgM" firstAttribute="leading" secondItem="pRR-ai-anK" secondAttribute="leadingMargin" id="O2E-aA-uMH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="0c8-0s-kFF" kind="show" id="GMs-iV-VxO"/>
@@ -147,13 +185,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6u-5V-pVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="-152"/>
+            <point key="canvasLocation" x="224.80000000000001" y="-152.47376311844079"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dmm-de-hsw">
             <objects>
                 <navigationController id="0c8-0s-kFF" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UDI-IN-RTK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UDI-IN-RTK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -293,6 +331,7 @@
         <image name="abstractBackground" width="1280" height="720"/>
         <image name="ic_bannerdbshadow.png" width="500" height="200"/>
         <image name="ic_dbquiz_banner" width="163" height="32"/>
+        <image name="ic_loadingColor.gif" width="256" height="256"/>
         <image name="ic_logodb.png" width="500" height="547"/>
         <image name="ic_mykomuniti.png" width="60" height="60"/>
     </resources>
