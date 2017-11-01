@@ -9,7 +9,6 @@ target 'dashboardv2' do
 
 pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 pod "youtube-ios-player-helper", "~> 0.1.4"
-pod "PlainPing"
 pod "Cosmos", "~> 8.0"
 pod "ImageSlideshow", "~> 1.0.0"
 pod "ImageSlideshow/Alamofire"
