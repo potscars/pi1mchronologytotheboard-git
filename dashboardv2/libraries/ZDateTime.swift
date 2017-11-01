@@ -18,7 +18,7 @@ class ZDateTime: NSObject {
         print("[ZDateTime] Value parsed is \(valueInString)")
         
         let originalDate: DateFormatter = DateFormatter()
-        originalDate.timeZone = NSTimeZone(name: "GMT+08:00") as! TimeZone
+        originalDate.timeZone = NSTimeZone(name: "GMT+08:00")! as TimeZone
         if(dateTimeFormatFrom != nil) { originalDate.dateFormat = dateTimeFormatFrom } else { originalDate.dateFormat = "yyyy-MM-dd HH:mm:ss" }
         let setDate: Date = originalDate.date(from: valueInString)!
         if(dateTimeFormatTo != nil) { originalDate.dateFormat = dateTimeFormatTo } else { originalDate.dateFormat = DateInLong }

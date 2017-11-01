@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
-        UINavigationBar.appearance().titleTextAttributes = [ NSFontAttributeName : UIFont(name: "Arial-BoldMT", size : 20.0)!, NSForegroundColorAttributeName : UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [ NSAttributedStringKey.font : UIFont(name: "Arial-BoldMT", size : 20.0)!, NSAttributedStringKey.foregroundColor : UIColor.white]
         UITabBar.appearance().tintColor = UIColor.white
         
         listingAllFontNames()

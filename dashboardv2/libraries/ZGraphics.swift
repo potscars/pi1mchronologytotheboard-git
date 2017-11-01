@@ -78,10 +78,10 @@ class ZGraphics: NSObject {
     {
         controller.navigationController?.navigationBar.barTintColor = setBarTintColor
         controller.navigationController?.navigationBar.tintColor = setBackButtonFontColor
-        controller.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: setBarFontColor,NSFontAttributeName:setBarFontFace]
+        controller.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: setBarFontColor,NSAttributedStringKey.font:setBarFontFace]
     }
     
-    static func adjustTextBarToTextOnly(tabBarItem: UITabBarItem, normalStateDefinedAttributes: [String : Any]?, selectedStateDefinedAttributes: [String : Any]?)
+    static func adjustTextBarToTextOnly(tabBarItem: UITabBarItem, normalStateDefinedAttributes: [NSAttributedStringKey : Any]?, selectedStateDefinedAttributes: [NSAttributedStringKey : Any]?)
     {
         tabBarItem.titlePositionAdjustment = UIOffset.init(horizontal: 0, vertical: -13)
         

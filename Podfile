@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.1'
 
 target 'dashboardv2' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
@@ -9,9 +9,9 @@ target 'dashboardv2' do
 
 pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 pod "youtube-ios-player-helper", "~> 0.1.4"
-pod "PlainPing"
+#pod "PlainPing"
 pod "Cosmos", "~> 8.0"
-pod "ImageSlideshow", "~> 1.0.0"
+pod "ImageSlideshow" #, "~> 1.0.0"
 pod "ImageSlideshow/Alamofire"
 pod "ImageSlideshow/AFURL"
 pod "ImageSlideshow/SDWebImage"

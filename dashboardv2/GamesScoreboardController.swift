@@ -81,7 +81,7 @@ class GamesScoreboardController: UITableViewController {
         }
     }
 
-    func playTapped(_ sender: UIBarButtonItem) {
+    @objc func playTapped(_ sender: UIBarButtonItem) {
         
         AlertController().alertController(self, title: "Warning!", message: "Under maintainance. Sorry for the inconvenience.")
     }

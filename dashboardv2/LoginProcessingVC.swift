@@ -35,7 +35,7 @@ class LoginProcessingVC: UIViewController {
         
     }
     
-    func loginProcess(data: NSDictionary)
+    @objc func loginProcess(data: NSDictionary)
     {
         print("[LPVC] Processing login with data is \(data)...")
         
@@ -95,7 +95,7 @@ class LoginProcessingVC: UIViewController {
         NotificationCenter.default.removeObserver(self, name: notificationName, object: nil);
     }
     
-    func tokenForMySoal(data: NSDictionary)
+    @objc func tokenForMySoal(data: NSDictionary)
     {
         let breakDown = data.value(forKey: "object") as! NSDictionary
         
@@ -105,7 +105,7 @@ class LoginProcessingVC: UIViewController {
         
     }
     
-    func tokenForMySkool(data: NSDictionary)
+    @objc func tokenForMySkool(data: NSDictionary)
     {
         let breakDown = data.value(forKey: "object") as! NSDictionary
         

@@ -143,7 +143,7 @@ class ZNetwork: NSObject {
         let setSessionDataTask = setUrlSession.dataTask(with: requestData as URLRequest, completionHandler: {
             (data, response, error) -> Void in
             
-            print("[ZNetwork] GetLoginData: Response is \(response)")
+            //print("[ZNetwork] GetLoginData: Response is \(response)")
             
             if let data = data {
                 

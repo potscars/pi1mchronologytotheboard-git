@@ -31,7 +31,7 @@ class MyPlaceSearchedResultDetails: UITableViewController {
     }
     
     //MARK: - Navigate to apple maps with given coordinates.
-    func navigateBarButtonTapped(_ sender: UIBarButtonItem) {
+    @objc func navigateBarButtonTapped(_ sender: UIBarButtonItem) {
         
         let latitude: CLLocationDegrees = Double(placeDetails.latitude!)!
         let longitude: CLLocationDegrees = Double(placeDetails.longitude!)!

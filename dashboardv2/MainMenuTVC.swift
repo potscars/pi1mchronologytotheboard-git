@@ -92,14 +92,14 @@ class MainMenuTVC: UITableViewController {
         NotificationCenter.default.removeObserver(self, name: Notification.Name(verifyingEventNotification), object: nil);
     }
     
-    func gotoSettings(sender: UIEvent)
+    @objc func gotoSettings(sender: UIEvent)
     {
         print("[MainMenuTVC] Open settings \(sender)!")
         
         self.performSegue(withIdentifier: "DB_GOTO_SETTINGS", sender: self)
     }
     
-    func gotQuestionData(data: NSDictionary) {
+    @objc func gotQuestionData(data: NSDictionary) {
         
         if let unwrapData = data.value(forKey: "object") as? NSDictionary {
             
@@ -342,7 +342,7 @@ class MainMenuTVC: UITableViewController {
         self.present(phoneAlertController, animated: true, completion: nil)
     }
 
-    func myQuizVerifyUser(data: NSDictionary) {
+    @objc func myQuizVerifyUser(data: NSDictionary) {
         
         //check if user is eligible
         
@@ -363,7 +363,7 @@ class MainMenuTVC: UITableViewController {
         }
     }
     
-    func myQuizVerifiedUser(data: NSDictionary) {
+    @objc func myQuizVerifiedUser(data: NSDictionary) {
         
         //verify user after insert phone no
         

@@ -80,7 +80,7 @@ class MyQuizQuestionSelectTableVC: UITableViewController {
         NotificationCenter.default.removeObserver(self, name: Notification.Name(quizSendAnswerRegisteredNotification), object: nil);
     }
     
-    func populateData(data: NSDictionary) {
+    @objc func populateData(data: NSDictionary) {
         
         let getPopulatedData: NSDictionary = data.value(forKey: "object") as! NSDictionary
         
@@ -179,7 +179,7 @@ class MyQuizQuestionSelectTableVC: UITableViewController {
         }
     }
 
-    func responseFromSendAnswer(data: NSDictionary) {
+    @objc func responseFromSendAnswer(data: NSDictionary) {
         
         print("Answer sent with response \(data.value(forKey: "object") as! NSDictionary)")
         
@@ -198,7 +198,7 @@ class MyQuizQuestionSelectTableVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func sendParticipation(sender: UIBarButtonItem) {
+    @objc func sendParticipation(sender: UIBarButtonItem) {
         
         let sendConfirmAlertController: UIAlertController = UIAlertController.init(title: "Confirm", message: "Confirm to send?", preferredStyle: UIAlertControllerStyle.alert)
         

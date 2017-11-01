@@ -60,7 +60,7 @@ class MyHealthBloodPressureTVC: UITableViewController {
         self.tableView.reloadData()
     }
     
-    func setRefresh(sender: UIBarButtonItem) {
+    @objc func setRefresh(sender: UIBarButtonItem) {
         
         if(DBWebServices.checkConnectionToDashboard(viewController: self) == true) {
             
@@ -81,7 +81,7 @@ class MyHealthBloodPressureTVC: UITableViewController {
         
     }
 
-    func populateData(data: NSDictionary) {
+    @objc func populateData(data: NSDictionary) {
         
         self.reloadPresets(inLoadingState: true)
         
@@ -115,8 +115,8 @@ class MyHealthBloodPressureTVC: UITableViewController {
                     
                     if let dataDictionary = data as? NSDictionary {
                         
-                        dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(dataDictionary.value(forKey: "HP"))/\(dataDictionary.value(forKey: "LP")) \(dataDictionary.value(forKey: "BPUnitText"))",
-                            "MYHEALTH_HEART_RATE":"\(dataDictionary.value(forKey: "HR")) denyutan/minit",
+                        dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(String(describing: dataDictionary.value(forKey: "HP")))/\(String(describing: dataDictionary.value(forKey: "LP"))) \(String(describing: dataDictionary.value(forKey: "BPUnitText")))",
+                            "MYHEALTH_HEART_RATE":"\(String(describing: dataDictionary.value(forKey: "HR"))) denyutan/minit",
                             "MYHEALTH_BPL":dataDictionary.value(forKey: "BPL")!,
                             "MYHEALTH_COLOR_INDICATOR":dataDictionary.value(forKey: "color"),
                             "MYHEALTH_CHECKED_DATE":dataDictionary.value(forKey: "MdateTime")
@@ -125,7 +125,7 @@ class MyHealthBloodPressureTVC: UITableViewController {
                 }
             }
             
-            print("[MyKomunitiMainTVC] \(paging) to \(pagingMaxFromAPI)")
+            //print("[MyKomunitiMainTVC] \(paging) to \(pagingMaxFromAPI)")
             
             if(paging == pagingMaxFromAPI) { self.canReloadMore = false } else { self.canReloadMore = true }
             
