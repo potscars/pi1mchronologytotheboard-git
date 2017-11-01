@@ -35,7 +35,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func keyboardHide(recognizer:UITapGestureRecognizer)
+    @objc func keyboardHide(recognizer:UITapGestureRecognizer)
     {
         print("[LVC] Hiding keyboard...")
         self.view.endEditing(true)

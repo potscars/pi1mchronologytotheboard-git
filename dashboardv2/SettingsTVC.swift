@@ -97,7 +97,7 @@ class SettingsTVC: UITableViewController {
         
     }
     
-    func warningAction(notificationID: String) {
+    @objc func warningAction(notificationID: String) {
         
         //specify yourself here
         

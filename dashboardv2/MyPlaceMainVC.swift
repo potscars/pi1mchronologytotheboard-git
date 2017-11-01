@@ -67,7 +67,7 @@ class MyPlaceMainVC: UIViewController {
         
     }
     
-    func dismissMyPlace() {
+    @objc func dismissMyPlace() {
         
         dismiss(animated: true, completion: nil)
     }
@@ -184,7 +184,7 @@ class MyPlaceMainVC: UIViewController {
         
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: setZoom)
         
-        print("latitude \(locationManager.location?.coordinate.latitude) longitude \(locationManager.location?.coordinate.longitude)")
+        //print("latitude \(locationManager.location?.coordinate.latitude) longitude \(locationManager.location?.coordinate.longitude)")
         
         mapView.animate(to: camera)
     }
@@ -230,7 +230,7 @@ class MyPlaceMainVC: UIViewController {
     
     //MARK: - Func to open add controller.
     
-    func addButtonTapped(_ sender: UIBarButtonItem) {
+    @objc func addButtonTapped(_ sender: UIBarButtonItem) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         

@@ -82,7 +82,7 @@ class MyPlaceAddPlaceVC: UIViewController {
         
         self.navigationController?.navigationBar.barTintColor = DBColorSet.mySoalColor
         self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         navigationItem.backBarButtonItem?.title = nil
         title = "Add Place"
         
@@ -130,7 +130,7 @@ class MyPlaceAddPlaceVC: UIViewController {
     }
     
     //MARK: - POST LOCATION
-    func submitButtonTapped(_ sender: UIButton) {
+    @objc func submitButtonTapped(_ sender: UIButton) {
         
         let loadingSpinner = LoadingSpinner.init(view: self.view, isNavBar: true)
         
@@ -230,7 +230,7 @@ class MyPlaceAddPlaceVC: UIViewController {
                     
                     loadingSpinner.removeLoadingScreen()
                     
-                    print(result)
+                    //print(result)
                     
                     guard responses == nil else {
                         alertController.alertController(self, title: "Warning!", message: responses!)
@@ -277,7 +277,7 @@ class MyPlaceAddPlaceVC: UIViewController {
         
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: setZoom)
         
-        print("latitude \(locationManager.location?.coordinate.latitude) longitude \(locationManager.location?.coordinate.longitude)")
+        //print("latitude \(locationManager.location?.coordinate.latitude) longitude \(locationManager.location?.coordinate.longitude)")
         
         mapView.animate(to: camera)
     }
@@ -305,7 +305,7 @@ class MyPlaceAddPlaceVC: UIViewController {
     
     //MARK: - Function to move up the field when keyboard appeared.
     
-    func keyboardWillShow(_ notification: NSNotification) {
+    @objc func keyboardWillShow(_ notification: NSNotification) {
         
         print("Keyboard showed!")
         
@@ -318,7 +318,7 @@ class MyPlaceAddPlaceVC: UIViewController {
         self.scrollView.contentInset = contentInset
     }
     
-    func keyboardWillHide(_ notification: NSNotification) {
+    @objc func keyboardWillHide(_ notification: NSNotification) {
         
         let contentInset: UIEdgeInsets = .zero
         self.scrollView.contentInset = contentInset
@@ -326,7 +326,7 @@ class MyPlaceAddPlaceVC: UIViewController {
     
     //MARK: - Function for button to take action
     
-    func addPhotoButtonTapped(_ sender: UIButton) {
+    @objc func addPhotoButtonTapped(_ sender: UIButton) {
         
         let picker = DKImagePickerController()
         picker.showsCancelButton = true
@@ -362,7 +362,7 @@ class MyPlaceAddPlaceVC: UIViewController {
     
     //MARK: - Popover view to show menu for state.
     
-    func stateTapped(_ sender: Any) {
+    @objc func stateTapped(_ sender: Any) {
         
         let vc = StatesMenuTVC()
         vc.modalPresentationStyle = .popover
@@ -373,7 +373,7 @@ class MyPlaceAddPlaceVC: UIViewController {
         present(vc, animated: true, completion: nil)
     }
     
-    func categoryTapped(_ sender: Any) {
+    @objc func categoryTapped(_ sender: Any) {
         
         let vc = CategoryMenuTVC()
         
@@ -476,7 +476,7 @@ extension MyPlaceAddPlaceVC: UIPopoverPresentationControllerDelegate, StatesMenu
         return navigationController
     }
     
-    func doneTapped() {
+    @objc func doneTapped() {
         self.dismiss(animated: true, completion: nil)
     }
     

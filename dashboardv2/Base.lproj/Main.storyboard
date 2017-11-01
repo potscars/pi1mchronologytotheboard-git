@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="giV-Ci-eCU">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="giV-Ci-eCU">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Unknown constraint types" minToolsVersion="5.1"/>
@@ -42,7 +50,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UvI-Rg-XfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-644"/>
+            <point key="canvasLocation" x="-153" y="-710"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -200,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+            <point key="canvasLocation" x="-154" y="153"/>
         </scene>
         <!--LoginV3VC-->
         <scene sceneID="Uo6-NG-BC6">
@@ -299,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsF-Gb-LHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="796.55172413793105"/>
+            <point key="canvasLocation" x="116" y="885"/>
         </scene>
         <!--After LoginNC-->
         <scene sceneID="tAw-xF-Wjd">
@@ -382,7 +390,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MMImageCellID" rowHeight="150" id="CEb-2A-N9Z" customClass="MMImageTransTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="CEb-2A-N9Z" id="qBB-jn-eGK">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CEb-2A-N9Z" id="qBB-jn-eGK">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -471,7 +483,11 @@
                                 <rect key="frame" x="0.0" y="248" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OjU-pF-a8P" id="uMl-71-yMc">
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+=======
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="119.5"/>
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyKomuniti" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYM-Lm-0nU">
@@ -708,7 +724,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TSwitchMenuCellID" rowHeight="90" id="10i-74-7zm" customClass="SettingsIntegratedTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="10i-74-7zm" id="hxa-eH-lq1">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="10i-74-7zm" id="hxa-eH-lq1">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -774,8 +794,13 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TSingleMenuCellID" rowHeight="60" id="bt6-Ls-3c1" customClass="SettingsIntegratedTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="118" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="bt6-Ls-3c1" id="nUj-P8-HgX">
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bt6-Ls-3c1" id="nUj-P8-HgX">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tetapan Bahasa / Language Selection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65p-jN-3W1">
@@ -851,8 +876,13 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SettingsExtTickSelectionCellID" rowHeight="60" id="kB0-fn-9lT" customClass="SettingsExtendedTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="kB0-fn-9lT" id="udN-1F-Akf">
                                     <rect key="frame" x="0.0" y="0.0" width="335" height="59.5"/>
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kB0-fn-9lT" id="udN-1F-Akf">
+                                    <rect key="frame" x="0.0" y="0.0" width="336" height="59.5"/>
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bahasa Malaysia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJN-Pf-UXe">
@@ -1120,7 +1150,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyKomunitiDetailsSenderCellID" rowHeight="60" id="GpR-5Z-1Ku" customClass="MyKomunitiDetailsTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="GpR-5Z-1Ku" id="r40-54-qkH">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GpR-5Z-1Ku" id="r40-54-qkH">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1205,7 +1239,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyKomunitiDetailsDescCellID" rowHeight="50" id="KNH-2t-35A" customClass="MyKomunitiDetailsTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="158" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KNH-2t-35A" id="dGM-GI-8Ci">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KNH-2t-35A" id="dGM-GI-8Ci">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1274,7 +1312,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ji7-iK-Hid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1599" y="-1078"/>
+            <point key="canvasLocation" x="1441" y="-1088"/>
         </scene>
         <!--Maps-->
         <scene sceneID="ORf-bb-eFi">
@@ -1338,7 +1376,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ABuildInfoCellID" rowHeight="210" id="JaZ-4v-3bW" customClass="ABuildInfoTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="JaZ-4v-3bW" id="fYm-a7-kTz">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JaZ-4v-3bW" id="fYm-a7-kTz">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1418,7 +1460,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AYTPlayerIntroCellID" rowHeight="240" id="MJN-Jd-B35" customClass="AYTPlayerTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="238" width="375" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="MJN-Jd-B35" id="qmO-0A-NZE">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MJN-Jd-B35" id="qmO-0A-NZE">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="239.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1500,7 +1546,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AImportanceDBCellID" rowHeight="470" id="R3l-Nf-StZ" customClass="AImportanceDBTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="708" width="375" height="470"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="R3l-Nf-StZ" id="sVA-GF-kra">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R3l-Nf-StZ" id="sVA-GF-kra">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="469.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1828,7 +1878,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70Y-eg-eZp">
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70Y-eg-eZp">
                                             <rect key="frame" x="8" y="8" width="9" height="83"/>
                                             <color key="backgroundColor" red="0.96722319160000003" green="0.6805507757" blue="0.30357578219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -2014,7 +2064,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Guc-Bq-bmo">
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Guc-Bq-bmo">
                                             <rect key="frame" x="8" y="8" width="9" height="83"/>
                                             <color key="backgroundColor" red="0.96722319160000003" green="0.6805507757" blue="0.30357578219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -4413,7 +4463,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySkoolDetailsSenderCellID" rowHeight="37" id="yfi-Zm-HRg" customClass="MySkoolDetailsTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="37"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="yfi-Zm-HRg" id="xgd-ii-b6h">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfi-Zm-HRg" id="xgd-ii-b6h">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="36.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -4483,7 +4537,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySkoolDetailsDescCellID" rowHeight="50" id="kL2-Wn-EDr" customClass="MySkoolDetailsTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="135" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="kL2-Wn-EDr" id="ZkX-bl-waf">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kL2-Wn-EDr" id="ZkX-bl-waf">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -4531,7 +4589,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySoalDetailsSenderCellID" rowHeight="37" id="uKx-cA-pPv" customClass="MySoalDetailsTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="37"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="uKx-cA-pPv" id="aKL-o6-joe">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uKx-cA-pPv" id="aKL-o6-joe">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="36.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -4601,7 +4663,11 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySoalDetailsDescCellID" rowHeight="50" id="6Fw-pC-31h" customClass="MySoalDetailsTVCell" customModule="dashboardv2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="135" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="6Fw-pC-31h" id="dsf-4q-vXz">
+=======
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Fw-pC-31h" id="dsf-4q-vXz">
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -5098,7 +5164,11 @@
                                 <rect key="frame" x="0.0" y="108" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MNT-j0-eX0" id="06p-y1-9OC">
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="69.5"/>
+=======
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
+>>>>>>> 316a63107aabaa9ae98263450f09f0b40be9949d
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soalan 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-gV-UfL">

@@ -80,7 +80,7 @@ class MyKomunitiMainTVC: UITableViewController {
         
     }
     
-    func composeButtonTapped(_ sender: UIBarButtonItem) {
+    @objc func composeButtonTapped(_ sender: UIBarButtonItem) {
         
         let viewControllerIdentifier = "myKomunitiPostVC"
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -91,7 +91,7 @@ class MyKomunitiMainTVC: UITableViewController {
         }
     }
     
-    func refreshed(_ sender: UIRefreshControl) {
+    @objc func refreshed(_ sender: UIRefreshControl) {
         
         if(DBWebServices.checkConnectionToDashboard(viewController: self) == true) {
             
@@ -116,7 +116,7 @@ class MyKomunitiMainTVC: UITableViewController {
         self.detailsToSend = [:]
     }
     
-    func populateData(data: NSDictionary)
+    @objc func populateData(data: NSDictionary)
     {
         
         if isRefreshing || isFirstLoad {
@@ -151,7 +151,7 @@ class MyKomunitiMainTVC: UITableViewController {
                             "MESSAGE_DESC":extractedData.value(forKey: "content") as! String
                 ])
             
-            print("UPDATED DATE: \(getUserData.value(forKey: "updated_at"))")
+            //print("UPDATED DATE: \(getUserData.value(forKey: "updated_at"))")
             
         }
         
@@ -261,7 +261,7 @@ extension MyKomunitiMainTVC {
         
         // Configure the cell...
         
-        let dataCount: Int = dataArrays.count
+        //let dataCount: Int = dataArrays.count
         //if(self.canReloadMore == true) { dataCount += 1 }
         
         if(self.isFirstLoad == true)

@@ -69,7 +69,7 @@ class MyKomunitiMainAdminTVC: UITableViewController {
         
     }
         
-    func refreshed(_ sender: UIRefreshControl) {
+    @objc func refreshed(_ sender: UIRefreshControl) {
         
         if(DBWebServices.checkConnectionToDashboard(viewController: self) == true) {
             
@@ -92,7 +92,7 @@ class MyKomunitiMainAdminTVC: UITableViewController {
         self.detailsToSend = [:]
     }
 
-    func populateData(data: NSDictionary) {
+    @objc func populateData(data: NSDictionary) {
         
         if isFirstLoad || isRefreshing {
             
@@ -126,7 +126,7 @@ class MyKomunitiMainAdminTVC: UITableViewController {
                 let extractedData: NSDictionary = getData[i] as! NSDictionary
                 let getUserData: NSDictionary = extractedData.value(forKey: "user") as! NSDictionary
                 
-                print("[MyKomunitiMainTVC] Title: \(extractedData.value(forKey: "title"))")
+                //print("[MyKomunitiMainTVC] Title: \(extractedData.value(forKey: "title"))")
                 
                 dataArrays.add(["MESSAGE_LEVEL":"PENTADBIR",
                                 "MESSAGE_SENDER":"\(getUserData.value(forKey:"first_name") as! String) \(getUserData.value(forKey:"last_name") as! String)",

@@ -52,9 +52,9 @@ class MyKomunitiPostVC: UIViewController {
         self.navigationItem.rightBarButtonItem = postButton
     }
     
-    func postButtonTapped(_ sender: UIBarButtonItem) {
+    @objc func postButtonTapped(_ sender: UIBarButtonItem) {
         
-        print("Title\(titleTextView) Content\(contentTextView)")
+        //print("Title\(titleTextView) Content\(contentTextView)")
         
         let alertController = AlertController()
         

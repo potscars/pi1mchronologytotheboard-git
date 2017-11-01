@@ -50,7 +50,7 @@ class MyShopProductDetailsTVC: UITableViewController {
         
     }
     
-    func populateData(data: NSDictionary) {
+    @objc func populateData(data: NSDictionary) {
         
         print("[MyShopProductDetails] Data: \(data)")
         

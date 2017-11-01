@@ -78,7 +78,7 @@ class MySoalMainTVC: UITableViewController {
         self.tableView.reloadData()
     }
     
-    func setRefresh(sender: UIBarButtonItem)
+    @objc func setRefresh(sender: UIBarButtonItem)
     {
         if(DBWebServices.checkConnectionToDashboard(viewController: self) == true) {
             
@@ -99,7 +99,7 @@ class MySoalMainTVC: UITableViewController {
         
     }
     
-    func populateData(data: NSDictionary)
+    @objc func populateData(data: NSDictionary)
     {
         let extractNotificationWrapper: NSDictionary = data.value(forKey: "object") as! NSDictionary
         

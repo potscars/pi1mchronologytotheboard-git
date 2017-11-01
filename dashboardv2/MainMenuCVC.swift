@@ -109,7 +109,7 @@ class MainMenuCVC: UICollectionViewController {
         performSegue(withIdentifier: MainMenuIdentifier.GoToSettings, sender: self)
     }
     
-    func gotQuestionData(data: NSDictionary) {
+    @objc func gotQuestionData(data: NSDictionary) {
         
         if let unwrapData = data.value(forKey: "object") as? NSDictionary {
             
@@ -137,7 +137,7 @@ class MainMenuCVC: UICollectionViewController {
         }
     }
     
-    func myQuizVerifyUser(data: NSDictionary) {
+    @objc func myQuizVerifyUser(data: NSDictionary) {
         
         //check if user is eligible
         
@@ -158,7 +158,7 @@ class MainMenuCVC: UICollectionViewController {
         }
     }
     
-    func myQuizVerifiedUser(data: NSDictionary) {
+    @objc func myQuizVerifiedUser(data: NSDictionary) {
         
         //verify user after insert phone no
         

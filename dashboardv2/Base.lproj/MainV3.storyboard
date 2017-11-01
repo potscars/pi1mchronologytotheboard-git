@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n4g-d8-gwa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n4g-d8-gwa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+        </array>
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="Dgf-oI-gAv">
             <objects>
                 <navigationController navigationBarHidden="YES" id="n4g-d8-gwa" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Dh-d1-jdW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6Dh-d1-jdW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -96,24 +103,24 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logodb.png" translatesAutoresizingMaskIntoConstraints="NO" id="pIy-On-bK6">
-                                <rect key="frame" x="97" y="35" width="180" height="180"/>
+                                <rect key="frame" x="97" y="47" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="pIy-On-bK6" secondAttribute="height" multiplier="1:1" id="UBl-wo-ZDm"/>
+                                    <constraint firstAttribute="width" secondItem="pIy-On-bK6" secondAttribute="height" multiplier="1:1" id="Vpd-yf-cGP"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.83137254900000002" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="s3G-wv-GDO" firstAttribute="top" secondItem="pIy-On-bK6" secondAttribute="bottom" constant="25" id="5IP-tD-93D"/>
                             <constraint firstItem="7zl-Ll-2I6" firstAttribute="top" secondItem="osR-Ku-a9u" secondAttribute="bottom" constant="20" id="DDR-KU-5zp"/>
+                            <constraint firstItem="pIy-On-bK6" firstAttribute="top" secondItem="LXx-aj-3Mg" secondAttribute="bottom" constant="27" id="Dr7-2D-ymD"/>
                             <constraint firstItem="osR-Ku-a9u" firstAttribute="top" secondItem="s3G-wv-GDO" secondAttribute="bottom" constant="107" id="IwZ-8Q-Abi"/>
+                            <constraint firstItem="pIy-On-bK6" firstAttribute="leading" secondItem="PNn-aU-byn" secondAttribute="leadingMargin" constant="81" id="LOx-KR-uQ4"/>
                             <constraint firstItem="osR-Ku-a9u" firstAttribute="trailing" secondItem="PNn-aU-byn" secondAttribute="trailingMargin" id="PWI-f8-hXn"/>
-                            <constraint firstItem="pIy-On-bK6" firstAttribute="top" secondItem="LXx-aj-3Mg" secondAttribute="bottom" constant="15" id="TmY-hp-4KU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s3G-wv-GDO" secondAttribute="trailing" constant="7" id="bdB-L4-Gp8"/>
                             <constraint firstItem="s3G-wv-GDO" firstAttribute="leading" secondItem="PNn-aU-byn" secondAttribute="leadingMargin" constant="6" id="jgI-0o-oYz"/>
                             <constraint firstItem="osR-Ku-a9u" firstAttribute="leading" secondItem="PNn-aU-byn" secondAttribute="leadingMargin" id="l11-F0-AvO"/>
-                            <constraint firstItem="pIy-On-bK6" firstAttribute="leading" secondItem="PNn-aU-byn" secondAttribute="leadingMargin" constant="81" id="lGe-EY-7iH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pIy-On-bK6" secondAttribute="trailing" constant="82" id="xAj-EB-A3P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pIy-On-bK6" secondAttribute="trailing" constant="82" id="ske-Ae-xSs"/>
+                            <constraint firstItem="s3G-wv-GDO" firstAttribute="top" secondItem="pIy-On-bK6" secondAttribute="bottom" constant="13" id="v4N-Kl-eoq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P35-zb-5Ze"/>
@@ -121,17 +128,17 @@
                         <outlet property="uibLV3VCLoginBtn" destination="yrR-As-lHc" id="vbS-Ej-ET2"/>
                         <outlet property="uitfLV3VCPassword" destination="gpH-5u-BOm" id="rlM-tJ-Fxh"/>
                         <outlet property="uitfLV3VCUsername" destination="5ai-tV-fUg" id="wbB-8Y-Pag"/>
-                        <segue destination="ttM-oj-ZLt" kind="show" identifier="DB_PROCESS_LOGIN" id="15v-jX-0Jy"/>
+                        <segue destination="ttM-oj-ZLt" kind="show" identifier="DB_PROCESS_LOGIN" animates="NO" id="15v-jX-0Jy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zy-Dj-FVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-553" y="-152"/>
         </scene>
-        <!--View Controller-->
+        <!--Login ProcessingVC-->
         <scene sceneID="7f7-Ub-Ush">
             <objects>
-                <viewController id="ttM-oj-ZLt" sceneMemberID="viewController">
+                <viewController id="ttM-oj-ZLt" customClass="LoginProcessingVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ld7-nh-xgX"/>
                         <viewControllerLayoutGuide type="bottom" id="PEl-aN-g7s"/>
@@ -191,8 +198,8 @@
         <scene sceneID="Dmm-de-hsw">
             <objects>
                 <navigationController id="0c8-0s-kFF" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UDI-IN-RTK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UDI-IN-RTK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

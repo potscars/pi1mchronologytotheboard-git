@@ -59,7 +59,7 @@ class MyHealthBodyWeightTVC: UITableViewController {
         self.tableView.reloadData()
     }
     
-    func setRefresh(sender: UIBarButtonItem) {
+    @objc func setRefresh(sender: UIBarButtonItem) {
         
         if(DBWebServices.checkConnectionToDashboard(viewController: self) == true) {
             
@@ -80,7 +80,7 @@ class MyHealthBodyWeightTVC: UITableViewController {
         
     }
     
-    func populateData(data: NSDictionary) {
+    @objc func populateData(data: NSDictionary) {
         
         self.reloadPresets(inLoadingState: true)
         
@@ -116,11 +116,11 @@ class MyHealthBodyWeightTVC: UITableViewController {
                     
                     let bmiInDouble: Double = Double(data.value(forKey: "WeightValue") as! String)!
                     
-                    dataArrays.add(["MYHEALTH_BW_BMI":"\(data.value(forKey: "BMI")) mata",
-                        "MYHEALTH_BW_BMI_RAW":"\(data.value(forKey: "BMI"))",
+                    dataArrays.add(["MYHEALTH_BW_BMI":"\(String(describing: data.value(forKey: "BMI"))) mata",
+                        "MYHEALTH_BW_BMI_RAW":"\(String(describing: data.value(forKey: "BMI")))",
                         "MYHEALTH_BW_WEIGHT":"\(Int(bmiInDouble)) kg",
                         "MYHEALTH_BW_WEIGHT_RAW":data.value(forKey: "WeightValue"),
-                        "MYHEALTH_BW_BONEMASS":"\(data.value(forKey: "BoneValue"))",
+                        "MYHEALTH_BW_BONEMASS":"\(String(describing: data.value(forKey: "BoneValue")))",
                         "MYHEALTH_BW_FATWEIGHT":data.value(forKey: "FatValue"),
                         "MYHEALTH_BW_LEANWEIGHT":data.value(forKey: "LeanWeight"),
                         "MYHEALTH_BW_MUSCLEMASS":data.value(forKey: "MuscaleValue"),

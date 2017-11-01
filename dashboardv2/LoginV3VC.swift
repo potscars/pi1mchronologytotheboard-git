@@ -41,8 +41,8 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
         
         let rect: CGRect = CGRect.init(x: 0, y: 0, width: 30, height: 30)
         
-        let iconImage: UIImage = UIImage.init(named: "ic_logincard300.png")!
-        let iconPassImage: UIImage = UIImage.init(named: "ic_loginkey300.png")!
+        let iconImage: UIImage = #imageLiteral(resourceName: "ic_logincard300.png")
+        let iconPassImage: UIImage = #imageLiteral(resourceName: "ic_loginkey300.png")
         
         UIGraphicsBeginImageContext(rect.size)
         iconImage.draw(in: rect)
@@ -67,13 +67,13 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
         
     }
     
-    func gotoLoginProcess(_ sender: UIButton) {
+    @objc func gotoLoginProcess(_ sender: UIButton) {
         
         self.performSegue(withIdentifier: "DB_PROCESS_LOGIN", sender: self)
         
     }
     
-    func keyboardWillShow(notification: NSNotification) {
+    @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0{
                 self.view.frame.origin.y -= keyboardSize.height
@@ -81,7 +81,7 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func keyboardWillHide(notification: NSNotification) {
+    @objc func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y != 0{
                 self.view.frame.origin.y += keyboardSize.height

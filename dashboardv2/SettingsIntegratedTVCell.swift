@@ -53,7 +53,7 @@ class SettingsIntegratedTVCell: UITableViewCell {
         
     }
     
-    func switchSelector(sender: UISwitch)
+    @objc func switchSelector(sender: UISwitch)
     {
         if(sender.isOn){
             
