@@ -27,7 +27,7 @@
         <scene sceneID="zgl-iz-a8O">
             <objects>
                 <navigationController storyboardIdentifier="BeforeLoginStoryBoard" navigationBarHidden="YES" id="giV-Ci-eCU" customClass="BeforeLoginNC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kjz-Wu-8Ie">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kjz-Wu-8Ie">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -560,7 +560,7 @@
         <scene sceneID="Nhy-mB-zGq">
             <objects>
                 <collectionViewController id="Fim-Ob-m1w" customClass="MainMenuCVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fLW-Fe-RWS">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="fLW-Fe-RWS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -929,7 +929,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengumuman gangguan bekalan di Kg. Dato Ahmad Said pada 7 Disember 2016" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="856-wb-eNB">
-                                            <rect key="frame" x="24" y="54" width="343" height="30.5"/>
+                                            <rect key="frame" x="24" y="54" width="343" height="31"/>
                                             <fontDescription key="fontDescription" name="RobotoCondensed-Light" family="Roboto Condensed" pointSize="13"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -1259,7 +1259,7 @@
             <objects>
                 <navigationController id="dlZ-pv-8b9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Maps" image="ic_games_white" id="l3s-i2-gVl"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GgG-m8-unb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GgG-m8-unb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

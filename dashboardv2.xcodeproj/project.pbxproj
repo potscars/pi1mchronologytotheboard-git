@@ -27,6 +27,10 @@
 		9E12E2D11F3C63A7003D15FA /* Catergory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2D01F3C63A7003D15FA /* Catergory.swift */; };
 		9E4462211F78CE3300F82591 /* MainMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462201F78CE3300F82591 /* MainMenuCVC.swift */; };
 		9E4462231F78D83700F82591 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462221F78D83700F82591 /* Extension.swift */; };
+		9E44622F1F7CE4CE00F82591 /* MyShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E44622E1F7CE4CE00F82591 /* MyShop.storyboard */; };
+		9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462301F7CEE2D00F82591 /* MyShopMainMenuVC.swift */; };
+		9E4462331F7CEE8A00F82591 /* MyShopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462321F7CEE8A00F82591 /* MyShopMenuBar.swift */; };
+		9E4462361F7CF29800F82591 /* ProdukTerkiniHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462351F7CF29800F82591 /* ProdukTerkiniHolderCell.swift */; };
 		9E51D6E61F206A540048337E /* GamesScoreboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51D6E51F206A540048337E /* GamesScoreboardController.swift */; };
 		9E5998611F44095500542304 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5998601F44095500542304 /* Location.swift */; };
 		9E5998631F4439BF00542304 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5998621F4439BF00542304 /* Place.swift */; };
@@ -168,6 +172,10 @@
 		9E12E2D01F3C63A7003D15FA /* Catergory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catergory.swift; sourceTree = "<group>"; };
 		9E4462201F78CE3300F82591 /* MainMenuCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuCVC.swift; sourceTree = "<group>"; };
 		9E4462221F78D83700F82591 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		9E44622E1F7CE4CE00F82591 /* MyShop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyShop.storyboard; sourceTree = "<group>"; };
+		9E4462301F7CEE2D00F82591 /* MyShopMainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopMainMenuVC.swift; sourceTree = "<group>"; };
+		9E4462321F7CEE8A00F82591 /* MyShopMenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopMenuBar.swift; sourceTree = "<group>"; };
+		9E4462351F7CF29800F82591 /* ProdukTerkiniHolderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdukTerkiniHolderCell.swift; sourceTree = "<group>"; };
 		9E51D6E51F206A540048337E /* GamesScoreboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesScoreboardController.swift; sourceTree = "<group>"; };
 		9E5998601F44095500542304 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		9E5998621F4439BF00542304 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -361,6 +369,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		9E4462341F7CF26A00F82591 /* MyShopViews */ = {
+			isa = PBXGroup;
+			children = (
+				9E4462351F7CF29800F82591 /* ProdukTerkiniHolderCell.swift */,
+			);
+			name = MyShopViews;
+			sourceTree = "<group>";
+		};
 		9E51D6E41F206A130048337E /* Games */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +461,10 @@
 		B73EF06A1E4193A8001B3ADB /* MyShop */ = {
 			isa = PBXGroup;
 			children = (
+				9E4462341F7CF26A00F82591 /* MyShopViews */,
+				9E44622E1F7CE4CE00F82591 /* MyShop.storyboard */,
+				9E4462321F7CEE8A00F82591 /* MyShopMenuBar.swift */,
+				9E4462301F7CEE2D00F82591 /* MyShopMainMenuVC.swift */,
 				B73EF0891E41B8B1001B3ADB /* MyShopMainMenuTVC.swift */,
 				B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */,
 				B7E311821E486A95003949CF /* MyShopProductDetailsTVC.swift */,
@@ -823,6 +843,7 @@
 				B73BD8001E51AF6E0036EBEF /* ic_DBImportancePosThree in Resources */,
 				B7350F271E52D99A007884B2 /* ic_dbkomunitiico.png in Resources */,
 				B7DC3A041E139F3B00951852 /* ic_myskool.png in Resources */,
+				9E44622F1F7CE4CE00F82591 /* MyShop.storyboard in Resources */,
 				B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */,
 				B7D8DE161F7CB8ED00C0B6C7 /* ic_loadingColor.gif in Resources */,
 				B7DC39FA1E139F3B00951852 /* ic_myebuku@3x.png in Resources */,
@@ -912,6 +933,7 @@
 				B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */,
 				B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */,
 				B73BD8061E51B12F0036EBEF /* AImportanceDBTVCell.swift in Sources */,
+				9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */,
 				B739662D1E1CDBE900B270A1 /* MyKomunitiDetailsTVCell.swift in Sources */,
 				B7DC39DE1E12678E00951852 /* MMImageTransTVCell.swift in Sources */,
 				B79167781E35D74D00383CAD /* MySkoolIntegratedTVCell.swift in Sources */,
@@ -955,6 +977,7 @@
 				B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */,
 				B7B9A6E51E2F3FD5006689C9 /* MySoalMainTVC.swift in Sources */,
 				9E12E2C81F3B14E9003D15FA /* PhotoHolderCell.swift in Sources */,
+				9E4462361F7CF29800F82591 /* ProdukTerkiniHolderCell.swift in Sources */,
 				B75C5AAA1E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift in Sources */,
 				B7A837021E3891CE004F7333 /* MyHealthBPDetailsTVC.swift in Sources */,
 				9E4462231F78D83700F82591 /* Extension.swift in Sources */,
@@ -975,6 +998,7 @@
 				B73966361E1E3C2700B270A1 /* ZParsers.swift in Sources */,
 				B7A29D4C1E44263B00836C19 /* ZImages.swift in Sources */,
 				B7DC3A271E15014200951852 /* ABuildInfoTVCell.swift in Sources */,
+				9E4462331F7CEE8A00F82591 /* MyShopMenuBar.swift in Sources */,
 				B7A3C70E1DEAF2FF00CB7864 /* ZCustomIndicatorVC.swift in Sources */,
 				9E12E2CA1F3B14E9003D15FA /* CategoryMenuTVC.swift in Sources */,
 				B794CF3D1E3994BF00C40BF9 /* ZDateTime.swift in Sources */,
