@@ -7,11 +7,11 @@ target 'dashboardv2' do
 
   # Pods for dashboardv2
 
-pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
-pod "youtube-ios-player-helper", "~> 0.1.4"
-pod "PlainPing"
+pod 'SVProgressHUD'
+pod "youtube-ios-player-helper"#, "~> 0.1.4"
+#pod "PlainPing"
 pod "Cosmos", "~> 8.0"
-pod "ImageSlideshow", "~> 1.0.0"
+pod "ImageSlideshow"#, "~> 1.0.0"
 pod "ImageSlideshow/Alamofire"
 pod "ImageSlideshow/AFURL"
 pod "ImageSlideshow/SDWebImage"

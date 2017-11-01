@@ -14,43 +14,42 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Alamofire (4.3.0)
-  - AlamofireImage (3.2.0):
-    - Alamofire (~> 4.1)
+  - Alamofire (4.5.1)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
   - Cosmos (8.0.2)
-  - DKImagePickerController (3.5.7):
-    - DKImagePickerController/Camera (= 3.5.7)
-    - DKImagePickerController/ImageManager (= 3.5.7)
-  - DKImagePickerController/Camera (3.5.7)
-  - DKImagePickerController/ImageManager (3.5.7)
-  - GoogleMaps (2.3.1):
-    - GoogleMaps/Maps (= 2.3.1)
-  - GoogleMaps/Base (2.3.1)
-  - GoogleMaps/Maps (2.3.1):
+  - DKImagePickerController (3.8.1):
+    - DKImagePickerController/Camera (= 3.8.1)
+    - DKImagePickerController/ImageManager (= 3.8.1)
+  - DKImagePickerController/Camera (3.8.1)
+  - DKImagePickerController/ImageManager (3.8.1)
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
     - GoogleMaps/Base
-  - GooglePlaces (2.3.1):
-    - GoogleMaps/Base (= 2.3.1)
-  - ImageSlideshow (1.0.0):
-    - ImageSlideshow/Core (= 1.0.0)
-  - ImageSlideshow/AFURL (1.0.0):
+  - GooglePlaces (2.5.0):
+    - GoogleMaps/Base (= 2.5.0)
+  - ImageSlideshow (1.4.1):
+    - ImageSlideshow/Core (= 1.4.1)
+  - ImageSlideshow/AFURL (1.4.1):
     - AFNetworking (~> 3.0)
     - ImageSlideshow/Core
-  - ImageSlideshow/Alamofire (1.0.0):
+  - ImageSlideshow/Alamofire (1.4.1):
     - AlamofireImage (~> 3.0)
     - ImageSlideshow/Core
-  - ImageSlideshow/Core (1.0.0)
-  - ImageSlideshow/Kingfisher (1.0.0):
+  - ImageSlideshow/Core (1.4.1)
+  - ImageSlideshow/Kingfisher (1.4.1):
     - ImageSlideshow/Core
-    - Kingfisher (~> 3.0)
-  - ImageSlideshow/SDWebImage (1.0.0):
+    - Kingfisher (> 3.0)
+  - ImageSlideshow/SDWebImage (1.4.1):
     - ImageSlideshow/Core
     - SDWebImage (~> 3.7)
-  - Kingfisher (3.4.0)
-  - PlainPing (0.3.1)
+  - Kingfisher (4.2.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SVProgressHUD (2.1.2)
+  - SVProgressHUD (2.2.2)
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
@@ -58,39 +57,28 @@ DEPENDENCIES:
   - DKImagePickerController
   - GoogleMaps
   - GooglePlaces
-  - ImageSlideshow (~> 1.0.0)
+  - ImageSlideshow
   - ImageSlideshow/AFURL
   - ImageSlideshow/Alamofire
   - ImageSlideshow/Kingfisher
   - ImageSlideshow/SDWebImage
-  - PlainPing
-  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
-  - youtube-ios-player-helper (~> 0.1.4)
-
-EXTERNAL SOURCES:
-  SVProgressHUD:
-    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
-
-CHECKOUT OPTIONS:
-  SVProgressHUD:
-    :commit: 803bc1e473e2861f75abf06174d9c937de7a0fe0
-    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+  - SVProgressHUD
+  - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   Cosmos: 007c0b8e33a85e5363911bdd933571bbe221f7ef
-  DKImagePickerController: da5111f475c2fda9f932bab55519a43275bd4cf0
-  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
-  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
-  ImageSlideshow: 2787e10e202b79ecf5348a205c539fcc5bb8e62b
-  Kingfisher: 5690cfb3d1bddf3a98d679a3a34d0b7294974ed2
-  PlainPing: 3b740d74bc694f4593045b5c5b17ea1275d1920f
+  DKImagePickerController: 51ad6ee2ba05414bb741db54a72cd7f4fb178e34
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
+  ImageSlideshow: 1bb0e610e28a71e8936d57265d882f61714a470b
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SVProgressHUD: d65371a8e4482380deddb9fe60e14e59ddb30eb3
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 584dbebd7873ad73aa7bb54d21147df055ca5e70
+PODFILE CHECKSUM: 6186322d0e4b93fff54a59b69d71b841531b3c8a
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1

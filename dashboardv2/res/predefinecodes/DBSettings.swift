@@ -10,6 +10,8 @@ import UIKit
 
 class DBSettings: NSObject {
     
+    // refer to api worksheet
+    
     //Global Settings goes here
     
     static let dbLoginOS: String = "ios"
@@ -51,6 +53,9 @@ class DBSettings: NSObject {
     static let myQuizVerifyUserAndEvent: String = "\(mainURL)/api/promo/verify/verified-event" // POST AND GET
     
     static let myGamesTopScorerByRegionURL: String = "\(myAppURL)/api/promo/games/top-ten-score-by-region/"
+    
+    static let myHealthKospenConfirmation: String = String.init(format: "%@%@", mainURL,"/api/myhealth/test-module")
+    static let myHealthKospenDetails: String = String.init(format: "%@%@", mainURL,"/api/myhealth/myhealth-details")
     
     //YTPlayer
     
