@@ -33,8 +33,12 @@
         <scene sceneID="zgl-iz-a8O">
             <objects>
                 <navigationController storyboardIdentifier="BeforeLoginStoryBoard" navigationBarHidden="YES" id="giV-Ci-eCU" customClass="BeforeLoginNC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kjz-Wu-8Ie">
+=======
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kjz-Wu-8Ie">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+>>>>>>> 753d907f257c5396133f07c6691e75c9eb049b6f
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1265,8 +1269,13 @@
             <objects>
                 <navigationController id="dlZ-pv-8b9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Maps" image="ic_games_white" id="l3s-i2-gVl"/>
+<<<<<<< HEAD
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GgG-m8-unb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+=======
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GgG-m8-unb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+>>>>>>> 753d907f257c5396133f07c6691e75c9eb049b6f
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
