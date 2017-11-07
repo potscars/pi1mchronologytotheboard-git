@@ -326,6 +326,7 @@
 				3F4CB6297C663404E0A29DB3 /* Pods_dashboardv2.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		6E06456C8D0085550DFEB19A /* Pods */ = {
@@ -335,6 +336,7 @@
 				0ECB81857DA5D6A79395AC92 /* Pods-dashboardv2.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9E12E2A51F397882003D15FA /* MyQuiz */ = {
@@ -364,6 +366,7 @@
 		9E12E2CF1F3C6394003D15FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B71887041FB163DC0039BA06 /* Login */,
 				9EE2E6091F4EA0C900041DE3 /* MyGames */,
 				9E59985F1F41943400542304 /* MyPlace */,
 				9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */,
@@ -417,6 +420,67 @@
 				9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */,
 			);
 			name = MyGames;
+			sourceTree = "<group>";
+		};
+		B71887041FB163DC0039BA06 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		B71887051FB1661C0039BA06 /* dashboardv3-modules */ = {
+			isa = PBXGroup;
+			children = (
+				B71887071FB1665D0039BA06 /* Controllers */,
+				B71887061FB166530039BA06 /* Models */,
+				B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */,
+			);
+			path = "dashboardv3-modules";
+			sourceTree = "<group>";
+		};
+		B71887061FB166530039BA06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B718870A1FB168780039BA06 /* Login */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B71887071FB1665D0039BA06 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B71887081FB166AD0039BA06 /* Compilers */ = {
+			isa = PBXGroup;
+			children = (
+				1F9EE8231369C24462BBA698 /* Frameworks */,
+				6E06456C8D0085550DFEB19A /* Pods */,
+				B7A3C6F41DE82F5600CB7864 /* Products */,
+			);
+			path = Compilers;
+			sourceTree = "<group>";
+		};
+		B71887091FB166E20039BA06 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				B7A3C6FF1DE82F5600CB7864 /* LaunchScreen.storyboard */,
+				B7A3C7021DE82F5600CB7864 /* Info.plist */,
+				B7A3C6F61DE82F5600CB7864 /* AppDelegate.swift */,
+				B7A3C6FD1DE82F5600CB7864 /* Assets.xcassets */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		B718870A1FB168780039BA06 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		B72B91A41E42D52200F1BF99 /* MyShopIcons */ = {
@@ -518,7 +582,6 @@
 			children = (
 				B7A3C6F81DE82F5600CB7864 /* LoginVC.swift */,
 				B74D337B1DF690E300208A03 /* LoginProcessingVC.swift */,
-				B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -547,10 +610,10 @@
 		B7A3C6EA1DE82F5600CB7864 = {
 			isa = PBXGroup;
 			children = (
-				B7A3C6F51DE82F5600CB7864 /* dashboardv2 */,
-				B7A3C6F41DE82F5600CB7864 /* Products */,
-				6E06456C8D0085550DFEB19A /* Pods */,
-				1F9EE8231369C24462BBA698 /* Frameworks */,
+				B71887051FB1661C0039BA06 /* dashboardv3-modules */,
+				B7A3C6F51DE82F5600CB7864 /* dashboardv2-modules */,
+				B71887091FB166E20039BA06 /* Globals */,
+				B71887081FB166AD0039BA06 /* Compilers */,
 			);
 			sourceTree = "<group>";
 		};
@@ -560,23 +623,19 @@
 				B7A3C6F31DE82F5600CB7864 /* dashboardv2.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		B7A3C6F51DE82F5600CB7864 /* dashboardv2 */ = {
+		B7A3C6F51DE82F5600CB7864 /* dashboardv2-modules */ = {
 			isa = PBXGroup;
 			children = (
 				9E12E2CF1F3C6394003D15FA /* Model */,
 				B7C3F6551E124BB000CC1A09 /* Controllers */,
 				B74D33721DF5164D00208A03 /* Resources */,
 				B7A3C7081DEAEDB200CB7864 /* Libraries */,
-				B7A3C6F61DE82F5600CB7864 /* AppDelegate.swift */,
 				B7A3C6FA1DE82F5600CB7864 /* Main.storyboard */,
-				B7A3C6FD1DE82F5600CB7864 /* Assets.xcassets */,
-				B7A3C6FF1DE82F5600CB7864 /* LaunchScreen.storyboard */,
-				B7A3C7021DE82F5600CB7864 /* Info.plist */,
-				B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */,
 			);
-			path = dashboardv2;
+			path = "dashboardv2-modules";
 			sourceTree = "<group>";
 		};
 		B7A3C7081DEAEDB200CB7864 /* Libraries */ = {
@@ -1139,7 +1198,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1189,7 +1248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

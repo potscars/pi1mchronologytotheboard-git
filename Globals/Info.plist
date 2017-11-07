@@ -109,11 +109,11 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Kebenaran diperlukan untuk mengambil gambar menggunakan kamera anda.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Lokasi anda diperlukan untuk update kedudukan semasa anda.</string>
+	<string>Lokasi anda diperlukan untuk mendapatkan kedudukan semasa anda.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Lokasi anda diperlukan untuk update kedudukan semasa anda.</string>
+	<string>Lokasi anda diperlukan untuk mendapatkan kedudukan semasa anda.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Kebenaran untuk akses ke Photo Library diperlukan demi upload gambar anda.</string>
+	<string>Kebenaran untuk akses ke Photo Library diperlukan untuk memuatnaik gambar anda.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>RobotoCondensed-Italic.ttf</string>
@@ -126,7 +126,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>MainV3</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

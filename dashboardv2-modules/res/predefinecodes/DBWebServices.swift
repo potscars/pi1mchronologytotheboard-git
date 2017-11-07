@@ -56,10 +56,10 @@ class DBWebServices: NSObject {
         
     }
     
-    static func getLoginData(data: NSDictionary, registeredNotification: String) {
+    @objc static func getLoginData(data: NSDictionary, registeredNotification: String) {
         
         let getLoginURL = NSURL.init(string: DBSettings.loginURL)
-        let getLoginParams = String(format: "username=%@&password=%@&regid=%@&imei=%@&os=%@", data.value(forKey: "USERNAME") as! String,data.value(forKey: "PASSWORD") as! String,data.value(forKey: "REGISTERED_ID") as! String,ZDeviceInfo.getDeviceVendorIdentifier(replaced: false),DBSettings.dbLoginOS)
+        let getLoginParams = String.init(format: "username=%@&password=%@&regid=%@&imei=%@&os=%@", data.value(forKey: "USERNAME") as! String,data.value(forKey: "PASSWORD") as! String,data.value(forKey: "REGISTERED_ID") as! String,ZDeviceInfo.getDeviceVendorIdentifier(replaced: false),DBSettings.dbLoginOS)
         
         _ = ZNetwork.performPostData(url: getLoginURL!, parameters: getLoginParams, contentType: ZNetwork.ContentTypeXWWWFormUrlEncoded, includeContentLength: false, notificationName: registeredNotification)
         
