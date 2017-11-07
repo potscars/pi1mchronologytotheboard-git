@@ -30,22 +30,22 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.5.0):
     - GoogleMaps/Base (= 2.5.0)
-  - ImageSlideshow (1.0.0):
-    - ImageSlideshow/Core (= 1.0.0)
-  - ImageSlideshow/AFURL (1.0.0):
+  - ImageSlideshow (1.4.1):
+    - ImageSlideshow/Core (= 1.4.1)
+  - ImageSlideshow/AFURL (1.4.1):
     - AFNetworking (~> 3.0)
     - ImageSlideshow/Core
-  - ImageSlideshow/Alamofire (1.0.0):
+  - ImageSlideshow/Alamofire (1.4.1):
     - AlamofireImage (~> 3.0)
     - ImageSlideshow/Core
-  - ImageSlideshow/Core (1.0.0)
-  - ImageSlideshow/Kingfisher (1.0.0):
+  - ImageSlideshow/Core (1.4.1)
+  - ImageSlideshow/Kingfisher (1.4.1):
     - ImageSlideshow/Core
-    - Kingfisher (~> 3.0)
-  - ImageSlideshow/SDWebImage (1.0.0):
+    - Kingfisher (> 3.0)
+  - ImageSlideshow/SDWebImage (1.4.1):
     - ImageSlideshow/Core
     - SDWebImage (~> 3.7)
-  - Kingfisher (3.13.1)
+  - Kingfisher (4.2.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -57,7 +57,7 @@ DEPENDENCIES:
   - DKImagePickerController
   - GoogleMaps
   - GooglePlaces
-  - ImageSlideshow (~> 1.0.0)
+  - ImageSlideshow
   - ImageSlideshow/AFURL
   - ImageSlideshow/Alamofire
   - ImageSlideshow/Kingfisher
@@ -73,12 +73,12 @@ SPEC CHECKSUMS:
   DKImagePickerController: 51ad6ee2ba05414bb741db54a72cd7f4fb178e34
   GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
   GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
-  ImageSlideshow: 2787e10e202b79ecf5348a205c539fcc5bb8e62b
-  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
+  ImageSlideshow: 1bb0e610e28a71e8936d57265d882f61714a470b
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 18dc25f26bb10bc3cb082a4da5908f5df83ed3d8
+PODFILE CHECKSUM: ccbd87fc1404d40a692338655cb0740f68e1642b
 
 COCOAPODS: 1.3.1

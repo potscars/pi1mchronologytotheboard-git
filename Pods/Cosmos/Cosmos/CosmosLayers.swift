@@ -25,7 +25,7 @@ class CosmosLayers {
 
     for _ in (0..<settings.totalStars) {
       
-      let fillLevel = CosmosRating.starFillLevel(ratingRemander,
+      let fillLevel = CosmosRating.starFillLevel(ratingRemainder: ratingRemander,
         fillMode: settings.fillMode)
       
       let starLayer = createCompositeStarLayer(fillLevel, settings: settings, isRightToLeft: isRightToLeft)
@@ -33,7 +33,7 @@ class CosmosLayers {
       ratingRemander -= 1
     }
     
-    if isRightToLeft { starLayers.reversed() }
+    if isRightToLeft { starLayers.reverse() }
     positionStarLayers(starLayers, starMargin: settings.starMargin)
     return starLayers
   }
@@ -100,7 +100,7 @@ class CosmosLayers {
     return parentLayer
   }
 
-  fileprivate class func createStarLayer(_ isFilled: Bool, settings: CosmosSettings) -> CALayer {
+  private class func createStarLayer(_ isFilled: Bool, settings: CosmosSettings) -> CALayer {
     let fillColor = isFilled ? settings.filledColor : settings.emptyColor
     let strokeColor = isFilled ? settings.filledBorderColor : settings.emptyBorderColor
 
