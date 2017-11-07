@@ -250,7 +250,7 @@ class MyPlaceAddPlaceVC: UIViewController {
             
             //Add location without image(s)
             
-            networkProcessor.uploadJSONData(locationParameters) { (result, responses) in
+            networkProcessor.postRequestJSONFromUrl(locationParameters) { (result, responses) in
                 
                 DispatchQueue.main.async {
                     

@@ -66,7 +66,7 @@ class Place {
         let urlString = "http://myplace.myapp.my/api/search/\(keyword)"
         let networkProcessor = NetworkProcessor.init(urlString)
         
-        networkProcessor.downloadJSONFromUrl { (result, responses) in
+        networkProcessor.getRequestJSONFromUrl { (result, responses) in
             
             guard responses == nil else {
                 

@@ -38,7 +38,7 @@ class State {
         let urlString = "http://myplace.myapp.my//api/state/lists"
         let networkProcessor = NetworkProcessor.init(urlString)
         
-        networkProcessor.downloadJSONFromUrl { (result, responses) in
+        networkProcessor.getRequestJSONFromUrl { (result, responses) in
             
             guard responses == nil else {
                 

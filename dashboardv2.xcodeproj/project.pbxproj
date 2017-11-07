@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C880FCF8F9E5E4AC54BC02E /* Pods_dashboardv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA18EF89B5F8092672FDE70 /* Pods_dashboardv2.framework */; };
 		68C815B46AF17B1ED8BD6879 /* Pods_dashboardv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4CB6297C663404E0A29DB3 /* Pods_dashboardv2.framework */; };
 		9E02B6971F1EF5A90028A230 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02B6961F1EF5A90028A230 /* LoadingSpinner.swift */; };
 		9E12E2AA1F39789E003D15FA /* MyQuizMainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2A61F39789E003D15FA /* MyQuizMainTableVC.swift */; };
@@ -149,8 +150,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060D7DF2D91A596741953ECC /* Pods-dashboardv2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashboardv2.release.xcconfig"; path = "Pods/Target Support Files/Pods-dashboardv2/Pods-dashboardv2.release.xcconfig"; sourceTree = "<group>"; };
 		0ECB81857DA5D6A79395AC92 /* Pods-dashboardv2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashboardv2.release.xcconfig"; path = "Pods/Target Support Files/Pods-dashboardv2/Pods-dashboardv2.release.xcconfig"; sourceTree = "<group>"; };
 		3F4CB6297C663404E0A29DB3 /* Pods_dashboardv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dashboardv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C69D4011FB8AB2FD3E9460C /* Pods-dashboardv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashboardv2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dashboardv2/Pods-dashboardv2.debug.xcconfig"; sourceTree = "<group>"; };
 		9E02B6961F1EF5A90028A230 /* LoadingSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
 		9E12E2A61F39789E003D15FA /* MyQuizMainTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQuizMainTableVC.swift; sourceTree = "<group>"; };
 		9E12E2A71F39789E003D15FA /* MyQuizMainTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQuizMainTVCell.swift; sourceTree = "<group>"; };
@@ -298,6 +301,7 @@
 		B7EF41A81E37072100262A0B /* MyHealthIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthIntegratedTVCell.swift; sourceTree = "<group>"; };
 		B7EF41AA1E37074600262A0B /* MyHealthBodyWeightTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBodyWeightTVC.swift; sourceTree = "<group>"; };
 		DAB8DD4C2CDFE54A7E9DAD25 /* Pods-dashboardv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashboardv2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dashboardv2/Pods-dashboardv2.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA18EF89B5F8092672FDE70 /* Pods_dashboardv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dashboardv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68C815B46AF17B1ED8BD6879 /* Pods_dashboardv2.framework in Frameworks */,
+				0C880FCF8F9E5E4AC54BC02E /* Pods_dashboardv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +334,15 @@
 			);
 			name = Pods;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		83B0D35CE094356216EE8DAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C69D4011FB8AB2FD3E9460C /* Pods-dashboardv2.debug.xcconfig */,
+				060D7DF2D91A596741953ECC /* Pods-dashboardv2.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9E12E2A51F397882003D15FA /* MyQuiz */ = {
@@ -605,6 +619,8 @@
 				B7A3C7081DEAEDB200CB7864 /* Libraries */,
 				B71887091FB166E20039BA06 /* Globals */,
 				B71887081FB166AD0039BA06 /* Compilers */,
+				83B0D35CE094356216EE8DAE /* Pods */,
+				BEF285E2E4D356FE0C7BA75B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -644,6 +660,7 @@
 				9E02B6961F1EF5A90028A230 /* LoadingSpinner.swift */,
 				9EB639C31F2AEBBF00FF6543 /* AlertController.swift */,
 				9E4462221F78D83700F82591 /* Extension.swift */,
+				9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */,
 				B74DADA51FA868FA00951F2E /* DataSecurity.swift */,
 			);
 			name = Libraries;
@@ -805,6 +822,14 @@
 				B75C5AA91E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift */,
 			);
 			name = MyHealth;
+			sourceTree = "<group>";
+		};
+		BEF285E2E4D356FE0C7BA75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA18EF89B5F8092672FDE70 /* Pods_dashboardv2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
