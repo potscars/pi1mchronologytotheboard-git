@@ -42,7 +42,7 @@ class TopScorer {
         print("GAMES SCORE : \(urlString)")
         let networkProcessor = NetworkProcessor.init(urlString)
         
-        networkProcessor.downloadJSONFromUrl { (result, responses) in
+        networkProcessor.getRequestJSONFromUrl { (result, responses) in
             
             guard responses == nil else { completion(nil, responses); return }
             

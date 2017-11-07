@@ -250,7 +250,7 @@ class MyPlaceAddPlaceVC: UIViewController {
             
             //Add location without image(s)
             
-            networkProcessor.uploadJSONData(locationParameters) { (result, responses) in
+            networkProcessor.postRequestJSONFromUrl(locationParameters) { (result, responses) in
                 
                 DispatchQueue.main.async {
                     
@@ -277,7 +277,7 @@ class MyPlaceAddPlaceVC: UIViewController {
         
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: setZoom)
         
-        print("latitude \(locationManager.location?.coordinate.latitude) longitude \(locationManager.location?.coordinate.longitude)")
+        //print("latitude \(locationManager.location?.coordinate.latitude) longitude \(locationManager.location?.coordinate.longitude)")
         
         mapView.animate(to: camera)
     }

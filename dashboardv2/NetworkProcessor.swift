@@ -36,7 +36,7 @@ class NetworkProcessor {
     
     //MARK: - Getting data from database.
     
-    func downloadJSONFromUrl(_ completion: @escaping JSONDataHandler) {
+    func getRequestJSONFromUrl(_ completion: @escaping JSONDataHandler) {
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -71,7 +71,7 @@ class NetworkProcessor {
     
     //MARK: - Setting data to database with json data as parameters
     
-    func uploadJSONData(_ params: [String: Any], completion: @escaping JSONDictionaryHandler) {
+    func postRequestJSONFromUrl(_ params: [String: Any], completion: @escaping JSONDictionaryHandler) {
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

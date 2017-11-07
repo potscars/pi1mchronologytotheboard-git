@@ -364,7 +364,6 @@
 			children = (
 				9EE2E6091F4EA0C900041DE3 /* MyGames */,
 				9E59985F1F41943400542304 /* MyPlace */,
-				9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -594,6 +593,7 @@
 				9E02B6961F1EF5A90028A230 /* LoadingSpinner.swift */,
 				9EB639C31F2AEBBF00FF6543 /* AlertController.swift */,
 				9E4462221F78D83700F82591 /* Extension.swift */,
+				9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
