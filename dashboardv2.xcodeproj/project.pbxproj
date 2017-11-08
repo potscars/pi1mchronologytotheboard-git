@@ -55,6 +55,7 @@
 		9EE2E60B1F4EA0F500041DE3 /* TopScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */; };
 		9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6ECA91F3D67950067C3C0 /* State.swift */; };
 		B70273EA1F6FACE8003F7BD7 /* LoginV3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */; };
+		B718870D1FB184830039BA06 /* LoginProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870C1FB184830039BA06 /* LoginProcess.swift */; };
 		B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A51E42D53400F1BF99 /* ic_chat.png */; };
 		B72B91A81E42D53400F1BF99 /* ic_view.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A61E42D53400F1BF99 /* ic_view.png */; };
 		B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */; };
@@ -86,7 +87,6 @@
 		B74DADA61FA868FA00951F2E /* DataSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DADA51FA868FA00951F2E /* DataSecurity.swift */; };
 		B74F0EBD1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F0EBC1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift */; };
 		B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F0EBE1E278AF1003887E4 /* DBPrefObject.swift */; };
-		B7583B4F1E2CB2D600C210AC /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = B7583B4E1E2CB2D600C210AC /* SimplePing.m */; };
 		B75C5AA81E3AEC3C009FD4E6 /* MyHealthBWDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75C5AA71E3AEC3C009FD4E6 /* MyHealthBWDetailsTVC.swift */; };
 		B75C5AAA1E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75C5AA91E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift */; };
 		B76D256B1E56DBBA00280415 /* SettingsExtendedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D256A1E56DBBA00280415 /* SettingsExtendedTVC.swift */; };
@@ -109,9 +109,6 @@
 		B7A3C6FE1DE82F5600CB7864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A3C6FD1DE82F5600CB7864 /* Assets.xcassets */; };
 		B7A3C7011DE82F5600CB7864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A3C6FF1DE82F5600CB7864 /* LaunchScreen.storyboard */; };
 		B7A3C70A1DEAEE2300CB7864 /* ZGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C7091DEAEE2300CB7864 /* ZGraphics.swift */; };
-		B7A3C70E1DEAF2FF00CB7864 /* ZCustomIndicatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C70C1DEAF2FF00CB7864 /* ZCustomIndicatorVC.swift */; };
-		B7A3C70F1DEAF2FF00CB7864 /* ZCustomIndicatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A3C70D1DEAF2FF00CB7864 /* ZCustomIndicatorVC.xib */; };
-		B7A3C7111DEAF6BE00CB7864 /* ZCustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C7101DEAF6BE00CB7864 /* ZCustomIndicator.swift */; };
 		B7A837001E3887B4004F7333 /* MyHealthMainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A836FF1E3887B4004F7333 /* MyHealthMainTabVC.swift */; };
 		B7A837021E3891CE004F7333 /* MyHealthBPDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */; };
 		B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */; };
@@ -221,6 +218,7 @@
 		9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScorer.swift; sourceTree = "<group>"; };
 		9EE6ECA91F3D67950067C3C0 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginV3VC.swift; sourceTree = "<group>"; };
+		B718870C1FB184830039BA06 /* LoginProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProcess.swift; sourceTree = "<group>"; };
 		B72B91A51E42D53400F1BF99 /* ic_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chat.png; path = "[[Resources]]/ic_chat.png"; sourceTree = SOURCE_ROOT; };
 		B72B91A61E42D53400F1BF99 /* ic_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_view.png; path = "[[Resources]]/ic_view.png"; sourceTree = SOURCE_ROOT; };
 		B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopLatestProdTVC.swift; sourceTree = "<group>"; };
@@ -252,9 +250,6 @@
 		B74DADA51FA868FA00951F2E /* DataSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSecurity.swift; sourceTree = "<group>"; };
 		B74F0EBC1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiLoadMoreDataTVCell.swift; sourceTree = "<group>"; };
 		B74F0EBE1E278AF1003887E4 /* DBPrefObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBPrefObject.swift; path = res/predefinecodes/DBPrefObject.swift; sourceTree = "<group>"; };
-		B7583B4C1E2CB2D600C210AC /* dashboardv2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dashboardv2-Bridging-Header.h"; sourceTree = "<group>"; };
-		B7583B4D1E2CB2D600C210AC /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimplePing.h; path = libraries/ThirdPartyLibraries/SimplePing.h; sourceTree = "<group>"; };
-		B7583B4E1E2CB2D600C210AC /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimplePing.m; path = libraries/ThirdPartyLibraries/SimplePing.m; sourceTree = "<group>"; };
 		B75C5AA71E3AEC3C009FD4E6 /* MyHealthBWDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBWDetailsTVC.swift; sourceTree = "<group>"; };
 		B75C5AA91E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBWDetailsTVCell.swift; sourceTree = "<group>"; };
 		B76D256A1E56DBBA00280415 /* SettingsExtendedTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsExtendedTVC.swift; sourceTree = "<group>"; };
@@ -279,9 +274,6 @@
 		B7A3C7001DE82F5600CB7864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A3C7021DE82F5600CB7864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7A3C7091DEAEE2300CB7864 /* ZGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZGraphics.swift; path = libraries/ZGraphics.swift; sourceTree = "<group>"; };
-		B7A3C70C1DEAF2FF00CB7864 /* ZCustomIndicatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZCustomIndicatorVC.swift; path = libraries/ZCustomIndicator/ZCustomIndicatorVC.swift; sourceTree = "<group>"; };
-		B7A3C70D1DEAF2FF00CB7864 /* ZCustomIndicatorVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZCustomIndicatorVC.xib; path = libraries/ZCustomIndicator/ZCustomIndicatorVC.xib; sourceTree = "<group>"; };
-		B7A3C7101DEAF6BE00CB7864 /* ZCustomIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZCustomIndicator.swift; path = libraries/ZCustomIndicator/ZCustomIndicator.swift; sourceTree = "<group>"; };
 		B7A836FF1E3887B4004F7333 /* MyHealthMainTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthMainTabVC.swift; sourceTree = "<group>"; };
 		B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVC.swift; sourceTree = "<group>"; };
 		B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVCell.swift; sourceTree = "<group>"; };
@@ -522,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				9E603B331FB18F6700E7B637 /* MyShop */,
+				B718870B1FB1842B0039BA06 /* Login */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -548,6 +541,14 @@
 			sourceTree = "<group>";
 		};
 		B718870A1FB168780039BA06 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B718870C1FB184830039BA06 /* LoginProcess.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B718870B1FB1842B0039BA06 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */,
@@ -657,16 +658,6 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
-		B7583B4B1E2CB1F700C210AC /* ThirdPartyLibraries */ = {
-			isa = PBXGroup;
-			children = (
-				B7583B4D1E2CB2D600C210AC /* SimplePing.h */,
-				B7583B4E1E2CB2D600C210AC /* SimplePing.m */,
-				B7583B4C1E2CB2D600C210AC /* dashboardv2-Bridging-Header.h */,
-			);
-			name = ThirdPartyLibraries;
-			sourceTree = "<group>";
-		};
 		B79167741E35D3D800383CAD /* MySkool */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +674,7 @@
 			children = (
 				B71887051FB1661C0039BA06 /* dashboardv3-modules */,
 				B7A3C6F51DE82F5600CB7864 /* dashboardv2-modules */,
+				B7A3C7081DEAEDB200CB7864 /* Libraries */,
 				B71887091FB166E20039BA06 /* Globals */,
 				B71887081FB166AD0039BA06 /* Compilers */,
 				83B0D35CE094356216EE8DAE /* Pods */,
@@ -705,7 +697,6 @@
 				9E12E2CF1F3C6394003D15FA /* Model */,
 				B7C3F6551E124BB000CC1A09 /* Controllers */,
 				B74D33721DF5164D00208A03 /* Resources */,
-				B7A3C7081DEAEDB200CB7864 /* Libraries */,
 				B7A3C6FA1DE82F5600CB7864 /* Main.storyboard */,
 			);
 			path = "dashboardv2-modules";
@@ -714,8 +705,7 @@
 		B7A3C7081DEAEDB200CB7864 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				B7583B4B1E2CB1F700C210AC /* ThirdPartyLibraries */,
-				B7A3C70B1DEAF2A900CB7864 /* CustomIndicator */,
+				9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */,
 				B7A3C7091DEAEE2300CB7864 /* ZGraphics.swift */,
 				B74D33761DF6649300208A03 /* ZUIs.swift */,
 				B78E62891DF7E00900D9767D /* ZDeviceInfo.swift */,
@@ -732,16 +722,7 @@
 				B74DADA51FA868FA00951F2E /* DataSecurity.swift */,
 			);
 			name = Libraries;
-			sourceTree = "<group>";
-		};
-		B7A3C70B1DEAF2A900CB7864 /* CustomIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				B7A3C70C1DEAF2FF00CB7864 /* ZCustomIndicatorVC.swift */,
-				B7A3C70D1DEAF2FF00CB7864 /* ZCustomIndicatorVC.xib */,
-				B7A3C7101DEAF6BE00CB7864 /* ZCustomIndicator.swift */,
-			);
-			name = CustomIndicator;
+			path = "dashboardv2-modules";
 			sourceTree = "<group>";
 		};
 		B7B73AC81E1B9C26000680FF /* Settings */ = {
@@ -1165,9 +1146,9 @@
 				B73966271E1CA3FF00B270A1 /* MyKomunitiMainTVC.swift in Sources */,
 				B73EF08C1E41B8F9001B3ADB /* MyShopIntegratedTVCell.swift in Sources */,
 				B7EF41AB1E37074600262A0B /* MyHealthBodyWeightTVC.swift in Sources */,
+				B718870D1FB184830039BA06 /* LoginProcess.swift in Sources */,
 				9E12E2AC1F39789E003D15FA /* MyQuizQuestionSelectTableVC.swift in Sources */,
 				B7DC3A0B1E13B6AD00951852 /* DBMenus.swift in Sources */,
-				B7A3C7111DEAF6BE00CB7864 /* ZCustomIndicator.swift in Sources */,
 				9EDD293A1F1731FF0004DA52 /* MyKomunitiPostCell.swift in Sources */,
 				B76D256B1E56DBBA00280415 /* SettingsExtendedTVC.swift in Sources */,
 				B73EF08A1E41B8B1001B3ADB /* MyShopMainMenuTVC.swift in Sources */,
@@ -1178,7 +1159,6 @@
 				B7A29D4C1E44263B00836C19 /* ZImages.swift in Sources */,
 				B7DC3A271E15014200951852 /* ABuildInfoTVCell.swift in Sources */,
 				9E4462331F7CEE8A00F82591 /* MyShopMenuBar.swift in Sources */,
-				B7A3C70E1DEAF2FF00CB7864 /* ZCustomIndicatorVC.swift in Sources */,
 				9E12E2CA1F3B14E9003D15FA /* CategoryMenuTVC.swift in Sources */,
 				B794CF3D1E3994BF00C40BF9 /* ZDateTime.swift in Sources */,
 				9E603B371FB1952800E7B637 /* MyShopPopularCVC.swift in Sources */,
@@ -1206,7 +1186,6 @@
 				B7DC39E01E1268E700951852 /* MMMenuListTVCell.swift in Sources */,
 				B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */,
 				B70273EA1F6FACE8003F7BD7 /* LoginV3VC.swift in Sources */,
-				B7583B4F1E2CB2D600C210AC /* SimplePing.m in Sources */,
 				B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */,
 				9EC034B21FB2FD0E00C0B42A /* ErrorCell.swift in Sources */,
 				B7A3C6F71DE82F5600CB7864 /* AppDelegate.swift in Sources */,
