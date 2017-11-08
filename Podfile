@@ -8,13 +8,13 @@ target 'dashboardv2' do
   # Pods for dashboardv2
 
 pod 'SVProgressHUD'
-pod "youtube-ios-player-helper"
-pod "Cosmos", "~> 8.0"
-pod "ImageSlideshow"
-pod "ImageSlideshow/Alamofire"
-pod "ImageSlideshow/AFURL"
-pod "ImageSlideshow/SDWebImage"
-pod "ImageSlideshow/Kingfisher"
+pod 'youtube-ios-player-helper'
+pod 'Cosmos', '~> 8.0'
+pod 'ImageSlideshow'
+pod 'ImageSlideshow/Alamofire'
+pod 'ImageSlideshow/AFURL'
+pod 'ImageSlideshow/SDWebImage'
+pod 'ImageSlideshow/Kingfisher'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'DKImagePickerController'

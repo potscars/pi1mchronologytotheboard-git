@@ -149,6 +149,14 @@ class DBColorSet: NSObject {
     
     // Color reference from Sip (macOS App). Color name is Royal Purple
     static let aboutWhatDBBGColor: UIColor = UIColor.init(red: 0.43, green: 0.26, blue: 0.64, alpha: 1.0)
-
-
+    
+    //Background color.
+    static let backgroundGray = UIColor.rgb(241, green: 241, blue: 241)
+    static let myShopBackgroundColor = UIColor.rgb(244, green: 236, blue: 247)
 }
+
+
+
+
+
+
