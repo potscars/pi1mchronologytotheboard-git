@@ -20,7 +20,13 @@ class ZUIs: NSObject {
                 
                 print("[ZUIs] showOKDialogBox: Back to prev controller.")
                 
-                _ = viewController.navigationController?.popToRootViewController(animated: false)
+                if(viewController.navigationController != nil)
+                {
+                    _ = viewController.navigationController?.popToRootViewController(animated: false)
+                }
+                else {
+                    viewController.presentingViewController?.dismiss(animated: false, completion: nil)
+                }
                 
             }
             else if(afterDialogDismissed != nil) {

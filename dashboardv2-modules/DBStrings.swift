@@ -114,10 +114,13 @@ class DBStrings: NSObject {
     static let DB_MODULE_MYSOAL_LOADMORE_IDLE_MS: String = "Tekan untuk memuatkan lagi"
     static let DB_MODULE_MYSOAL_LOADMORE_PROCESSING_EN: String = "Please wait..."
     static let DB_MODULE_MYSOAL_LOADMORE_PROCESSING_MS: String = "Sila tunggu..."
-    
+    static let DB_MODULE_MYSOAL_TOKEN_FAILED_EN: String = "Failed to get MySoal system authentication. Please contact our administrator."
+    static let DB_MODULE_MYSOAL_TOKEN_FAILED_MS: String = "Gagal memperoleh kebenaran dari sistem MySoal. Sila hubungi pihak pentadbir kami"
     
     //MySkool Label
-    
+    static let DB_MODULE_MYSKOOL_TOKEN_FAILED_EN: String = "Failed to get MySkool system authentication. Please contact our administrator."
+    static let DB_MODULE_MYSKOOL_TOKEN_FAILED_MS: String = "Gagal memperoleh kebenaran dari sistem MySkool. Sila hubungi pihak pentadbir kami."
+
     //MyHealth BP Label
     static let DB_MODULE_MYHEALTH_BP_CONDITION_OPTIMAL_EN: String = "Optimum"
     static let DB_MODULE_MYHEALTH_BP_CONDITION_OPTIMAL_MS: String = "Baik"

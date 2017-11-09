@@ -65,6 +65,10 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
         //loginprocess
         uibLV3VCLoginBtn.addTarget(self, action: #selector(gotoLoginProcess(_:)), for: UIControlEvents.touchUpInside)
         
+        //debugpurposes
+        uitfLV3VCUsername.text = "881015138333"
+        uitfLV3VCPassword.text = "password"
+        
     }
     
     @objc func gotoLoginProcess(_ sender: UIButton) {
@@ -111,14 +115,27 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if(segue.identifier == "DB_PROCESS_LOGIN") {
+            
+            let destinationVC: LoginV3ProcessorVC = segue.destination as! LoginV3ProcessorVC
+            destinationVC.fromLogin.sendUserName = uitfLV3VCUsername.text!
+            destinationVC.fromLogin.sendPassword = uitfLV3VCPassword.text!
+            destinationVC.fromLogin.sendRegID = "1"
+            destinationVC.fromLogin.sendIMEI = ZDeviceInfo.getDeviceVendorIdentifier(replaced: false)
+            destinationVC.fromLogin.sendOS = DBSettings.dbLoginOS
+            
+            
+        }
+        
     }
-    */
+    
 
 }

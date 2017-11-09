@@ -8,6 +8,8 @@ target 'dashboardv2' do
   # Pods for dashboardv2
 
 pod 'SVProgressHUD'
+<<<<<<< HEAD
+pod 'NVActivityIndicatorView'
 pod "youtube-ios-player-helper"
 pod "Cosmos", "~> 8.0"
 pod "ImageSlideshow"
@@ -15,6 +17,15 @@ pod "ImageSlideshow/Alamofire"
 pod "ImageSlideshow/AFURL"
 pod "ImageSlideshow/SDWebImage"
 pod "ImageSlideshow/Kingfisher"
+=======
+pod 'youtube-ios-player-helper'
+pod 'Cosmos', '~> 8.0'
+pod 'ImageSlideshow'
+pod 'ImageSlideshow/Alamofire'
+pod 'ImageSlideshow/AFURL'
+pod 'ImageSlideshow/SDWebImage'
+pod 'ImageSlideshow/Kingfisher'
+>>>>>>> 57eca4c5af33fc0959e43faa715a05b9219163e7
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'DKImagePickerController'
