@@ -121,11 +121,17 @@
 		B7A837021E3891CE004F7333 /* MyHealthBPDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */; };
 		B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */; };
 		B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */; };
+		B7B113AC1FB40F3100557DEF /* MainMenuV3CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */; };
+		B7B113AF1FB4163500557DEF /* MainMenuProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */; };
+		B7B113B11FB4298900557DEF /* MainMenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113B01FB4298900557DEF /* MainMenuData.swift */; };
 		B7B73ACA1E1B9C40000680FF /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73AC91E1B9C40000680FF /* SettingsTVC.swift */; };
 		B7B9A6E51E2F3FD5006689C9 /* MySoalMainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9A6E41E2F3FD5006689C9 /* MySoalMainTVC.swift */; };
 		B7B9A6E71E2F47EC006689C9 /* MySoalIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9A6E61E2F47EC006689C9 /* MySoalIntegratedTVCell.swift */; };
 		B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */; };
 		B7BB51861E24912400F9EB3E /* ZUISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51851E24912400F9EB3E /* ZUISetup.swift */; };
+		B7BC569C1FB5508800E4AE27 /* ic_rememberMe.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BC569B1FB5508700E4AE27 /* ic_rememberMe.png */; };
+		B7BC569E1FB586BC00E4AE27 /* ic_logout.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BC569D1FB586BC00E4AE27 /* ic_logout.png */; };
+		B7CAB5B51FB545E0002785AC /* SettingsV3TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CAB5B41FB545E0002785AC /* SettingsV3TVC.swift */; };
 		B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */; };
 		B7D8DE161F7CB8ED00C0B6C7 /* ic_loadingColor.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */; };
 		B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D71E1258F200951852 /* AfterLoginNC.swift */; };
@@ -294,11 +300,17 @@
 		B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVC.swift; sourceTree = "<group>"; };
 		B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVCell.swift; sourceTree = "<group>"; };
 		B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsIntegratedTVCell.swift; sourceTree = "<group>"; };
+		B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuV3CVC.swift; sourceTree = "<group>"; };
+		B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuProcess.swift; sourceTree = "<group>"; };
+		B7B113B01FB4298900557DEF /* MainMenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuData.swift; sourceTree = "<group>"; };
 		B7B73AC91E1B9C40000680FF /* SettingsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
 		B7B9A6E41E2F3FD5006689C9 /* MySoalMainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySoalMainTVC.swift; sourceTree = "<group>"; };
 		B7B9A6E61E2F47EC006689C9 /* MySoalIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySoalIntegratedTVCell.swift; sourceTree = "<group>"; };
 		B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiLoadingTVCell.swift; sourceTree = "<group>"; };
 		B7BB51851E24912400F9EB3E /* ZUISetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZUISetup.swift; path = libraries/ZUISetup.swift; sourceTree = "<group>"; };
+		B7BC569B1FB5508700E4AE27 /* ic_rememberMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_rememberMe.png; path = "[[Resources]]/ic_rememberMe.png"; sourceTree = SOURCE_ROOT; };
+		B7BC569D1FB586BC00E4AE27 /* ic_logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_logout.png; path = "[[Resources]]/ic_logout.png"; sourceTree = SOURCE_ROOT; };
+		B7CAB5B41FB545E0002785AC /* SettingsV3TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsV3TVC.swift; sourceTree = "<group>"; };
 		B7D8DE101F7CB13000C0B6C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainV3.storyboard; sourceTree = "<group>"; };
 		B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ic_loadingColor.gif; sourceTree = "<group>"; };
 		B7DC39D71E1258F200951852 /* AfterLoginNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterLoginNC.swift; sourceTree = "<group>"; };
@@ -519,6 +531,7 @@
 		B71887061FB166530039BA06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B7B113AD1FB415F000557DEF /* MainMenu */,
 				B71887131FB2B9CD0039BA06 /* MySoal */,
 				B71887121FB2B9C60039BA06 /* MySkool */,
 				9EC034AF1FB2FCF200C0B42A /* Error */,
@@ -531,6 +544,8 @@
 		B71887071FB1665D0039BA06 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B7CAB5B31FB542E4002785AC /* Settings */,
+				B7B113AA1FB40EB000557DEF /* MainMenu */,
 				9E603B331FB18F6700E7B637 /* MyShop */,
 				B718870B1FB1842B0039BA06 /* Login */,
 			);
@@ -773,6 +788,23 @@
 			path = "dashboardv2-modules";
 			sourceTree = "<group>";
 		};
+		B7B113AA1FB40EB000557DEF /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		B7B113AD1FB415F000557DEF /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */,
+				B7B113B01FB4298900557DEF /* MainMenuData.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
 		B7B73AC81E1B9C26000680FF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,6 +825,15 @@
 				B79167721E35BBF500383CAD /* MySoalDetailsTVCell.swift */,
 			);
 			name = MySoal;
+			sourceTree = "<group>";
+		};
+		B7BC569A1FB5506A00E4AE27 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC569D1FB586BC00E4AE27 /* ic_logout.png */,
+				B7BC569B1FB5508700E4AE27 /* ic_rememberMe.png */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		B7C3F6551E124BB000CC1A09 /* Controllers */ = {
@@ -828,9 +869,18 @@
 			name = Main_Menu;
 			sourceTree = "<group>";
 		};
+		B7CAB5B31FB542E4002785AC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B7CAB5B41FB545E0002785AC /* SettingsV3TVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		B7D8DE121F7CB75C00C0B6C7 /* V3 */ = {
 			isa = PBXGroup;
 			children = (
+				B7BC569A1FB5506A00E4AE27 /* Settings */,
 				B71887201FB300450039BA06 /* MainMenu */,
 				B7D8DE141F7CB79400C0B6C7 /* Loading */,
 				B79E92411F7227DD00FBD071 /* ic_logincard300.png */,
@@ -1015,6 +1065,7 @@
 				9E603B401FB1959500E7B637 /* MyShopProductCell.xib in Resources */,
 				B7DC3A081E139F3B00951852 /* ic_mysoal@2x.png in Resources */,
 				B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */,
+				B7BC569E1FB586BC00E4AE27 /* ic_logout.png in Resources */,
 				B7A3C6FE1DE82F5600CB7864 /* Assets.xcassets in Resources */,
 				B73BD8001E51AF6E0036EBEF /* ic_DBImportancePosThree in Resources */,
 				B7350F271E52D99A007884B2 /* ic_dbkomunitiico.png in Resources */,
@@ -1041,6 +1092,7 @@
 				B7DC3A0D1E14C72100951852 /* ic_bannerdb in Resources */,
 				B79E92421F7227DD00FBD071 /* ic_logincard300.png in Resources */,
 				B73BD7FF1E51AF6E0036EBEF /* ic_DBImportancePosSix in Resources */,
+				B7BC569C1FB5508800E4AE27 /* ic_rememberMe.png in Resources */,
 				B7DC39FE1E139F3B00951852 /* ic_mykomuniti.png in Resources */,
 				B7DC3A141E14E61D00951852 /* ic_bannerdbshadow.png in Resources */,
 				B7DC3A031E139F3B00951852 /* ic_myshop@3x.png in Resources */,
@@ -1145,6 +1197,7 @@
 				9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */,
 				9E603B391FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift in Sources */,
 				B739662D1E1CDBE900B270A1 /* MyKomunitiDetailsTVCell.swift in Sources */,
+				B7B113B11FB4298900557DEF /* MainMenuData.swift in Sources */,
 				B7DC39DE1E12678E00951852 /* MMImageTransTVCell.swift in Sources */,
 				B79167781E35D74D00383CAD /* MySkoolIntegratedTVCell.swift in Sources */,
 				9E12E2C91F3B14E9003D15FA /* StatesMenuTVC.swift in Sources */,
@@ -1159,6 +1212,7 @@
 				9E51D6E61F206A540048337E /* GamesScoreboardController.swift in Sources */,
 				B7B9A6E71E2F47EC006689C9 /* MySoalIntegratedTVCell.swift in Sources */,
 				B74D337F1DF6A2A200208A03 /* DBSettings.swift in Sources */,
+				B7B113AC1FB40F3100557DEF /* MainMenuV3CVC.swift in Sources */,
 				B7EF41A91E37072100262A0B /* MyHealthIntegratedTVCell.swift in Sources */,
 				B7DC3A191E14EEE500951852 /* AboutTVC.swift in Sources */,
 				B73966291E1CA42300B270A1 /* MyKomunitiMainTVCell.swift in Sources */,
@@ -1196,6 +1250,7 @@
 				9E4462231F78D83700F82591 /* Extension.swift in Sources */,
 				B718871B1FB2F2F20039BA06 /* AfterLoginV3NC.swift in Sources */,
 				9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */,
+				B7B113AF1FB4163500557DEF /* MainMenuProcess.swift in Sources */,
 				9E4462211F78CE3300F82591 /* MainMenuCVC.swift in Sources */,
 				B73966271E1CA3FF00B270A1 /* MyKomunitiMainTVC.swift in Sources */,
 				B73EF08C1E41B8F9001B3ADB /* MyShopIntegratedTVCell.swift in Sources */,
@@ -1206,6 +1261,7 @@
 				9EDD293A1F1731FF0004DA52 /* MyKomunitiPostCell.swift in Sources */,
 				B71887111FB18BA40039BA06 /* LoginV3ProcessorVC.swift in Sources */,
 				B76D256B1E56DBBA00280415 /* SettingsExtendedTVC.swift in Sources */,
+				B7CAB5B51FB545E0002785AC /* SettingsV3TVC.swift in Sources */,
 				B73EF08A1E41B8B1001B3ADB /* MyShopMainMenuTVC.swift in Sources */,
 				9E12E2AF1F397BF5003D15FA /* MainMenuTVC.swift in Sources */,
 				B74D33811DF6AAE300208A03 /* DBWebServices.swift in Sources */,

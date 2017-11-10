@@ -110,6 +110,9 @@ class NetworkProcessor {
                     }
                     
                 }
+                else {
+                    completion(nil, "Error code \(httpResponse.statusCode)")
+                }
             } else {
                 completion(nil, "There is no http responses.")
             }
@@ -155,6 +158,9 @@ class NetworkProcessor {
                         completion(nil, httpResponsesString)
                     }
                     
+                }
+                else {
+                    completion(nil, "Error code \(httpResponse.statusCode)")
                 }
             } else {
                 completion(nil, "There is no http responses.")

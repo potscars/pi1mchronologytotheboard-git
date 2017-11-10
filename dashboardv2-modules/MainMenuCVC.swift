@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-struct MainMenuIdentifier {
+private struct MainMenuIdentifier {
     static let HeaderView = "headerCell"
     static let MenuCell = "menuCell"
     static let QuizMenuCell = "quizMenuCell"

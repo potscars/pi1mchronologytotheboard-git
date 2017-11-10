@@ -76,9 +76,6 @@ class LoginV3ProcessorVC: UIViewController {
         
         print("Login Got")
         
-        //temporary
-        UserDefaults.standard.set(true, forKey: "RememberLogger")
-        
         UserDefaults.standard.set(true, forKey: "SuccessLoggerIsLogin")
         UserDefaults.standard.set(data.userEmail, forKey: "SuccessLoggerEmail")
         UserDefaults.standard.set(data.userFullName, forKey: "SuccessLoggerFullName")

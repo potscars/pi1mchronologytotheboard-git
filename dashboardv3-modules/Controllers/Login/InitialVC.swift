@@ -15,12 +15,11 @@ class InitialVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let loggedIn: Bool? = UserDefaults.standard.object(forKey: "SuccessLoggerIsLogin") as? Bool ?? false
-        let rememberLoggedIn: Bool? = UserDefaults.standard.object(forKey: "RememberLogger") as? Bool ?? false
+        //let loggedIn: Bool? = UserDefaults.standard.object(forKey: "SuccessLoggerIsLogin") as? Bool ?? false
         
-        if rememberLoggedIn! == false {
+        if(ChangeSettingsValue.loggedIn == true) {
         
-            switch loggedIn! {
+            switch ChangeSettingsValue.rememberMe {
             
             case nil:
                 self.notLoggedInVC()
@@ -33,16 +32,11 @@ class InitialVC: UIViewController {
             case true:
                 self.loggedInVC()
                 break
-                
-            default:
-                self.notLoggedInVC()
-                break
             
             }
-        } else {
-            
-            self.loggedInVC()
-            
+        }
+        else {
+            self.notLoggedInVC()
         }
     }
     

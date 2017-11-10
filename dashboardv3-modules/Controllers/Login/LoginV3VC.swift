@@ -9,22 +9,6 @@
 import UIKit
 import QuartzCore.CALayer
 
-extension UIImage {
-    
-    func addImagePadding(x: CGFloat, y: CGFloat) -> UIImage? {
-        let width: CGFloat = self.size.width + x
-        let height: CGFloat = self.size.width + y
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: width, height: height), false, 0)
-        let origin: CGPoint = CGPoint(x: (width - self.size.width) / 2, y: (height - self.size.height) / 2)
-        self.draw(at: origin)
-        let imageWithPadding = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return imageWithPadding
-    }
-    
-}
-
 class LoginV3VC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var uitfLV3VCUsername: UITextField!
