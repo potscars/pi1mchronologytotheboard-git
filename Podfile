@@ -18,5 +18,6 @@ pod 'ImageSlideshow/Kingfisher'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'DKImagePickerController'
+pod 'SDWebImage'
 
 end

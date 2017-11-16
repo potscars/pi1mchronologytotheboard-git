@@ -47,9 +47,9 @@ class NetworkProcessor {
             
             if let httpResponse = response as? HTTPURLResponse {
                 
+                let httpResponsesString = self.checkResponseStatusCode(httpResponse.statusCode)
+                
                 if httpResponse.statusCode == HttpResponsesCode.Success {
-                    
-                    let httpResponsesString = self.checkResponseStatusCode(httpResponse.statusCode)
                     
                     if let data = data {
                         
@@ -59,10 +59,9 @@ class NetworkProcessor {
                     } else {
                         completion(nil, httpResponsesString)
                     }
-                    
                 }
                 else {
-                    completion(nil, "Error code \(httpResponse.statusCode)")
+                    completion(nil, httpResponsesString)
                 }
             } else {
                 completion(nil, "There is no http responses.")

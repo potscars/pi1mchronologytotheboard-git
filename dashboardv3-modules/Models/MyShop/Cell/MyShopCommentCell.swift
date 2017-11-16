@@ -13,6 +13,13 @@ class MyShopCommentCell: UITableViewCell {
     @IBOutlet weak var senderLabel: UILabel!
     @IBOutlet weak var commentTextview: UITextView!
     
+    var comment: Comment! {
+        didSet {
+            self.senderLabel.text = "Anonymous"
+            self.commentTextview.text = comment.message
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
