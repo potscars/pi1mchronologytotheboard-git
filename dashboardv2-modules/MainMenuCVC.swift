@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-struct MainMenuIdentifier {
+private struct MainMenuIdentifier {
     static let HeaderView = "headerCell"
     static let MenuCell = "menuCell"
     static let QuizMenuCell = "quizMenuCell"
@@ -75,7 +75,7 @@ class MainMenuCVC: UICollectionViewController {
             _ = self.navigationController?.popViewController(animated: true)
         }
         
-        print("Settings registered:\n\nRemember Me: \(UserDefaults.standard.object(forKey: "SuccessLoggerSettingsRememberMe") as! Bool)\nLanguage Selected: \(UserDefaults.standard.object(forKey: "SuccessLoggerSettingsLanguage") as! String)\nModule Selected: \(UserDefaults.standard.object(forKey: "SuccessLoggerSettingsModuleSelected") as! NSArray)")
+        print("Settings registered:\n\nRemember Me: \(UserDefaults.standard.object(forKey: "SuccessLoggerSettingsRememberMe") as? Bool)\nLanguage Selected: \(UserDefaults.standard.object(forKey: "SuccessLoggerSettingsLanguage") as? String)\nModule Selected: \(UserDefaults.standard.object(forKey: "SuccessLoggerSettingsModuleSelected") as? NSArray)")
     }
     
     override func viewWillDisappear(_ animated: Bool) {

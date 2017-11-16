@@ -9,22 +9,6 @@
 import UIKit
 import QuartzCore.CALayer
 
-extension UIImage {
-    
-    func addImagePadding(x: CGFloat, y: CGFloat) -> UIImage? {
-        let width: CGFloat = self.size.width + x
-        let height: CGFloat = self.size.width + y
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: width, height: height), false, 0)
-        let origin: CGPoint = CGPoint(x: (width - self.size.width) / 2, y: (height - self.size.height) / 2)
-        self.draw(at: origin)
-        let imageWithPadding = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return imageWithPadding
-    }
-    
-}
-
 class LoginV3VC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var uitfLV3VCUsername: UITextField!
@@ -64,6 +48,10 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
         
         //loginprocess
         uibLV3VCLoginBtn.addTarget(self, action: #selector(gotoLoginProcess(_:)), for: UIControlEvents.touchUpInside)
+        
+        //debugpurposes
+        uitfLV3VCUsername.text = "881015138333"
+        uitfLV3VCPassword.text = "password"
         
     }
     
@@ -111,14 +99,27 @@ class LoginV3VC: UIViewController, UITextFieldDelegate {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if(segue.identifier == "DB_PROCESS_LOGIN") {
+            
+            let destinationVC: LoginV3ProcessorVC = segue.destination as! LoginV3ProcessorVC
+            destinationVC.fromLogin.sendUserName = uitfLV3VCUsername.text!
+            destinationVC.fromLogin.sendPassword = uitfLV3VCPassword.text!
+            destinationVC.fromLogin.sendRegID = "1"
+            destinationVC.fromLogin.sendIMEI = ZDeviceInfo.getDeviceVendorIdentifier(replaced: false)
+            destinationVC.fromLogin.sendOS = DBSettings.dbLoginOS
+            
+            
+        }
+        
     }
-    */
+    
 
 }

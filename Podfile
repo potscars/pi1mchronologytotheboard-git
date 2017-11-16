@@ -8,6 +8,7 @@ target 'dashboardv2' do
   # Pods for dashboardv2
 
 pod 'SVProgressHUD'
+pod 'NVActivityIndicatorView'
 pod 'youtube-ios-player-helper'
 pod 'Cosmos', '~> 8.0'
 pod 'ImageSlideshow'

@@ -50,12 +50,6 @@ class DBWebServices: NSObject {
         
     }
     
-    func simplePing(_ pinger: SimplePing, didStartWithAddress address: Data) {
-        
-        print("Starting pinging")
-        
-    }
-    
     @objc static func getLoginData(data: NSDictionary, registeredNotification: String) {
         
         let getLoginURL = NSURL.init(string: DBSettings.loginURL)

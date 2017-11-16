@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n4g-d8-gwa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ymr-pe-dxz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,10 +19,28 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Navigation Controller-->
+        <!--InitialVC-->
+        <scene sceneID="FIy-FA-f2d">
+            <objects>
+                <viewController id="ymr-pe-dxz" customClass="InitialVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u1q-eE-CpO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hdg-wb-DuX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GY7-N6-jSf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYd-HG-mHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2177" y="-152"/>
+        </scene>
+        <!--Before LoginV3NC-->
         <scene sceneID="Dgf-oI-gAv">
             <objects>
-                <navigationController navigationBarHidden="YES" id="n4g-d8-gwa" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NotLoggedInV3NC" navigationBarHidden="YES" id="n4g-d8-gwa" customClass="BeforeLoginV3NC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6Dh-d1-jdW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -32,7 +50,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huf-jj-mwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1374" y="-152"/>
+            <point key="canvasLocation" x="-1370" y="-152"/>
         </scene>
         <!--LoginV3VC-->
         <scene sceneID="mcz-hC-zmb">
@@ -93,7 +111,7 @@
                                     <constraint firstItem="gpH-5u-BOm" firstAttribute="width" secondItem="5ai-tV-fUg" secondAttribute="height" multiplier="157:25" id="HRc-Qv-d95"/>
                                     <constraint firstAttribute="trailing" secondItem="yrR-As-lHc" secondAttribute="trailing" constant="8" id="Lsm-8k-Bi5"/>
                                     <constraint firstItem="5ai-tV-fUg" firstAttribute="width" secondItem="gpH-5u-BOm" secondAttribute="height" multiplier="157:25" id="Mpf-Nm-aDh"/>
-                                    <constraint firstAttribute="height" constant="240" id="SPj-kZ-glX"/>
+                                    <constraint firstAttribute="height" constant="240" placeholder="YES" id="SPj-kZ-glX"/>
                                     <constraint firstAttribute="trailing" secondItem="5ai-tV-fUg" secondAttribute="trailing" constant="8" id="SyB-Zb-Lfu"/>
                                     <constraint firstItem="5ai-tV-fUg" firstAttribute="leading" secondItem="s3G-wv-GDO" secondAttribute="leading" constant="8" id="XZU-zp-Bpc"/>
                                     <constraint firstItem="5ai-tV-fUg" firstAttribute="top" secondItem="s3G-wv-GDO" secondAttribute="top" constant="30" id="g66-Jv-Ki3"/>
@@ -133,12 +151,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zy-Dj-FVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-553" y="-152"/>
+            <point key="canvasLocation" x="-572" y="-152"/>
         </scene>
-        <!--Login ProcessingVC-->
+        <!--LoginV3 ProcessorVC-->
         <scene sceneID="7f7-Ub-Ush">
             <objects>
-                <viewController id="ttM-oj-ZLt" customClass="LoginProcessingVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ttM-oj-ZLt" customClass="LoginV3ProcessorVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ld7-nh-xgX"/>
                         <viewControllerLayoutGuide type="bottom" id="PEl-aN-g7s"/>
@@ -147,7 +165,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7L-Lt-mgM">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7L-Lt-mgM">
                                 <rect key="frame" x="16" y="241" width="343" height="185"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_loadingColor.gif" translatesAutoresizingMaskIntoConstraints="NO" id="pqv-3a-UNT">
@@ -187,17 +205,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="0c8-0s-kFF" kind="show" id="GMs-iV-VxO"/>
+                        <segue destination="0c8-0s-kFF" kind="presentation" identifier="DB_GOTO_MAINMENU" modalTransitionStyle="crossDissolve" id="GMs-iV-VxO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6u-5V-pVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="224.80000000000001" y="-152.47376311844079"/>
+            <point key="canvasLocation" x="215" y="-152"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--After LoginV3NC-->
         <scene sceneID="Dmm-de-hsw">
             <objects>
-                <navigationController id="0c8-0s-kFF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoggedInV3NC" id="0c8-0s-kFF" customClass="AfterLoginV3NC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UDI-IN-RTK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -208,12 +226,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQA-n3-sZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="-152"/>
+            <point key="canvasLocation" x="1034" y="-152"/>
         </scene>
         <!--Dashboard Komuniti-->
         <scene sceneID="Xoo-Cx-ROG">
             <objects>
-                <collectionViewController id="i1E-RR-oBq" customClass="MainMenuCVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="i1E-RR-oBq" customClass="MainMenuV3CVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="m8c-Kh-imk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,9 +242,10 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <imageView key="backgroundView" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abstractBackground" id="IN5-Ce-7Q7">
+                        <imageView key="backgroundView" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_abstbg1.png" id="IN5-Ce-7Q7">
                             <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuCell" id="KfL-Ez-Eyh">
@@ -253,7 +272,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.2588235438" green="0.75686275960000005" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.2588235438" green="0.75686275960000005" blue="0.96862745289999996" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="W1Z-Rh-nI7" firstAttribute="centerX" secondItem="TjO-c8-wPp" secondAttribute="centerX" id="OBQ-cT-wzd"/>
                                                 <constraint firstItem="W1Z-Rh-nI7" firstAttribute="top" secondItem="TjO-c8-wPp" secondAttribute="top" constant="24" id="Upk-Gj-fTS"/>
@@ -328,18 +347,45 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Dashboard Komuniti" id="kT3-XZ-3UV"/>
+                    <connections>
+                        <segue destination="wfA-lk-4Q5" kind="show" identifier="DB_GOTO_SETTINGS" id="w0r-rZ-GNa"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eka-7O-vuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1844" y="-152"/>
         </scene>
+        <!--SettingsV3TVC-->
+        <scene sceneID="Sz2-RX-ZM4">
+            <objects>
+                <tableViewController id="wfA-lk-4Q5" customClass="SettingsV3TVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uVP-rw-iJn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="wfA-lk-4Q5" id="hdU-YR-U2X"/>
+                            <outlet property="delegate" destination="wfA-lk-4Q5" id="5OS-80-rJn"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="n4g-d8-gwa" kind="presentation" identifier="DB_RETURNTO_LOGIN" modalTransitionStyle="crossDissolve" id="sC9-80-7yg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaN-Un-Av6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2631" y="-927"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="abstractBackground" width="1280" height="720"/>
+        <image name="ic_abstbg1.png" width="274" height="479"/>
         <image name="ic_bannerdbshadow.png" width="500" height="200"/>
         <image name="ic_dbquiz_banner" width="163" height="32"/>
         <image name="ic_loadingColor.gif" width="256" height="256"/>
         <image name="ic_logodb.png" width="500" height="547"/>
         <image name="ic_mykomuniti.png" width="60" height="60"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="15v-jX-0Jy"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -46,6 +46,9 @@ PODS:
     - ImageSlideshow/Core
     - SDWebImage (~> 3.7)
   - Kingfisher (4.2.0)
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -63,6 +66,7 @@ DEPENDENCIES:
   - ImageSlideshow/Kingfisher
   - ImageSlideshow/SDWebImage
   - SDWebImage
+  - NVActivityIndicatorView
   - SVProgressHUD
   - youtube-ios-player-helper
 
@@ -76,10 +80,11 @@ SPEC CHECKSUMS:
   GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
   ImageSlideshow: 1bb0e610e28a71e8936d57265d882f61714a470b
   Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 7f49e4bffa61eafa4ef639db3ba67e72a402880d
+PODFILE CHECKSUM: 40047bef8adeeeab280fb9a1757dd86421cf348c
 
 COCOAPODS: 1.3.1

@@ -40,6 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.answeredQuestion = NSMutableArray.init()
         
+        print("IOS Version: \(UIDevice.current.systemVersion)")
+        
         return true
     }
     

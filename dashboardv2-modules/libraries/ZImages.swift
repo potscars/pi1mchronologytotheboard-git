@@ -141,3 +141,52 @@ class ZImages: NSObject {
     
     
 }
+
+extension UIImage{
+    
+    func resizeImageWith(newSize: CGSize, opaque: Bool) -> UIImage {
+        
+        let horizontalRatio = newSize.width / size.width
+        let verticalRatio = newSize.height / size.height
+        
+        let ratio = max(horizontalRatio, verticalRatio)
+        let newSize = CGSize(width: size.width * ratio, height: size.height * ratio)
+        UIGraphicsBeginImageContextWithOptions(newSize, opaque, 0)
+        draw(in: CGRect(origin: CGPoint(x: 0, y: 0), size: newSize))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+    
+    func addImagePadding(x: CGFloat, y: CGFloat) -> UIImage? {
+        let width: CGFloat = self.size.width + x
+        let height: CGFloat = self.size.width + y
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: width, height: height), false, 0)
+        let origin: CGPoint = CGPoint(x: (width - self.size.width) / 2, y: (height - self.size.height) / 2)
+        self.draw(at: origin)
+        let imageWithPadding = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return imageWithPadding
+    }
+    
+    func drawInRectAspectFill(rect: CGRect) {
+        let targetSize = rect.size
+        if targetSize == CGSize.zero {
+            return self.draw(in: rect)
+        }
+        let widthRatio    = targetSize.width  / self.size.width
+        let heightRatio   = targetSize.height / self.size.height
+        let scalingFactor = max(widthRatio, heightRatio)
+        let newSize = CGSize(width:  self.size.width  * scalingFactor,
+                             height: self.size.height * scalingFactor)
+        UIGraphicsBeginImageContext(targetSize)
+        let origin = CGPoint(x: (targetSize.width  - newSize.width)  / 2,
+                             y: (targetSize.height - newSize.height) / 2)
+        self.draw(in: CGRect(origin: origin, size: newSize))
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        scaledImage!.draw(in: rect)
+    }
+    
+}

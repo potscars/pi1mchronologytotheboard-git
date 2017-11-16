@@ -63,6 +63,14 @@
 		9EE2E60B1F4EA0F500041DE3 /* TopScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */; };
 		9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6ECA91F3D67950067C3C0 /* State.swift */; };
 		B718870D1FB184830039BA06 /* LoginProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870C1FB184830039BA06 /* LoginProcess.swift */; };
+		B718870F1FB18B640039BA06 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870E1FB18B640039BA06 /* LoginData.swift */; };
+		B71887111FB18BA40039BA06 /* LoginV3ProcessorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887101FB18BA40039BA06 /* LoginV3ProcessorVC.swift */; };
+		B71887151FB2B9E90039BA06 /* MySkoolProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887141FB2B9E90039BA06 /* MySkoolProcess.swift */; };
+		B71887171FB2B9F90039BA06 /* MySoalProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887161FB2B9F90039BA06 /* MySoalProcess.swift */; };
+		B718871B1FB2F2F20039BA06 /* AfterLoginV3NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871A1FB2F2F20039BA06 /* AfterLoginV3NC.swift */; };
+		B718871D1FB2F33F0039BA06 /* BeforeLoginV3NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871C1FB2F33F0039BA06 /* BeforeLoginV3NC.swift */; };
+		B718871F1FB2F35C0039BA06 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871E1FB2F35C0039BA06 /* InitialVC.swift */; };
+		B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B71887211FB300550039BA06 /* ic_abstbg1.png */; };
 		B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A51E42D53400F1BF99 /* ic_chat.png */; };
 		B72B91A81E42D53400F1BF99 /* ic_view.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A61E42D53400F1BF99 /* ic_view.png */; };
 		B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */; };
@@ -120,11 +128,17 @@
 		B7A837021E3891CE004F7333 /* MyHealthBPDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */; };
 		B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */; };
 		B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */; };
+		B7B113AC1FB40F3100557DEF /* MainMenuV3CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */; };
+		B7B113AF1FB4163500557DEF /* MainMenuProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */; };
+		B7B113B11FB4298900557DEF /* MainMenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113B01FB4298900557DEF /* MainMenuData.swift */; };
 		B7B73ACA1E1B9C40000680FF /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73AC91E1B9C40000680FF /* SettingsTVC.swift */; };
 		B7B9A6E51E2F3FD5006689C9 /* MySoalMainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9A6E41E2F3FD5006689C9 /* MySoalMainTVC.swift */; };
 		B7B9A6E71E2F47EC006689C9 /* MySoalIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9A6E61E2F47EC006689C9 /* MySoalIntegratedTVCell.swift */; };
 		B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */; };
 		B7BB51861E24912400F9EB3E /* ZUISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB51851E24912400F9EB3E /* ZUISetup.swift */; };
+		B7BC569C1FB5508800E4AE27 /* ic_rememberMe.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BC569B1FB5508700E4AE27 /* ic_rememberMe.png */; };
+		B7BC569E1FB586BC00E4AE27 /* ic_logout.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BC569D1FB586BC00E4AE27 /* ic_logout.png */; };
+		B7CAB5B51FB545E0002785AC /* SettingsV3TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CAB5B41FB545E0002785AC /* SettingsV3TVC.swift */; };
 		B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */; };
 		B7D8DE161F7CB8ED00C0B6C7 /* ic_loadingColor.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */; };
 		B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D71E1258F200951852 /* AfterLoginNC.swift */; };
@@ -233,6 +247,14 @@
 		9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScorer.swift; sourceTree = "<group>"; };
 		9EE6ECA91F3D67950067C3C0 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		B718870C1FB184830039BA06 /* LoginProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProcess.swift; sourceTree = "<group>"; };
+		B718870E1FB18B640039BA06 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		B71887101FB18BA40039BA06 /* LoginV3ProcessorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginV3ProcessorVC.swift; sourceTree = "<group>"; };
+		B71887141FB2B9E90039BA06 /* MySkoolProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySkoolProcess.swift; sourceTree = "<group>"; };
+		B71887161FB2B9F90039BA06 /* MySoalProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySoalProcess.swift; sourceTree = "<group>"; };
+		B718871A1FB2F2F20039BA06 /* AfterLoginV3NC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginV3NC.swift; sourceTree = "<group>"; };
+		B718871C1FB2F33F0039BA06 /* BeforeLoginV3NC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeLoginV3NC.swift; sourceTree = "<group>"; };
+		B718871E1FB2F35C0039BA06 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
+		B71887211FB300550039BA06 /* ic_abstbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_abstbg1.png; path = "[[Resources]]/ic_abstbg1.png"; sourceTree = SOURCE_ROOT; };
 		B72B91A51E42D53400F1BF99 /* ic_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chat.png; path = "[[Resources]]/ic_chat.png"; sourceTree = SOURCE_ROOT; };
 		B72B91A61E42D53400F1BF99 /* ic_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_view.png; path = "[[Resources]]/ic_view.png"; sourceTree = SOURCE_ROOT; };
 		B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopLatestProdTVC.swift; sourceTree = "<group>"; };
@@ -292,11 +314,17 @@
 		B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVC.swift; sourceTree = "<group>"; };
 		B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVCell.swift; sourceTree = "<group>"; };
 		B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsIntegratedTVCell.swift; sourceTree = "<group>"; };
+		B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuV3CVC.swift; sourceTree = "<group>"; };
+		B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuProcess.swift; sourceTree = "<group>"; };
+		B7B113B01FB4298900557DEF /* MainMenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuData.swift; sourceTree = "<group>"; };
 		B7B73AC91E1B9C40000680FF /* SettingsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
 		B7B9A6E41E2F3FD5006689C9 /* MySoalMainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySoalMainTVC.swift; sourceTree = "<group>"; };
 		B7B9A6E61E2F47EC006689C9 /* MySoalIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySoalIntegratedTVCell.swift; sourceTree = "<group>"; };
 		B7BB51821E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiLoadingTVCell.swift; sourceTree = "<group>"; };
 		B7BB51851E24912400F9EB3E /* ZUISetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZUISetup.swift; path = libraries/ZUISetup.swift; sourceTree = "<group>"; };
+		B7BC569B1FB5508700E4AE27 /* ic_rememberMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_rememberMe.png; path = "[[Resources]]/ic_rememberMe.png"; sourceTree = SOURCE_ROOT; };
+		B7BC569D1FB586BC00E4AE27 /* ic_logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_logout.png; path = "[[Resources]]/ic_logout.png"; sourceTree = SOURCE_ROOT; };
+		B7CAB5B41FB545E0002785AC /* SettingsV3TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsV3TVC.swift; sourceTree = "<group>"; };
 		B7D8DE101F7CB13000C0B6C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainV3.storyboard; sourceTree = "<group>"; };
 		B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ic_loadingColor.gif; sourceTree = "<group>"; };
 		B7DC39D71E1258F200951852 /* AfterLoginNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterLoginNC.swift; sourceTree = "<group>"; };
@@ -540,6 +568,9 @@
 		B71887061FB166530039BA06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B7B113AD1FB415F000557DEF /* MainMenu */,
+				B71887131FB2B9CD0039BA06 /* MySoal */,
+				B71887121FB2B9C60039BA06 /* MySkool */,
 				9EC034AF1FB2FCF200C0B42A /* Error */,
 				9E603B3C1FB1956600E7B637 /* MyShop */,
 				B718870A1FB168780039BA06 /* Login */,
@@ -550,6 +581,8 @@
 		B71887071FB1665D0039BA06 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B7CAB5B31FB542E4002785AC /* Settings */,
+				B7B113AA1FB40EB000557DEF /* MainMenu */,
 				9E603B331FB18F6700E7B637 /* MyShop */,
 				B718870B1FB1842B0039BA06 /* Login */,
 			);
@@ -581,6 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				B718870C1FB184830039BA06 /* LoginProcess.swift */,
+				B718870E1FB18B640039BA06 /* LoginData.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -588,9 +622,38 @@
 		B718870B1FB1842B0039BA06 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9EC034B41FB4338900C0B42A /* LoginV3VC.swift */,
+				B70273E91F6FACE8003F7BD7 /* LoginV3VC.swift */,
+				B71887101FB18BA40039BA06 /* LoginV3ProcessorVC.swift */,
+				B718871A1FB2F2F20039BA06 /* AfterLoginV3NC.swift */,
+				B718871C1FB2F33F0039BA06 /* BeforeLoginV3NC.swift */,
+				B718871E1FB2F35C0039BA06 /* InitialVC.swift */,
 			);
 			name = Login;
+			path = Controllers/Login;
+			sourceTree = "<group>";
+		};
+		B71887121FB2B9C60039BA06 /* MySkool */ = {
+			isa = PBXGroup;
+			children = (
+				B71887141FB2B9E90039BA06 /* MySkoolProcess.swift */,
+			);
+			path = MySkool;
+			sourceTree = "<group>";
+		};
+		B71887131FB2B9CD0039BA06 /* MySoal */ = {
+			isa = PBXGroup;
+			children = (
+				B71887161FB2B9F90039BA06 /* MySoalProcess.swift */,
+			);
+			path = MySoal;
+			sourceTree = "<group>";
+		};
+		B71887201FB300450039BA06 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B71887211FB300550039BA06 /* ic_abstbg1.png */,
+			);
+			name = MainMenu;
 			sourceTree = "<group>";
 		};
 		B72B91A41E42D52200F1BF99 /* MyShopIcons */ = {
@@ -656,6 +719,7 @@
 				B7D8DE131F7CB76700C0B6C7 /* Sprites */,
 			);
 			name = Resources;
+			path = "dashboardv2-modules";
 			sourceTree = "<group>";
 		};
 		B74D33731DF5165300208A03 /* V2 */ = {
@@ -711,6 +775,7 @@
 			children = (
 				B71887051FB1661C0039BA06 /* dashboardv3-modules */,
 				B7A3C6F51DE82F5600CB7864 /* dashboardv2-modules */,
+				B74D33721DF5164D00208A03 /* Resources */,
 				B7A3C7081DEAEDB200CB7864 /* Libraries */,
 				B71887091FB166E20039BA06 /* Globals */,
 				B71887081FB166AD0039BA06 /* Compilers */,
@@ -733,7 +798,6 @@
 			children = (
 				9E12E2CF1F3C6394003D15FA /* Model */,
 				B7C3F6551E124BB000CC1A09 /* Controllers */,
-				B74D33721DF5164D00208A03 /* Resources */,
 				B7A3C6FA1DE82F5600CB7864 /* Main.storyboard */,
 			);
 			path = "dashboardv2-modules";
@@ -761,6 +825,23 @@
 			path = "dashboardv2-modules";
 			sourceTree = "<group>";
 		};
+		B7B113AA1FB40EB000557DEF /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		B7B113AD1FB415F000557DEF /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */,
+				B7B113B01FB4298900557DEF /* MainMenuData.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
 		B7B73AC81E1B9C26000680FF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -781,6 +862,15 @@
 				B79167721E35BBF500383CAD /* MySoalDetailsTVCell.swift */,
 			);
 			name = MySoal;
+			sourceTree = "<group>";
+		};
+		B7BC569A1FB5506A00E4AE27 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC569D1FB586BC00E4AE27 /* ic_logout.png */,
+				B7BC569B1FB5508700E4AE27 /* ic_rememberMe.png */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		B7C3F6551E124BB000CC1A09 /* Controllers */ = {
@@ -816,9 +906,19 @@
 			name = Main_Menu;
 			sourceTree = "<group>";
 		};
+		B7CAB5B31FB542E4002785AC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B7CAB5B41FB545E0002785AC /* SettingsV3TVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		B7D8DE121F7CB75C00C0B6C7 /* V3 */ = {
 			isa = PBXGroup;
 			children = (
+				B7BC569A1FB5506A00E4AE27 /* Settings */,
+				B71887201FB300450039BA06 /* MainMenu */,
 				B7D8DE141F7CB79400C0B6C7 /* Loading */,
 				B79E92411F7227DD00FBD071 /* ic_logincard300.png */,
 				B79E923B1F7211B100FBD071 /* ic_loginkey300.png */,
@@ -1002,6 +1102,8 @@
 				B74D33751DF5167000208A03 /* ic_logodb.png in Resources */,
 				9E603B401FB1959500E7B637 /* MyShopProductCell.xib in Resources */,
 				B7DC3A081E139F3B00951852 /* ic_mysoal@2x.png in Resources */,
+				B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */,
+				B7BC569E1FB586BC00E4AE27 /* ic_logout.png in Resources */,
 				B7A3C6FE1DE82F5600CB7864 /* Assets.xcassets in Resources */,
 				B73BD8001E51AF6E0036EBEF /* ic_DBImportancePosThree in Resources */,
 				B7350F271E52D99A007884B2 /* ic_dbkomunitiico.png in Resources */,
@@ -1028,6 +1130,7 @@
 				B7DC3A0D1E14C72100951852 /* ic_bannerdb in Resources */,
 				B79E92421F7227DD00FBD071 /* ic_logincard300.png in Resources */,
 				B73BD7FF1E51AF6E0036EBEF /* ic_DBImportancePosSix in Resources */,
+				B7BC569C1FB5508800E4AE27 /* ic_rememberMe.png in Resources */,
 				B7DC39FE1E139F3B00951852 /* ic_mykomuniti.png in Resources */,
 				B7DC3A141E14E61D00951852 /* ic_bannerdbshadow.png in Resources */,
 				B7DC3A031E139F3B00951852 /* ic_myshop@3x.png in Resources */,
@@ -1055,6 +1158,7 @@
 				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
@@ -1068,6 +1172,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
@@ -1121,6 +1226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71887151FB2B9E90039BA06 /* MySkoolProcess.swift in Sources */,
 				B78E628A1DF7E00900D9767D /* ZDeviceInfo.swift in Sources */,
 				B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */,
 				B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */,
@@ -1129,6 +1235,7 @@
 				9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */,
 				9E603B391FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift in Sources */,
 				B739662D1E1CDBE900B270A1 /* MyKomunitiDetailsTVCell.swift in Sources */,
+				B7B113B11FB4298900557DEF /* MainMenuData.swift in Sources */,
 				B7DC39DE1E12678E00951852 /* MMImageTransTVCell.swift in Sources */,
 				B79167781E35D74D00383CAD /* MySkoolIntegratedTVCell.swift in Sources */,
 				9E12E2C91F3B14E9003D15FA /* StatesMenuTVC.swift in Sources */,
@@ -1136,6 +1243,7 @@
 				B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */,
 				9E12E2BE1F3AF8AE003D15FA /* MyPlaceMainVC.swift in Sources */,
 				9EC034BD1FB97C5500C0B42A /* ErrorCollectionCell.swift in Sources */,
+				B718871F1FB2F35C0039BA06 /* InitialVC.swift in Sources */,
 				9E12E2CE1F3C62F1003D15FA /* NetworkProcessor.swift in Sources */,
 				9ED76EB71FBC1EBD00962E85 /* ProductHeaderView.swift in Sources */,
 				9E5998681F45A06D00542304 /* MyPlaceSearchedResultDetails.swift in Sources */,
@@ -1144,6 +1252,7 @@
 				9E51D6E61F206A540048337E /* GamesScoreboardController.swift in Sources */,
 				B7B9A6E71E2F47EC006689C9 /* MySoalIntegratedTVCell.swift in Sources */,
 				B74D337F1DF6A2A200208A03 /* DBSettings.swift in Sources */,
+				B7B113AC1FB40F3100557DEF /* MainMenuV3CVC.swift in Sources */,
 				B7EF41A91E37072100262A0B /* MyHealthIntegratedTVCell.swift in Sources */,
 				9EC034BA1FB5A25D00C0B42A /* Product.swift in Sources */,
 				B7DC3A191E14EEE500951852 /* AboutTVC.swift in Sources */,
@@ -1181,7 +1290,9 @@
 				B75C5AAA1E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift in Sources */,
 				B7A837021E3891CE004F7333 /* MyHealthBPDetailsTVC.swift in Sources */,
 				9E4462231F78D83700F82591 /* Extension.swift in Sources */,
+				B718871B1FB2F2F20039BA06 /* AfterLoginV3NC.swift in Sources */,
 				9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */,
+				B7B113AF1FB4163500557DEF /* MainMenuProcess.swift in Sources */,
 				9E4462211F78CE3300F82591 /* MainMenuCVC.swift in Sources */,
 				B73966271E1CA3FF00B270A1 /* MyKomunitiMainTVC.swift in Sources */,
 				B73EF08C1E41B8F9001B3ADB /* MyShopIntegratedTVCell.swift in Sources */,
@@ -1192,10 +1303,13 @@
 				9E12E2AC1F39789E003D15FA /* MyQuizQuestionSelectTableVC.swift in Sources */,
 				B7DC3A0B1E13B6AD00951852 /* DBMenus.swift in Sources */,
 				9EDD293A1F1731FF0004DA52 /* MyKomunitiPostCell.swift in Sources */,
+				B71887111FB18BA40039BA06 /* LoginV3ProcessorVC.swift in Sources */,
 				B76D256B1E56DBBA00280415 /* SettingsExtendedTVC.swift in Sources */,
+				B7CAB5B51FB545E0002785AC /* SettingsV3TVC.swift in Sources */,
 				B73EF08A1E41B8B1001B3ADB /* MyShopMainMenuTVC.swift in Sources */,
 				9E12E2AF1F397BF5003D15FA /* MainMenuTVC.swift in Sources */,
 				B74D33811DF6AAE300208A03 /* DBWebServices.swift in Sources */,
+				B718870F1FB18B640039BA06 /* LoginData.swift in Sources */,
 				B791677C1E36065500383CAD /* MySkoolDetailsTVCell.swift in Sources */,
 				B73966361E1E3C2700B270A1 /* ZParsers.swift in Sources */,
 				B7A29D4C1E44263B00836C19 /* ZImages.swift in Sources */,
@@ -1222,12 +1336,15 @@
 				9E02B6971F1EF5A90028A230 /* LoadingSpinner.swift in Sources */,
 				9E12E2B11F397CD8003D15FA /* DBStrings.swift in Sources */,
 				9EC034B71FB5576200C0B42A /* MyShopDetailsVC.swift in Sources */,
+				B71887171FB2B9F90039BA06 /* MySoalProcess.swift in Sources */,
 				B73966301E1DF63500B270A1 /* ZNetwork.swift in Sources */,
 				B7DC3A1B1E14F42A00951852 /* DBImages.swift in Sources */,
 				B7EF41A71E3706F000262A0B /* MyHealthBloodPressureTVC.swift in Sources */,
 				9E12E2C61F3B14E9003D15FA /* MyPlaceAddPlaceTVCell.swift in Sources */,
 				B7DC39E01E1268E700951852 /* MMMenuListTVCell.swift in Sources */,
 				B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */,
+				B718871D1FB2F33F0039BA06 /* BeforeLoginV3NC.swift in Sources */,
+				B70273EA1F6FACE8003F7BD7 /* LoginV3VC.swift in Sources */,
 				B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */,
 				9EC034B21FB2FD0E00C0B42A /* ErrorCell.swift in Sources */,
 				B7A3C6F71DE82F5600CB7864 /* AppDelegate.swift in Sources */,
@@ -1333,7 +1450,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ingeniworks.dashboardi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/dashboardv2-modules/dashboardv2-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

@@ -12,6 +12,13 @@ import UIKit
 
 class DBColorSet: NSObject {
     
+    /******** DASHBOARD V3 **********/
+    
+    static let dashboardV3_MainColor: UIColor = UIColor.init(red: 0.246, green: 0.334, blue: 0.686, alpha: 1.0)
+    static let dashboardV3_MinorColor: UIColor = UIColor.init(red: 0.319, green: 0.442, blue: 0.931, alpha: 1.0)
+    
+    /******** DASHBOARD V2 **********/
+    
     // Color reference from Sip (macOS App). Color name is Bay of Many
     static let dashboardMainColor: UIColor = UIColor.init(red: 0.18, green: 0.21, blue: 0.55, alpha: 1.0)
     static let dashboardMinorColor: UIColor = UIColor.init(red: 0.089, green: 0.124, blue: 0.262, alpha: 1.0)
