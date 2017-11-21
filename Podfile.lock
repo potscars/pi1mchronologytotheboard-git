@@ -69,6 +69,7 @@ DEPENDENCIES:
   - ImageSlideshow/Alamofire
   - ImageSlideshow/Kingfisher
   - ImageSlideshow/SDWebImage
+  - SDWebImage
   - NVActivityIndicatorView
   - SVProgressHUD
   - youtube-ios-player-helper

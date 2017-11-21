@@ -43,3 +43,26 @@ extension UIColor {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
     }
 }
+
+//MARK: - Myshop punya extension.
+extension UINavigationController {
+    
+    func changeMyShopNavigationBarColor() {
+        
+        self.navigationBar.barTintColor = DBColorSet.myShopColor
+        self.navigationBar.tintColor = UIColor.white
+        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+}
+
+extension UICollectionView {
+    //Func ni guna untuk collectionview myshop sahaja.
+    func registerMyShopNibNameToCollectionView() {
+        
+        let errorNib = UINib(nibName: "ErrorCollectionCell", bundle: nil)
+        self.register(errorNib, forCellWithReuseIdentifier: "errorCollectionCell")
+        
+        let nibName = UINib(nibName: MyShopIdentifier.MyShopProductNibName, bundle: nil)
+        self.register(nibName, forCellWithReuseIdentifier: MyShopIdentifier.ProductCell)
+    }
+}
