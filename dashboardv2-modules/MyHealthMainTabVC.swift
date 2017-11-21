@@ -22,6 +22,15 @@ class MyHealthMainTabVC: UITabBarController {
         let secondTabBar: UITabBarItem = self.tabBar.items![1] as UITabBarItem
        // ZGraphics.adjustTextBarToTextOnly(tabBarItem: firstTabBar, normalStateDefinedAttributes: [NSFontAttributeName:UIFont.init(name: "RobotoCondensed-Regular", size: 18.0)!,NSForegroundColorAttributeName:UIColor.lightGray], selectedStateDefinedAttributes: [NSFontAttributeName:UIFont.init(name: "RobotoCondensed-Bold", size: 18.0)!,NSForegroundColorAttributeName:UIColor.white])
         //ZGraphics.adjustTextBarToTextOnly(tabBarItem: secondTabBar, normalStateDefinedAttributes: [NSFontAttributeName:UIFont.init(name: "RobotoCondensed-Regular", size: 18.0)!,NSForegroundColorAttributeName:UIColor.lightGray], selectedStateDefinedAttributes: [NSFontAttributeName:UIFont.init(name: "RobotoCondensed-Bold", size: 18.0)!,NSForegroundColorAttributeName:UIColor.white])
+        
+        let np: NetworkProcessor = NetworkProcessor.init(DBSettings.myHealthKospenDataURL)
+        let tokens: String = UserDefaults.standard.object(forKey: "SuccessLoggerDashboardToken") as! String
+        np.postRequestJSONFromUrl(["token":tokens], completion: { (result, response) in
+            
+            let mykspn: MyHealthKospenData = MyHealthKospenData.init(resultFromServer: result! as NSDictionary)
+            print("kospen data: \(mykspn.height), glu data: \(mykspn.glucoseRecord.object(atIndex: 0).diabetes), wtrec data:\(mykspn.weightRecord.object(atIndex: 0).bmi), bprec data: \(mykspn.bloodPressureRecord.object(atIndex: 0).dyastolic)")
+            
+        })
 
     }
 
@@ -42,3 +51,5 @@ class MyHealthMainTabVC: UITabBarController {
     */
 
 }
+
+

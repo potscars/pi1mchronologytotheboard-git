@@ -348,18 +348,24 @@ class MainMenuTVC: UITableViewController {
         
         if let breakUpObject: NSDictionary = data.value(forKey: "object") as? NSDictionary {
             
-            if(breakUpObject.value(forKey: "status") as! Int == 1) {
+            if breakUpObject.value(forKey: "status") != nil {
                 
-                print("User already Verified")
+                if(breakUpObject.value(forKey: "status") as! Int == 1) {
                 
-                self.myQuizVerifiedUser = true
-            }
-            else {
+                    print("User already Verified")
                 
-                self.myQuizVerifiedUser = false
+                    self.myQuizVerifiedUser = true
+                }
+                else {
+                
+                    self.myQuizVerifiedUser = false
+                }
+                
+            } else {
+                print("Quiz data nil.")
             }
         } else {
-            print("Quiz data nil.")
+            print("Quiz data dict nil.")
         }
     }
     

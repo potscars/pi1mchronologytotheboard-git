@@ -64,6 +64,9 @@
 		B718871D1FB2F33F0039BA06 /* BeforeLoginV3NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871C1FB2F33F0039BA06 /* BeforeLoginV3NC.swift */; };
 		B718871F1FB2F35C0039BA06 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871E1FB2F35C0039BA06 /* InitialVC.swift */; };
 		B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B71887211FB300550039BA06 /* ic_abstbg1.png */; };
+		B71BA9B41FBBDB0100CD44B1 /* MyHealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */; };
+		B71BA9B61FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B51FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift */; };
+		B71BA9B81FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B71FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift */; };
 		B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A51E42D53400F1BF99 /* ic_chat.png */; };
 		B72B91A81E42D53400F1BF99 /* ic_view.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A61E42D53400F1BF99 /* ic_view.png */; };
 		B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */; };
@@ -121,6 +124,9 @@
 		B7A837021E3891CE004F7333 /* MyHealthBPDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */; };
 		B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */; };
 		B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */; };
+		B7B07DF01FBECB5100F0743B /* MyHealthGlucoseTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B07DEF1FBECB5100F0743B /* MyHealthGlucoseTV.swift */; };
+		B7B07DF21FBED85C00F0743B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B07DF11FBED85C00F0743B /* CustomLabel.swift */; };
+		B7B07DF41FBEDB1F00F0743B /* CustomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B07DF31FBEDB1F00F0743B /* CustomString.swift */; };
 		B7B113AC1FB40F3100557DEF /* MainMenuV3CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */; };
 		B7B113AF1FB4163500557DEF /* MainMenuProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */; };
 		B7B113B11FB4298900557DEF /* MainMenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113B01FB4298900557DEF /* MainMenuData.swift */; };
@@ -172,6 +178,7 @@
 		B7EF41A71E3706F000262A0B /* MyHealthBloodPressureTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF41A61E3706F000262A0B /* MyHealthBloodPressureTVC.swift */; };
 		B7EF41A91E37072100262A0B /* MyHealthIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF41A81E37072100262A0B /* MyHealthIntegratedTVCell.swift */; };
 		B7EF41AB1E37074600262A0B /* MyHealthBodyWeightTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF41AA1E37074600262A0B /* MyHealthBodyWeightTVC.swift */; };
+		B7F9156A1FBA86E200499C0F /* MyHealthProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F915691FBA86E200499C0F /* MyHealthProfileTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,6 +248,9 @@
 		B718871C1FB2F33F0039BA06 /* BeforeLoginV3NC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeLoginV3NC.swift; sourceTree = "<group>"; };
 		B718871E1FB2F35C0039BA06 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		B71887211FB300550039BA06 /* ic_abstbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_abstbg1.png; path = "[[Resources]]/ic_abstbg1.png"; sourceTree = SOURCE_ROOT; };
+		B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthData.swift; sourceTree = "<group>"; };
+		B71BA9B51FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthGlucoseTVC.swift; sourceTree = "<group>"; };
+		B71BA9B71FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthGlucoseTVCell.swift; sourceTree = "<group>"; };
 		B72B91A51E42D53400F1BF99 /* ic_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chat.png; path = "[[Resources]]/ic_chat.png"; sourceTree = SOURCE_ROOT; };
 		B72B91A61E42D53400F1BF99 /* ic_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_view.png; path = "[[Resources]]/ic_view.png"; sourceTree = SOURCE_ROOT; };
 		B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopLatestProdTVC.swift; sourceTree = "<group>"; };
@@ -300,6 +310,9 @@
 		B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVC.swift; sourceTree = "<group>"; };
 		B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVCell.swift; sourceTree = "<group>"; };
 		B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsIntegratedTVCell.swift; sourceTree = "<group>"; };
+		B7B07DEF1FBECB5100F0743B /* MyHealthGlucoseTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthGlucoseTV.swift; sourceTree = "<group>"; };
+		B7B07DF11FBED85C00F0743B /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		B7B07DF31FBEDB1F00F0743B /* CustomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomString.swift; sourceTree = "<group>"; };
 		B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuV3CVC.swift; sourceTree = "<group>"; };
 		B7B113AE1FB4163500557DEF /* MainMenuProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuProcess.swift; sourceTree = "<group>"; };
 		B7B113B01FB4298900557DEF /* MainMenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuData.swift; sourceTree = "<group>"; };
@@ -351,6 +364,7 @@
 		B7EF41A61E3706F000262A0B /* MyHealthBloodPressureTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBloodPressureTVC.swift; sourceTree = "<group>"; };
 		B7EF41A81E37072100262A0B /* MyHealthIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthIntegratedTVCell.swift; sourceTree = "<group>"; };
 		B7EF41AA1E37074600262A0B /* MyHealthBodyWeightTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBodyWeightTVC.swift; sourceTree = "<group>"; };
+		B7F915691FBA86E200499C0F /* MyHealthProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthProfileTVC.swift; sourceTree = "<group>"; };
 		DAB8DD4C2CDFE54A7E9DAD25 /* Pods-dashboardv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashboardv2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dashboardv2/Pods-dashboardv2.debug.xcconfig"; sourceTree = "<group>"; };
 		EEA18EF89B5F8092672FDE70 /* Pods_dashboardv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dashboardv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -531,6 +545,7 @@
 		B71887061FB166530039BA06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B71BA9B21FBBDAAE00CD44B1 /* MyHealth */,
 				B7B113AD1FB415F000557DEF /* MainMenu */,
 				B71887131FB2B9CD0039BA06 /* MySoal */,
 				B71887121FB2B9C60039BA06 /* MySkool */,
@@ -617,6 +632,14 @@
 				B71887211FB300550039BA06 /* ic_abstbg1.png */,
 			);
 			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		B71BA9B21FBBDAAE00CD44B1 /* MyHealth */ = {
+			isa = PBXGroup;
+			children = (
+				B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */,
+			);
+			path = MyHealth;
 			sourceTree = "<group>";
 		};
 		B72B91A41E42D52200F1BF99 /* MyShopIcons */ = {
@@ -769,6 +792,7 @@
 		B7A3C7081DEAEDB200CB7864 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B7B07DF11FBED85C00F0743B /* CustomLabel.swift */,
 				B7A3C7091DEAEE2300CB7864 /* ZGraphics.swift */,
 				B74D33761DF6649300208A03 /* ZUIs.swift */,
 				B78E62891DF7E00900D9767D /* ZDeviceInfo.swift */,
@@ -783,6 +807,7 @@
 				9E4462221F78D83700F82591 /* Extension.swift */,
 				9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */,
 				B74DADA51FA868FA00951F2E /* DataSecurity.swift */,
+				B7B07DF31FBEDB1F00F0743B /* CustomString.swift */,
 			);
 			name = Libraries;
 			path = "dashboardv2-modules";
@@ -977,6 +1002,10 @@
 				B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */,
 				B75C5AA71E3AEC3C009FD4E6 /* MyHealthBWDetailsTVC.swift */,
 				B75C5AA91E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift */,
+				B7F915691FBA86E200499C0F /* MyHealthProfileTVC.swift */,
+				B71BA9B51FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift */,
+				B71BA9B71FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift */,
+				B7B07DEF1FBECB5100F0743B /* MyHealthGlucoseTV.swift */,
 			);
 			name = MyHealth;
 			sourceTree = "<group>";
@@ -1116,6 +1145,7 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
@@ -1130,6 +1160,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
@@ -1190,15 +1221,18 @@
 			files = (
 				B71887151FB2B9E90039BA06 /* MySkoolProcess.swift in Sources */,
 				B78E628A1DF7E00900D9767D /* ZDeviceInfo.swift in Sources */,
+				B71BA9B81FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift in Sources */,
 				B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */,
 				B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */,
 				9E603B3B1FB1955600E7B637 /* MyShopTempatanCVC.swift in Sources */,
 				B73BD8061E51B12F0036EBEF /* AImportanceDBTVCell.swift in Sources */,
 				9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */,
+				B7B07DF01FBECB5100F0743B /* MyHealthGlucoseTV.swift in Sources */,
 				9E603B391FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift in Sources */,
 				B739662D1E1CDBE900B270A1 /* MyKomunitiDetailsTVCell.swift in Sources */,
 				B7B113B11FB4298900557DEF /* MainMenuData.swift in Sources */,
 				B7DC39DE1E12678E00951852 /* MMImageTransTVCell.swift in Sources */,
+				B7B07DF21FBED85C00F0743B /* CustomLabel.swift in Sources */,
 				B79167781E35D74D00383CAD /* MySkoolIntegratedTVCell.swift in Sources */,
 				9E12E2C91F3B14E9003D15FA /* StatesMenuTVC.swift in Sources */,
 				B7A3C70A1DEAEE2300CB7864 /* ZGraphics.swift in Sources */,
@@ -1234,6 +1268,7 @@
 				9E5998611F44095500542304 /* Location.swift in Sources */,
 				B7DC39E41E12847500951852 /* MMMenuGridCVCell.swift in Sources */,
 				9E12E2D11F3C63A7003D15FA /* Catergory.swift in Sources */,
+				B71BA9B61FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift in Sources */,
 				B7A3C6F91DE82F5600CB7864 /* LoginVC.swift in Sources */,
 				9EB639C41F2AEBBF00FF6543 /* AlertController.swift in Sources */,
 				B74F0EBD1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift in Sources */,
@@ -1271,6 +1306,7 @@
 				B7A29D4C1E44263B00836C19 /* ZImages.swift in Sources */,
 				B7DC3A271E15014200951852 /* ABuildInfoTVCell.swift in Sources */,
 				9E4462331F7CEE8A00F82591 /* MyShopMenuBar.swift in Sources */,
+				B71BA9B41FBBDB0100CD44B1 /* MyHealthData.swift in Sources */,
 				9E12E2CA1F3B14E9003D15FA /* CategoryMenuTVC.swift in Sources */,
 				B794CF3D1E3994BF00C40BF9 /* ZDateTime.swift in Sources */,
 				9E603B371FB1952800E7B637 /* MyShopPopularCVC.swift in Sources */,
@@ -1278,6 +1314,7 @@
 				B74D33771DF6649300208A03 /* ZUIs.swift in Sources */,
 				9E5998631F4439BF00542304 /* Place.swift in Sources */,
 				B79167731E35BBF500383CAD /* MySoalDetailsTVCell.swift in Sources */,
+				B7B07DF41FBEDB1F00F0743B /* CustomString.swift in Sources */,
 				B7A837001E3887B4004F7333 /* MyHealthMainTabVC.swift in Sources */,
 				B79167761E35D71000383CAD /* MySkoolMainTVC.swift in Sources */,
 				9E603B351FB1950300E7B637 /* MyShopTerkiniCVC.swift in Sources */,
@@ -1287,6 +1324,7 @@
 				9E12E2AD1F39789E003D15FA /* MyQuizQuestionSelectTVCell.swift in Sources */,
 				9E603B4B1FB1C42800E7B637 /* MyShopCommentCell.swift in Sources */,
 				9EDD29381F172F780004DA52 /* MyKomunitiPostVC.swift in Sources */,
+				B7F9156A1FBA86E200499C0F /* MyHealthProfileTVC.swift in Sources */,
 				9E5998651F45835E00542304 /* SearchedResultCell.swift in Sources */,
 				9E02B6971F1EF5A90028A230 /* LoadingSpinner.swift in Sources */,
 				9E12E2B11F397CD8003D15FA /* DBStrings.swift in Sources */,
@@ -1407,7 +1445,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

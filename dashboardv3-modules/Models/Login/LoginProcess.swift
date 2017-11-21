@@ -99,13 +99,13 @@ class UserData: NSObject {
     /// User Site Name. Return as String
     var siteName: String = ""
     
-    /// Return as String
+    /// User Site Code. Return as String
     var siteCode: String = ""
     
-    /// Return as Integer
+    /// User Login Status. Return as Integer
     var loginStatus: Int = 0
     
-    /// Return as String
+    /// Session token. Return as String
     var token: String = ""
     
     override init() {
@@ -127,7 +127,7 @@ class UserData: NSObject {
 
 class ChangeSettingsValue: NSObject {
     
-    /// Read or set the Remember Me value.
+    /// Read or set the Remember Me value. Returns boolean.
    static var rememberMe: Bool {
         get {
             return UserDefaults.standard.object(forKey: "RememberLogger") as? Bool ?? true
@@ -136,6 +136,7 @@ class ChangeSettingsValue: NSObject {
         }
     }
     
+    /// Read or set the user is logged in or not value. Returns boolean.
     static var loggedIn: Bool {
         get {
             return UserDefaults.standard.object(forKey: "SuccessLoggerIsLogin") as? Bool ?? false
@@ -144,6 +145,7 @@ class ChangeSettingsValue: NSObject {
         }
     }
     
+    /// Clears all user credentials session.
     static func clearAllUserData() {
         
         UserDefaults.standard.set(false, forKey: "SuccessLoggerIsLogin")

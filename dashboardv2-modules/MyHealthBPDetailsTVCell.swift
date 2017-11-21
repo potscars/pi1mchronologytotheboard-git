@@ -65,12 +65,20 @@ class MyHealthBPDetailsTVCell: UITableViewCell {
     
     func setBPData(data:NSDictionary)
     {
-        uilMHBPDTVCBPData.text = data.value(forKey: "MYHEALTH_BLOOD_PRESSURE") as? String ?? "Tidak Diketahui"
+        if data.value(forKey: "MYHEALTH_BLOOD_PRESSURE") != nil {
+            uilMHBPDTVCBPData.text = (data.value(forKey: "MYHEALTH_BLOOD_PRESSURE") as! String)
+        } else {
+            uilMHBPDTVCBPData.text = "Tidak Diketahui"
+        }
     }
     
     func setHRData(data:NSDictionary)
     {
-        uilMHBPDTVCHRData.text = data.value(forKey: "MYHEALTH_HEART_RATE") as? String ?? "Tidak Diketahui"
+        if data.value(forKey: "MYHEALTH_HEART_RATE") != nil {
+            uilMHBPDTVCHRData.text = (data.value(forKey: "MYHEALTH_HEART_RATE") as! String)
+        } else {
+            uilMHBPDTVCHRData.text = "Tidak Diketahui"
+        }
     }
     
     func setBPStatusData(data:NSDictionary)

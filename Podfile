@@ -10,6 +10,7 @@ target 'dashboardv2' do
 pod 'SVProgressHUD'
 pod 'NVActivityIndicatorView'
 pod 'youtube-ios-player-helper'
+pod 'Charts'
 pod 'Cosmos', '~> 8.0'
 pod 'ImageSlideshow'
 pod 'ImageSlideshow/Alamofire'

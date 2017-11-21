@@ -107,9 +107,9 @@ class SettingsV3TVC: UITableViewController {
     
     func exitToLogin() {
         
-        let logoutAlertController: UIAlertController = UIAlertController.init(title: DBStrings.DB_MODULE_MYQUIZ_PHONEASK_TITLE_MS, message: DBStrings.DB_MODULE_MYQUIZ_PHONEASK_DESC_MS, preferredStyle: UIAlertControllerStyle.alert)
+        let logoutAlertController: UIAlertController = UIAlertController.init(title: DBStrings.DB_APP_SETTINGS_LOGOUT_TITLE_MS, message: DBStrings.DB_APP_SETTINGS_LOGOUT_MESSAGE_MS, preferredStyle: UIAlertControllerStyle.alert)
         
-        let logoutCancelAction: UIAlertAction = UIAlertAction.init(title: DBStrings.DB_BUTTON_CANCEL_LABEL_MS, style: UIAlertActionStyle.default, handler: { action -> Void in
+        let logoutCancelAction: UIAlertAction = UIAlertAction.init(title: DBStrings.DB_BUTTON_NO_LABEL_MS, style: UIAlertActionStyle.default, handler: { action -> Void in
             
             logoutAlertController.dismiss(animated: true, completion: nil)
             

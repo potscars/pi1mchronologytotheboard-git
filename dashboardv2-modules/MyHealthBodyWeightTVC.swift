@@ -103,6 +103,8 @@ class MyHealthBodyWeightTVC: UITableViewController {
             
             //self.haveData = true
             
+            //if extractNotificationWrapper.value(forKey: "W_data") != nil { }
+            
             let unwrapBPData: NSDictionary = extractNotificationWrapper.value(forKey: "W_data") as! NSDictionary
             let pagingMaxFromAPI: Int = unwrapBPData.value(forKey: "last_page") as! Int
             
@@ -116,11 +118,11 @@ class MyHealthBodyWeightTVC: UITableViewController {
                     
                     let bmiInDouble: Double = Double(data.value(forKey: "WeightValue") as! String)!
                     
-                    dataArrays.add(["MYHEALTH_BW_BMI":"\(String(describing: data.value(forKey: "BMI"))) mata",
-                        "MYHEALTH_BW_BMI_RAW":"\(String(describing: data.value(forKey: "BMI")))",
+                    dataArrays.add(["MYHEALTH_BW_BMI":"\(String(describing: data.value(forKey: "BMI")!)) mata",
+                        "MYHEALTH_BW_BMI_RAW":"\(String(describing: data.value(forKey: "BMI")!))",
                         "MYHEALTH_BW_WEIGHT":"\(Int(bmiInDouble)) kg",
                         "MYHEALTH_BW_WEIGHT_RAW":data.value(forKey: "WeightValue"),
-                        "MYHEALTH_BW_BONEMASS":"\(String(describing: data.value(forKey: "BoneValue")))",
+                        "MYHEALTH_BW_BONEMASS":"\(String(describing: data.value(forKey: "BoneValue")!))",
                         "MYHEALTH_BW_FATWEIGHT":data.value(forKey: "FatValue"),
                         "MYHEALTH_BW_LEANWEIGHT":data.value(forKey: "LeanWeight"),
                         "MYHEALTH_BW_MUSCLEMASS":data.value(forKey: "MuscaleValue"),
@@ -212,7 +214,7 @@ class MyHealthBodyWeightTVC: UITableViewController {
                 //MKPublicLoadMoreCellID
                 reloadCell = tableView.dequeueReusableCell(withIdentifier: "MyHealthBWLoadMoreCellID") as? MyHealthIntegratedTVCell
                 reloadCell?.backgroundColor = DBColorSet.myHealthColor
-                reloadCell?.uilMHITVCLoadMore.textColor = UIColor.white
+                reloadCell?.uilMHITVCBWLoadMore.textColor = UIColor.white
                 
                 return reloadCell!
             }

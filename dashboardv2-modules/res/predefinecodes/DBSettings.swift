@@ -39,6 +39,8 @@ class DBSettings: NSObject {
     static let mySkoolPetiMasukURL: String = "\(mySkoolMainURL)/walls/dashboardv2_json_wall/"
     static let myHealthBPURL: String = "\(mainURL)/api/myhealth/bp-records/"
     static let myHealthBWURL: String = "\(mainURL)/api/myhealth/weight-records/"
+    static let myHealthKospenVerifyURL: String = "\(mainURL)/api/myhealth/test-module"
+    static let myHealthKospenDataURL: String = "\(mainURL)/api/myhealth/myhealth-details"
     static let myShopProductDetailsURL: String = "\(myShopMainURL)/api/product/find-product-detail"
     static let myShopLatestProductURL: String = "\(myShopMainURL)/api/product/latest-product-myshop"
     static let myShopPopularProductURL: String = "\(myShopMainURL)/api/product/popular"

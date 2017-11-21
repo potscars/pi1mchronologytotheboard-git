@@ -139,8 +139,20 @@ class MyHealthIntegratedTVCell: UITableViewCell {
         
         let bpColorandClassification: NSArray = DBColorSet.setMyHealthBPIndicatorColor(hexColor: data.value(forKey: "MYHEALTH_COLOR_INDICATOR") as! String)
         
-        uilMHITVCBPPressure.text = data.value(forKey: "MYHEALTH_BLOOD_PRESSURE") as? String ?? "Tiada Maklumat"
-        uilMHITVCBPHBeat.text = data.value(forKey: "MYHEALTH_HEART_RATE") as? String ?? "Tiada Maklumat"
+        if data.value(forKey: "MYHEALTH_BLOOD_PRESSURE") != nil {
+            uilMHITVCBPPressure.text = (data.value(forKey: "MYHEALTH_BLOOD_PRESSURE") as! String)
+        }
+        else {
+            uilMHITVCBPPressure.text = "Tiada Maklumat"
+        }
+        
+        if data.value(forKey: "MYHEALTH_HEART_RATE") != nil {
+            uilMHITVCBPHBeat.text = (data.value(forKey: "MYHEALTH_HEART_RATE") as! String)
+        }
+        else {
+            uilMHITVCBPHBeat.text = "Tiada Maklumat"
+        }
+       
         uilMHITVCBPStatus.text = bpColorandClassification.object(at: 2) as? String ?? "Tidak Diketahui"
         uilMHITVCBPStatus.textColor = bpColorandClassification.object(at: 0) as? UIColor ?? UIColor.init(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
         self.setBPLevelIndicator(level: bpColorandClassification.object(at: 3) as! Int)
@@ -227,9 +239,9 @@ class MyHealthIntegratedTVCell: UITableViewCell {
     
     func updateBodyWeightInfo(data:NSDictionary) {
         
-        print("Converting \(data.value(forKey: "MYHEALTH_BW_BMI_RAW") as! String)")
-        
-        let bmiInDouble: Double = Double(data.value(forKey: "MYHEALTH_BW_BMI_RAW") as! String)!
+        //let bmiInDouble: Double = Double(data.value(forKey: "MYHEALTH_BW_BMI_RAW") as! String)!
+        let bmiInDouble: Double = NumberFormatter().number(from: String.init(format: "%@", data.value(forKey: "MYHEALTH_BW_BMI_RAW") as! String))!.doubleValue
+        print("bmiDouble: \(bmiInDouble)")
         let bmiStatus: NSArray = ZHealth.simpleBodyMassIndexForAsian(point: bmiInDouble)
         let bwColorandClassification: NSArray = DBColorSet.setMyHealthBWIndicatorColor(bmiPoints: bmiStatus.object(at: 1) as! Int)
         

@@ -115,8 +115,8 @@ class MyHealthBloodPressureTVC: UITableViewController {
                     
                     if let dataDictionary = data as? NSDictionary {
                         
-                        dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(String(describing: dataDictionary.value(forKey: "HP")))/\(String(describing: dataDictionary.value(forKey: "LP"))) \(String(describing: dataDictionary.value(forKey: "BPUnitText")))",
-                            "MYHEALTH_HEART_RATE":"\(String(describing: dataDictionary.value(forKey: "HR"))) denyutan/minit",
+                        dataArrays.add(["MYHEALTH_BLOOD_PRESSURE":"\(String(describing: dataDictionary.value(forKey: "HP")!))/\(String(describing: dataDictionary.value(forKey: "LP")!)) \(String(describing: dataDictionary.value(forKey: "BPUnitText")!))",
+                            "MYHEALTH_HEART_RATE":"\(String(describing: dataDictionary.value(forKey: "HR")!)) denyutan/minit",
                             "MYHEALTH_BPL":dataDictionary.value(forKey: "BPL")!,
                             "MYHEALTH_COLOR_INDICATOR":dataDictionary.value(forKey: "color"),
                             "MYHEALTH_CHECKED_DATE":dataDictionary.value(forKey: "MdateTime")
