@@ -45,7 +45,7 @@ class MainMenuV3CVC: UICollectionViewController {
         
         self.configureBarButton()
         
-        getQuizEvent()
+        //getQuizEvent()
     }
     
     override func viewWillAppear(_ animated: Bool) {

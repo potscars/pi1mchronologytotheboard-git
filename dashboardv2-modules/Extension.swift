@@ -53,6 +53,13 @@ extension UINavigationController {
         self.navigationBar.tintColor = UIColor.white
         self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
+    
+    func changeKospenNavigationBarColor() {
+        
+        self.navigationBar.barTintColor = DBColorSet.myHealthColor
+        self.navigationBar.tintColor = UIColor.white
+        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
 }
 
 extension UICollectionView {

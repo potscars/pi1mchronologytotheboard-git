@@ -100,6 +100,48 @@ class ZGraphics: NSObject {
     {
         tableView.tableFooterView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.size.width, height: 1))
     }
+    
+    func createImageWithWords(_ firstValue: String, secondValue: String = "", imageView: UIImageView, fontSize: CGFloat) {
+        
+        for view in imageView.subviews {
+            view.removeFromSuperview()
+        }
+        
+        let firstLabel = UILabel()
+        firstLabel.textColor = UIColor.black
+        firstLabel.textAlignment = .center
+        firstLabel.font = UIFont(name: "Futura-Medium", size: fontSize)
+        firstLabel.text = firstValue
+        firstLabel.sizeToFit()
+        firstLabel.numberOfLines = 0
+        firstLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        if secondValue != "" {
+            
+            let secondLabel = UILabel()
+            secondLabel.textColor = UIColor.black
+            secondLabel.textAlignment = .center
+            secondLabel.font = UIFont(name: "Futura-Medium", size: fontSize - 2)
+            secondLabel.numberOfLines = 0
+            secondLabel.text = secondValue
+            
+            secondLabel.translatesAutoresizingMaskIntoConstraints = false
+            
+            imageView.addSubview(firstLabel)
+            imageView.addSubview(secondLabel)
+            
+            imageView.addConstraintsWithFormat("V:|-4-[v0]-(-5)-[v1]", views: firstLabel, secondLabel)
+            imageView.addConstraintsWithFormat("H:|[v0]|", views: firstLabel)
+            imageView.addConstraintsWithFormat("H:|[v0]|", views: secondLabel)
+
+        } else {
+            
+            imageView.addSubview(firstLabel)
+            
+            firstLabel.centerXAnchor.constraint(equalTo: imageView.centerXAnchor).isActive = true
+            firstLabel.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
+        }
+    }
 
 }
 

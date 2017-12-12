@@ -63,6 +63,9 @@ class DBSettings: NSObject {
     
     static let ytEmbeddedVideo: String = "-S3HyuE368Y"
     
+    //Kospen
+    static let kospenUserDetailsURL = "\(mainURL)/api/myhealth/myhealth-details"
+    
 }
 
 
