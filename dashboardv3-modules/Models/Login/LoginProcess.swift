@@ -40,27 +40,37 @@ class LoginProcess: NSObject {
         
         np.postRequestJSONFromUrl(dataToDict, completion: { (result, response) in
             
-            if(result!["success"] as! Int != 0) {
+            if(result != nil) {
                 
-                DispatchQueue.global(qos: .default).async {
-                    dataGot.status = result!["success"] as? Int ?? 0
-                    dataGot.serverMessage = result!["message"] as? String ?? "N/A"
-                    dataGot.userID = result!["user_id"] as? Int ?? 0
-                    dataGot.userFullName = result!["full_name"] as? String ?? "N/A"
-                    dataGot.userSiteID = result!["site_id"] as? Int ?? 0
-                    dataGot.userSiteName = result!["site_name"] as? String ?? "N/A"
-                    dataGot.userSiteCode = result!["sitecode"] as? String ?? "N/A"
-                    dataGot.userEmail = result!["email"] as? String ?? "N/A"
-                    dataGot.userEventID = result!["event_id"] as? Int ?? 0
-                    dataGot.userToken = result!["token"] as? String ?? "N/A"
+                if(result!["success"] as! Int != 0) {
+                
+                    DispatchQueue.global(qos: .default).async {
+                        dataGot.status = result!["success"] as? Int ?? 0
+                        dataGot.serverMessage = result!["message"] as? String ?? "N/A"
+                        dataGot.userID = result!["user_id"] as? Int ?? 0
+                        dataGot.userFullName = result!["full_name"] as? String ?? "N/A"
+                        dataGot.userSiteID = result!["site_id"] as? Int ?? 0
+                        dataGot.userSiteName = result!["site_name"] as? String ?? "N/A"
+                        dataGot.userSiteCode = result!["sitecode"] as? String ?? "N/A"
+                        dataGot.userEmail = result!["email"] as? String ?? "N/A"
+                        dataGot.userEventID = result!["event_id"] as? Int ?? 0
+                        dataGot.userToken = result!["token"] as? String ?? "N/A"
 
-                    dispatching.leave()
+                        dispatching.leave()
+                    }
+                }
+                else {
+                    DispatchQueue.global(qos: .default).async {
+                        dataGot.status = result!["success"] as? Int ?? 0
+                        dataGot.serverMessage = result!["message"] as? String ?? "Unknown Error"
+                        dispatching.leave()
+                    }
                 }
             }
             else {
                 DispatchQueue.global(qos: .default).async {
-                    dataGot.status = result!["success"] as? Int ?? 0
-                    dataGot.serverMessage = result!["message"] as? String ?? "Unknown Error"
+                    dataGot.status = 0
+                    dataGot.serverMessage = response!
                     dispatching.leave()
                 }
             }

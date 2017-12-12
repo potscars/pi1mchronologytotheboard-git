@@ -350,6 +350,7 @@
                     <connections>
                         <segue destination="wfA-lk-4Q5" kind="show" identifier="DB_GOTO_SETTINGS" id="w0r-rZ-GNa"/>
                         <segue destination="ubI-Fy-ZXu" kind="show" identifier="DB_GOTO_MYHEALTH" id="Anm-qe-for"/>
+                        <segue destination="soT-er-OEb" kind="show" identifier="DB_GOTO_MYKOMUNITI" id="ozf-9n-o4j"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eka-7O-vuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,7 +376,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaN-Un-Av6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631" y="-927"/>
+            <point key="canvasLocation" x="2910" y="-916"/>
         </scene>
         <!--Glukosa-->
         <scene sceneID="TXl-ln-xtu">
@@ -451,16 +452,128 @@
             </objects>
             <point key="canvasLocation" x="2910" y="-154.22535211267606"/>
         </scene>
+        <!--My Komuniti MainV3TVC-->
+        <scene sceneID="lof-IU-RaT">
+            <objects>
+                <tableViewController id="soT-er-OEb" customClass="MyKomunitiMainV3TVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hJg-TL-X22">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MKomunitiV3LoadMoreCellID" rowHeight="60" id="mYZ-Oh-3Lm">
+                                <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mYZ-Oh-3Lm" id="BzG-zt-BRA">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muatkan lagi..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgu-Gm-f5Q">
+                                            <rect key="frame" x="16" y="11" width="288" height="38"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bgu-Gm-f5Q" firstAttribute="bottom" secondItem="BzG-zt-BRA" secondAttribute="bottomMargin" id="1pd-yS-eve"/>
+                                        <constraint firstItem="bgu-Gm-f5Q" firstAttribute="trailing" secondItem="BzG-zt-BRA" secondAttribute="trailingMargin" id="8Jc-95-30m"/>
+                                        <constraint firstItem="bgu-Gm-f5Q" firstAttribute="leading" secondItem="BzG-zt-BRA" secondAttribute="leadingMargin" id="HLY-mD-3cw"/>
+                                        <constraint firstItem="bgu-Gm-f5Q" firstAttribute="top" secondItem="BzG-zt-BRA" secondAttribute="topMargin" id="cyf-95-vOR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MKomunitiV3NoConnCellID" rowHeight="300" id="ea4-Sb-LFb">
+                                <rect key="frame" x="0.0" y="88" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ea4-Sb-LFb" id="N8O-EJ-reL">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiada Sambungan Internet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75q-MA-8Vi">
+                                            <rect key="frame" x="16" y="229" width="288" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="75q-MA-8Vi" secondAttribute="height" multiplier="24:5" id="Zb0-Fr-XKe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_wifi_noconn.png" translatesAutoresizingMaskIntoConstraints="NO" id="k31-SK-17Z">
+                                            <rect key="frame" x="16" y="11" width="288" height="210"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="k31-SK-17Z" secondAttribute="height" multiplier="48:35" id="IHs-y6-Clu"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="k31-SK-17Z" firstAttribute="leading" secondItem="N8O-EJ-reL" secondAttribute="leadingMargin" id="414-kf-iia"/>
+                                        <constraint firstItem="75q-MA-8Vi" firstAttribute="trailing" secondItem="N8O-EJ-reL" secondAttribute="trailingMargin" id="8pv-fI-hDL"/>
+                                        <constraint firstItem="75q-MA-8Vi" firstAttribute="top" secondItem="k31-SK-17Z" secondAttribute="bottom" constant="8" id="Raa-BA-kQ9"/>
+                                        <constraint firstItem="75q-MA-8Vi" firstAttribute="leading" secondItem="N8O-EJ-reL" secondAttribute="leadingMargin" id="cpZ-uF-WMb"/>
+                                        <constraint firstItem="k31-SK-17Z" firstAttribute="top" secondItem="N8O-EJ-reL" secondAttribute="topMargin" id="gY7-wt-tgD"/>
+                                        <constraint firstItem="75q-MA-8Vi" firstAttribute="bottom" secondItem="N8O-EJ-reL" secondAttribute="bottomMargin" id="jpu-Ao-bjm"/>
+                                        <constraint firstItem="k31-SK-17Z" firstAttribute="trailing" secondItem="N8O-EJ-reL" secondAttribute="trailingMargin" id="n57-6T-d4T"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MKomunitiV3NoDataCellID" rowHeight="300" id="dVH-ZZ-8sZ">
+                                <rect key="frame" x="0.0" y="388" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dVH-ZZ-8sZ" id="X2C-Rp-YJp">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiada Pengumuman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mid-Ad-RcO">
+                                            <rect key="frame" x="16" y="229" width="288" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="mid-Ad-RcO" secondAttribute="height" multiplier="24:5" id="Dqz-CX-PyK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_annoucement.png" translatesAutoresizingMaskIntoConstraints="NO" id="NHG-jZ-MYD">
+                                            <rect key="frame" x="16" y="11" width="288" height="210"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="NHG-jZ-MYD" secondAttribute="height" multiplier="48:35" id="Bbf-Sm-tlA"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mid-Ad-RcO" firstAttribute="trailing" secondItem="X2C-Rp-YJp" secondAttribute="trailingMargin" id="0uT-9o-jZV"/>
+                                        <constraint firstItem="NHG-jZ-MYD" firstAttribute="leading" secondItem="X2C-Rp-YJp" secondAttribute="leadingMargin" id="5NL-s1-UXJ"/>
+                                        <constraint firstItem="mid-Ad-RcO" firstAttribute="top" secondItem="NHG-jZ-MYD" secondAttribute="bottom" constant="8" id="AwJ-1d-yAq"/>
+                                        <constraint firstItem="NHG-jZ-MYD" firstAttribute="trailing" secondItem="X2C-Rp-YJp" secondAttribute="trailingMargin" id="NBw-Vx-eOp"/>
+                                        <constraint firstItem="NHG-jZ-MYD" firstAttribute="top" secondItem="X2C-Rp-YJp" secondAttribute="topMargin" id="Tug-cv-9iK"/>
+                                        <constraint firstItem="mid-Ad-RcO" firstAttribute="bottom" secondItem="X2C-Rp-YJp" secondAttribute="bottomMargin" id="i5g-fC-Vh9"/>
+                                        <constraint firstItem="mid-Ad-RcO" firstAttribute="leading" secondItem="X2C-Rp-YJp" secondAttribute="leadingMargin" id="kuF-xj-avD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="soT-er-OEb" id="9gn-Ng-9pn"/>
+                            <outlet property="delegate" destination="soT-er-OEb" id="aaB-mi-fFJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Mc-Bx-Igf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2910" y="558.80281690140851"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ic_abstbg1.png" width="274" height="479"/>
+        <image name="ic_annoucement.png" width="300" height="300"/>
         <image name="ic_bannerdbshadow.png" width="500" height="200"/>
         <image name="ic_dbquiz_banner" width="163" height="32"/>
         <image name="ic_loadingColor.gif" width="256" height="256"/>
         <image name="ic_logodb.png" width="500" height="547"/>
         <image name="ic_mykomuniti.png" width="60" height="60"/>
+        <image name="ic_wifi_noconn.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZSU-KB-o2s"/>
+        <segue reference="w0r-rZ-GNa"/>
     </inferredMetricsTieBreakers>
 </document>
