@@ -75,6 +75,8 @@ class NetworkProcessor {
     
     func postRequestJSONFromUrl(_ params: [String: Any], completion: @escaping JSONDictionaryHandler) {
         
+        let sessions = URLSession.shared
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -89,7 +91,7 @@ class NetworkProcessor {
         }
         
         
-        let task = session.dataTask(with: request) { (data, response, error) in
+        let task = sessions.dataTask(with: request) { (data, response, error) in
             
             guard error == nil else { completion(nil, error?.localizedDescription); return }
             
@@ -101,9 +103,15 @@ class NetworkProcessor {
                     
                     if let data = data {
                         
-                        let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [String: Any]
+                        do {
+                            let jsonData = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                            
+                            completion(jsonData, nil)
+                        } catch {
+                            completion(nil, "Error getting data object.")
+                        }
                         
-                        completion(jsonData, nil)
+                        
                     } else {
                         completion(nil, httpResponsesString)
                     }

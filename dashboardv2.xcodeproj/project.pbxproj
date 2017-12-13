@@ -25,6 +25,7 @@
 		9E12E2CC1F3C0917003D15FA /* MyPlaceSearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2CB1F3C0917003D15FA /* MyPlaceSearchResultVC.swift */; };
 		9E12E2CE1F3C62F1003D15FA /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */; };
 		9E12E2D11F3C63A7003D15FA /* Catergory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2D01F3C63A7003D15FA /* Catergory.swift */; };
+		9E2796531FD5593900B55F4C /* KospenProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2796521FD5593900B55F4C /* KospenProfile.swift */; };
 		9E2B3C751FB9982100B54DF8 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B3C741FB9982100B54DF8 /* ProductDetails.swift */; };
 		9E4462211F78CE3300F82591 /* MainMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462201F78CE3300F82591 /* MainMenuCVC.swift */; };
 		9E4462231F78D83700F82591 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462221F78D83700F82591 /* Extension.swift */; };
@@ -37,6 +38,17 @@
 		9E5998631F4439BF00542304 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5998621F4439BF00542304 /* Place.swift */; };
 		9E5998651F45835E00542304 /* SearchedResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5998641F45835E00542304 /* SearchedResultCell.swift */; };
 		9E5998681F45A06D00542304 /* MyPlaceSearchedResultDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5998671F45A06D00542304 /* MyPlaceSearchedResultDetails.swift */; };
+		9E5C75401FC47CB7002A064A /* MyKospenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C753F1FC47CB7002A064A /* MyKospenHeaderView.swift */; };
+		9E5C75471FC5305B002A064A /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C75451FC5305B002A064A /* ChartCell.swift */; };
+		9E5C75481FC5305B002A064A /* ChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5C75461FC5305B002A064A /* ChartCell.xib */; };
+		9E5C754B1FC53162002A064A /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C75491FC53162002A064A /* RecordCell.swift */; };
+		9E5C754C1FC53162002A064A /* RecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5C754A1FC53162002A064A /* RecordCell.xib */; };
+		9E5C754F1FC66CF6002A064A /* KospenQuestionaireCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C754D1FC66CF6002A064A /* KospenQuestionaireCell.swift */; };
+		9E5C75501FC66CF6002A064A /* KospenQuestionaireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5C754E1FC66CF6002A064A /* KospenQuestionaireCell.xib */; };
+		9E5C75551FC6A7B2002A064A /* BMIRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C75531FC6A7B2002A064A /* BMIRecordCell.swift */; };
+		9E5C75561FC6A7B2002A064A /* BMIRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5C75541FC6A7B2002A064A /* BMIRecordCell.xib */; };
+		9E5C75581FC6CA94002A064A /* KospenTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C75571FC6CA94002A064A /* KospenTabbarController.swift */; };
+		9E5C755A1FC6D036002A064A /* MyKospenProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C75591FC6D036002A064A /* MyKospenProfileTVC.swift */; };
 		9E603B351FB1950300E7B637 /* MyShopTerkiniCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E603B341FB1950300E7B637 /* MyShopTerkiniCVC.swift */; };
 		9E603B371FB1952800E7B637 /* MyShopPopularCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E603B361FB1952800E7B637 /* MyShopPopularCVC.swift */; };
 		9E603B391FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E603B381FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift */; };
@@ -46,10 +58,13 @@
 		9E603B421FB1AC4100E7B637 /* MyShopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E603B411FB1AC4100E7B637 /* MyShopTabBar.swift */; };
 		9E603B4B1FB1C42800E7B637 /* MyShopCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E603B491FB1C42800E7B637 /* MyShopCommentCell.swift */; };
 		9E603B4C1FB1C42800E7B637 /* MyShopCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E603B4A1FB1C42800E7B637 /* MyShopCommentCell.xib */; };
+		9E842B411FCD5370005FBD75 /* KospenUserMeasureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */; };
+		9E842B421FCD5370005FBD75 /* KospenUserMeasureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */; };
 		9EB639C21F299F4900FF6543 /* GamesScoreboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */; };
 		9EB639C41F2AEBBF00FF6543 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C31F2AEBBF00FF6543 /* AlertController.swift */; };
 		9EC034B21FB2FD0E00C0B42A /* ErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034B01FB2FD0E00C0B42A /* ErrorCell.swift */; };
 		9EC034B31FB2FD0E00C0B42A /* ErrorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC034B11FB2FD0E00C0B42A /* ErrorCell.xib */; };
+		9EC034B51FB4338900C0B42A /* dashboardv3-modules in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034B41FB4338900C0B42A /* dashboardv3-modules */; };
 		9EC034B71FB5576200C0B42A /* MyShopDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034B61FB5576200C0B42A /* MyShopDetailsVC.swift */; };
 		9EC034BA1FB5A25D00C0B42A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034B91FB5A25D00C0B42A /* Product.swift */; };
 		9EC034BD1FB97C5500C0B42A /* ErrorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034BB1FB97C5500C0B42A /* ErrorCollectionCell.swift */; };
@@ -57,10 +72,13 @@
 		9ED76EB31FBC113B00962E85 /* ProductImagePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB21FBC113B00962E85 /* ProductImagePageVC.swift */; };
 		9ED76EB51FBC116800962E85 /* ProductImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB41FBC116800962E85 /* ProductImageVC.swift */; };
 		9ED76EB71FBC1EBD00962E85 /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB61FBC1EBD00962E85 /* ProductHeaderView.swift */; };
+		9EDB9B4E1FC4063E00F03CC0 /* LoginV3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB9B4D1FC4063E00F03CC0 /* LoginV3VC.swift */; };
 		9EDD29381F172F780004DA52 /* MyKomunitiPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD29371F172F780004DA52 /* MyKomunitiPostVC.swift */; };
 		9EDD293A1F1731FF0004DA52 /* MyKomunitiPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD29391F1731FF0004DA52 /* MyKomunitiPostCell.swift */; };
 		9EE2E60B1F4EA0F500041DE3 /* TopScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */; };
 		9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6ECA91F3D67950067C3C0 /* State.swift */; };
+		9EF6D39C1FC7CD4900EA25BB /* MyKospenProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6D39B1FC7CD4900EA25BB /* MyKospenProfileCell.swift */; };
+		9EF6D39E1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */; };
 		B718870D1FB184830039BA06 /* LoginProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870C1FB184830039BA06 /* LoginProcess.swift */; };
 		B718870F1FB18B640039BA06 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870E1FB18B640039BA06 /* LoginData.swift */; };
 		B71887111FB18BA40039BA06 /* LoginV3ProcessorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887101FB18BA40039BA06 /* LoginV3ProcessorVC.swift */; };
@@ -71,8 +89,8 @@
 		B718871F1FB2F35C0039BA06 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871E1FB2F35C0039BA06 /* InitialVC.swift */; };
 		B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B71887211FB300550039BA06 /* ic_abstbg1.png */; };
 		B71BA9B41FBBDB0100CD44B1 /* MyHealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */; };
-		B71BA9B61FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B51FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift */; };
-		B71BA9B81FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B71FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift */; };
+		B71BA9B61FBBE2B300CD44B1 /* MyKospenTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B51FBBE2B300CD44B1 /* MyKospenTVC.swift */; };
+		B71BA9B81FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B71FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift */; };
 		B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A51E42D53400F1BF99 /* ic_chat.png */; };
 		B72B91A81E42D53400F1BF99 /* ic_view.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A61E42D53400F1BF99 /* ic_view.png */; };
 		B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */; };
@@ -130,7 +148,7 @@
 		B7A837021E3891CE004F7333 /* MyHealthBPDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */; };
 		B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */; };
 		B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */; };
-		B7B07DF01FBECB5100F0743B /* MyHealthGlucoseTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B07DEF1FBECB5100F0743B /* MyHealthGlucoseTV.swift */; };
+		B7B07DF01FBECB5100F0743B /* MyKospenStatusTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B07DEF1FBECB5100F0743B /* MyKospenStatusTV.swift */; };
 		B7B07DF21FBED85C00F0743B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B07DF11FBED85C00F0743B /* CustomLabel.swift */; };
 		B7B07DF41FBEDB1F00F0743B /* CustomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B07DF31FBEDB1F00F0743B /* CustomString.swift */; };
 		B7B113AC1FB40F3100557DEF /* MainMenuV3CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */; };
@@ -215,6 +233,7 @@
 		9E12E2CB1F3C0917003D15FA /* MyPlaceSearchResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlaceSearchResultVC.swift; sourceTree = "<group>"; };
 		9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 		9E12E2D01F3C63A7003D15FA /* Catergory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catergory.swift; sourceTree = "<group>"; };
+		9E2796521FD5593900B55F4C /* KospenProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KospenProfile.swift; sourceTree = "<group>"; };
 		9E2B3C741FB9982100B54DF8 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		9E4462201F78CE3300F82591 /* MainMenuCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuCVC.swift; sourceTree = "<group>"; };
 		9E4462221F78D83700F82591 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -227,6 +246,17 @@
 		9E5998621F4439BF00542304 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		9E5998641F45835E00542304 /* SearchedResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchedResultCell.swift; sourceTree = "<group>"; };
 		9E5998671F45A06D00542304 /* MyPlaceSearchedResultDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlaceSearchedResultDetails.swift; sourceTree = "<group>"; };
+		9E5C753F1FC47CB7002A064A /* MyKospenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenHeaderView.swift; sourceTree = "<group>"; };
+		9E5C75451FC5305B002A064A /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		9E5C75461FC5305B002A064A /* ChartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCell.xib; sourceTree = "<group>"; };
+		9E5C75491FC53162002A064A /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
+		9E5C754A1FC53162002A064A /* RecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordCell.xib; sourceTree = "<group>"; };
+		9E5C754D1FC66CF6002A064A /* KospenQuestionaireCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KospenQuestionaireCell.swift; sourceTree = "<group>"; };
+		9E5C754E1FC66CF6002A064A /* KospenQuestionaireCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KospenQuestionaireCell.xib; sourceTree = "<group>"; };
+		9E5C75531FC6A7B2002A064A /* BMIRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIRecordCell.swift; sourceTree = "<group>"; };
+		9E5C75541FC6A7B2002A064A /* BMIRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMIRecordCell.xib; sourceTree = "<group>"; };
+		9E5C75571FC6CA94002A064A /* KospenTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KospenTabbarController.swift; sourceTree = "<group>"; };
+		9E5C75591FC6D036002A064A /* MyKospenProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenProfileTVC.swift; sourceTree = "<group>"; };
 		9E603B341FB1950300E7B637 /* MyShopTerkiniCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShopTerkiniCVC.swift; sourceTree = "<group>"; };
 		9E603B361FB1952800E7B637 /* MyShopPopularCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShopPopularCVC.swift; sourceTree = "<group>"; };
 		9E603B381FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShopTinggiPernilaianCVC.swift; sourceTree = "<group>"; };
@@ -236,11 +266,13 @@
 		9E603B411FB1AC4100E7B637 /* MyShopTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShopTabBar.swift; sourceTree = "<group>"; };
 		9E603B491FB1C42800E7B637 /* MyShopCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShopCommentCell.swift; sourceTree = "<group>"; };
 		9E603B4A1FB1C42800E7B637 /* MyShopCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyShopCommentCell.xib; sourceTree = "<group>"; };
+		9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KospenUserMeasureCell.swift; sourceTree = "<group>"; };
+		9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KospenUserMeasureCell.xib; sourceTree = "<group>"; };
 		9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesScoreboardCell.swift; sourceTree = "<group>"; };
 		9EB639C31F2AEBBF00FF6543 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		9EC034B01FB2FD0E00C0B42A /* ErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCell.swift; sourceTree = "<group>"; };
 		9EC034B11FB2FD0E00C0B42A /* ErrorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorCell.xib; sourceTree = "<group>"; };
-		9EC034B41FB4338900C0B42A /* LoginV3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginV3VC.swift; path = Controllers/Login/LoginV3VC.swift; sourceTree = "<group>"; };
+		9EC034B41FB4338900C0B42A /* dashboardv3-modules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = "dashboardv3-modules"; sourceTree = "<group>"; };
 		9EC034B61FB5576200C0B42A /* MyShopDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShopDetailsVC.swift; sourceTree = "<group>"; };
 		9EC034B91FB5A25D00C0B42A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9EC034BB1FB97C5500C0B42A /* ErrorCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCollectionCell.swift; sourceTree = "<group>"; };
@@ -248,6 +280,7 @@
 		9ED76EB21FBC113B00962E85 /* ProductImagePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImagePageVC.swift; sourceTree = "<group>"; };
 		9ED76EB41FBC116800962E85 /* ProductImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageVC.swift; sourceTree = "<group>"; };
 		9ED76EB61FBC1EBD00962E85 /* ProductHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
+		9EDB9B4D1FC4063E00F03CC0 /* LoginV3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginV3VC.swift; sourceTree = "<group>"; };
 		9EDD29311F1609710004DA52 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		9EDD29321F1609710004DA52 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
 		9EDD29331F1609710004DA52 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
@@ -258,6 +291,8 @@
 		9EDD29391F1731FF0004DA52 /* MyKomunitiPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiPostCell.swift; sourceTree = "<group>"; };
 		9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScorer.swift; sourceTree = "<group>"; };
 		9EE6ECA91F3D67950067C3C0 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		9EF6D39B1FC7CD4900EA25BB /* MyKospenProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenProfileCell.swift; sourceTree = "<group>"; };
+		9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenProfileUpdateTVC.swift; sourceTree = "<group>"; };
 		B718870C1FB184830039BA06 /* LoginProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProcess.swift; sourceTree = "<group>"; };
 		B718870E1FB18B640039BA06 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		B71887101FB18BA40039BA06 /* LoginV3ProcessorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginV3ProcessorVC.swift; sourceTree = "<group>"; };
@@ -268,8 +303,8 @@
 		B718871E1FB2F35C0039BA06 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		B71887211FB300550039BA06 /* ic_abstbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_abstbg1.png; path = "[[Resources]]/ic_abstbg1.png"; sourceTree = SOURCE_ROOT; };
 		B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthData.swift; sourceTree = "<group>"; };
-		B71BA9B51FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthGlucoseTVC.swift; sourceTree = "<group>"; };
-		B71BA9B71FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthGlucoseTVCell.swift; sourceTree = "<group>"; };
+		B71BA9B51FBBE2B300CD44B1 /* MyKospenTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenTVC.swift; sourceTree = "<group>"; };
+		B71BA9B71FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenSummaryReviewCell.swift; sourceTree = "<group>"; };
 		B72B91A51E42D53400F1BF99 /* ic_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chat.png; path = "[[Resources]]/ic_chat.png"; sourceTree = SOURCE_ROOT; };
 		B72B91A61E42D53400F1BF99 /* ic_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_view.png; path = "[[Resources]]/ic_view.png"; sourceTree = SOURCE_ROOT; };
 		B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopLatestProdTVC.swift; sourceTree = "<group>"; };
@@ -329,7 +364,7 @@
 		B7A837011E3891CE004F7333 /* MyHealthBPDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVC.swift; sourceTree = "<group>"; };
 		B7A837031E38923C004F7333 /* MyHealthBPDetailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthBPDetailsTVCell.swift; sourceTree = "<group>"; };
 		B7AB812A1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsIntegratedTVCell.swift; sourceTree = "<group>"; };
-		B7B07DEF1FBECB5100F0743B /* MyHealthGlucoseTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthGlucoseTV.swift; sourceTree = "<group>"; };
+		B7B07DEF1FBECB5100F0743B /* MyKospenStatusTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenStatusTV.swift; sourceTree = "<group>"; };
 		B7B07DF11FBED85C00F0743B /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		B7B07DF31FBEDB1F00F0743B /* CustomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomString.swift; sourceTree = "<group>"; };
 		B7B113AB1FB40F3100557DEF /* MainMenuV3CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuV3CVC.swift; sourceTree = "<group>"; };
@@ -468,6 +503,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		9E2796511FD5591A00B55F4C /* MyKospen */ = {
+			isa = PBXGroup;
+			children = (
+				9E2796521FD5593900B55F4C /* KospenProfile.swift */,
+			);
+			path = MyKospen;
+			sourceTree = "<group>";
+		};
 		9E4462341F7CF26A00F82591 /* MyShopViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +549,32 @@
 				9E12E2C51F3B14E9003D15FA /* CategoryMenuTVC.swift */,
 			);
 			name = AddPlace;
+			sourceTree = "<group>";
+		};
+		9E5C75511FC67176002A064A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C75521FC67190002A064A /* Kospen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E5C75521FC67190002A064A /* Kospen */ = {
+			isa = PBXGroup;
+			children = (
+				9E5C75451FC5305B002A064A /* ChartCell.swift */,
+				9E5C75461FC5305B002A064A /* ChartCell.xib */,
+				9E5C75491FC53162002A064A /* RecordCell.swift */,
+				9E5C754A1FC53162002A064A /* RecordCell.xib */,
+				9E5C754D1FC66CF6002A064A /* KospenQuestionaireCell.swift */,
+				9E5C754E1FC66CF6002A064A /* KospenQuestionaireCell.xib */,
+				9E5C75531FC6A7B2002A064A /* BMIRecordCell.swift */,
+				9E5C75541FC6A7B2002A064A /* BMIRecordCell.xib */,
+				9EF6D39B1FC7CD4900EA25BB /* MyKospenProfileCell.swift */,
+				9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */,
+				9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */,
+			);
+			path = Kospen;
 			sourceTree = "<group>";
 		};
 		9E603B331FB18F6700E7B637 /* MyShop */ = {
@@ -565,6 +634,28 @@
 			name = MyShopDetails;
 			sourceTree = "<group>";
 		};
+		9EDB9B4B1FC3D39800F03CC0 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				9EC034B41FB4338900C0B42A /* dashboardv3-modules */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		9EDB9B4C1FC3D71000F03CC0 /* Kospen */ = {
+			isa = PBXGroup;
+			children = (
+				B71BA9B51FBBE2B300CD44B1 /* MyKospenTVC.swift */,
+				B71BA9B71FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift */,
+				B7B07DEF1FBECB5100F0743B /* MyKospenStatusTV.swift */,
+				9E5C753F1FC47CB7002A064A /* MyKospenHeaderView.swift */,
+				9E5C75571FC6CA94002A064A /* KospenTabbarController.swift */,
+				9E5C75591FC6D036002A064A /* MyKospenProfileTVC.swift */,
+				9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */,
+			);
+			name = Kospen;
+			sourceTree = "<group>";
+		};
 		9EE2E6091F4EA0C900041DE3 /* MyGames */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +675,7 @@
 			isa = PBXGroup;
 			children = (
 				B71887071FB1665D0039BA06 /* Controllers */,
+				9E5C75511FC67176002A064A /* Views */,
 				B71887061FB166530039BA06 /* Models */,
 				B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */,
 			);
@@ -594,6 +686,7 @@
 			isa = PBXGroup;
 			children = (
 				B7D7C89F1FC5333600909127 /* MyKomuniti */,
+				9E2796511FD5591A00B55F4C /* MyKospen */,
 				B71BA9B21FBBDAAE00CD44B1 /* MyHealth */,
 				B7B113AD1FB415F000557DEF /* MainMenu */,
 				B71887131FB2B9CD0039BA06 /* MySoal */,
@@ -655,6 +748,7 @@
 				B718871A1FB2F2F20039BA06 /* AfterLoginV3NC.swift */,
 				B718871C1FB2F33F0039BA06 /* BeforeLoginV3NC.swift */,
 				B718871E1FB2F35C0039BA06 /* InitialVC.swift */,
+				9EDB9B4D1FC4063E00F03CC0 /* LoginV3VC.swift */,
 			);
 			name = Login;
 			path = Controllers/Login;
@@ -817,7 +911,7 @@
 				B71887081FB166AD0039BA06 /* Compilers */,
 				83B0D35CE094356216EE8DAE /* Pods */,
 				BEF285E2E4D356FE0C7BA75B /* Frameworks */,
-				B7EC223A1FC3CEA5006F31CD /* Recovered References */,
+				9EDB9B4B1FC3D39800F03CC0 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1072,6 +1166,7 @@
 		B7EF41A51E3706B500262A0B /* MyHealth */ = {
 			isa = PBXGroup;
 			children = (
+				9EDB9B4C1FC3D71000F03CC0 /* Kospen */,
 				B7A836FF1E3887B4004F7333 /* MyHealthMainTabVC.swift */,
 				B7EF41A61E3706F000262A0B /* MyHealthBloodPressureTVC.swift */,
 				B7EF41AA1E37074600262A0B /* MyHealthBodyWeightTVC.swift */,
@@ -1081,9 +1176,6 @@
 				B75C5AA71E3AEC3C009FD4E6 /* MyHealthBWDetailsTVC.swift */,
 				B75C5AA91E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift */,
 				B7F915691FBA86E200499C0F /* MyHealthProfileTVC.swift */,
-				B71BA9B51FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift */,
-				B71BA9B71FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift */,
-				B7B07DEF1FBECB5100F0743B /* MyHealthGlucoseTV.swift */,
 			);
 			name = MyHealth;
 			sourceTree = "<group>";
@@ -1174,11 +1266,14 @@
 				B7DC3A081E139F3B00951852 /* ic_mysoal@2x.png in Resources */,
 				B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */,
 				B7BC569E1FB586BC00E4AE27 /* ic_logout.png in Resources */,
+				9E842B421FCD5370005FBD75 /* KospenUserMeasureCell.xib in Resources */,
 				B7A3C6FE1DE82F5600CB7864 /* Assets.xcassets in Resources */,
 				B73BD8001E51AF6E0036EBEF /* ic_DBImportancePosThree in Resources */,
 				B7350F271E52D99A007884B2 /* ic_dbkomunitiico.png in Resources */,
 				B7D7C8A71FC7C9A800909127 /* ic_annoucement.png in Resources */,
+				9E5C75561FC6A7B2002A064A /* BMIRecordCell.xib in Resources */,
 				B7DC3A041E139F3B00951852 /* ic_myskool.png in Resources */,
+				9E5C75501FC66CF6002A064A /* KospenQuestionaireCell.xib in Resources */,
 				9E44622F1F7CE4CE00F82591 /* MyShop.storyboard in Resources */,
 				9EC034B31FB2FD0E00C0B42A /* ErrorCell.xib in Resources */,
 				B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */,
@@ -1206,7 +1301,9 @@
 				B7DC39FE1E139F3B00951852 /* ic_mykomuniti.png in Resources */,
 				B7DC3A141E14E61D00951852 /* ic_bannerdbshadow.png in Resources */,
 				B7DC3A031E139F3B00951852 /* ic_myshop@3x.png in Resources */,
+				9E5C754C1FC53162002A064A /* RecordCell.xib in Resources */,
 				B73BD7FE1E51AF6E0036EBEF /* ic_DBImportancePosOne in Resources */,
+				9E5C75481FC5305B002A064A /* ChartCell.xib in Resources */,
 				B7DC39F81E139F3B00951852 /* ic_myebuku.png in Resources */,
 				B7DC3A011E139F3B00951852 /* ic_myshop.png in Resources */,
 				B7A3C6FC1DE82F5600CB7864 /* Main.storyboard in Resources */,
@@ -1302,13 +1399,13 @@
 			files = (
 				B71887151FB2B9E90039BA06 /* MySkoolProcess.swift in Sources */,
 				B78E628A1DF7E00900D9767D /* ZDeviceInfo.swift in Sources */,
-				B71BA9B81FBBE67300CD44B1 /* MyHealthGlucoseTVCell.swift in Sources */,
+				B71BA9B81FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift in Sources */,
 				B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */,
 				B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */,
 				9E603B3B1FB1955600E7B637 /* MyShopTempatanCVC.swift in Sources */,
 				B73BD8061E51B12F0036EBEF /* AImportanceDBTVCell.swift in Sources */,
 				9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */,
-				B7B07DF01FBECB5100F0743B /* MyHealthGlucoseTV.swift in Sources */,
+				B7B07DF01FBECB5100F0743B /* MyKospenStatusTV.swift in Sources */,
 				9E603B391FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift in Sources */,
 				B739662D1E1CDBE900B270A1 /* MyKomunitiDetailsTVCell.swift in Sources */,
 				B7B113B11FB4298900557DEF /* MainMenuData.swift in Sources */,
@@ -1316,6 +1413,7 @@
 				B7B07DF21FBED85C00F0743B /* CustomLabel.swift in Sources */,
 				B79167781E35D74D00383CAD /* MySkoolIntegratedTVCell.swift in Sources */,
 				9E12E2C91F3B14E9003D15FA /* StatesMenuTVC.swift in Sources */,
+				9EF6D39E1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift in Sources */,
 				B7A3C70A1DEAEE2300CB7864 /* ZGraphics.swift in Sources */,
 				B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */,
 				9E12E2BE1F3AF8AE003D15FA /* MyPlaceMainVC.swift in Sources */,
@@ -1327,11 +1425,13 @@
 				9E12E2C01F3B14DF003D15FA /* MyPlaceAddPlaceVC.swift in Sources */,
 				9E12E2AB1F39789E003D15FA /* MyQuizMainTVCell.swift in Sources */,
 				9E51D6E61F206A540048337E /* GamesScoreboardController.swift in Sources */,
+				9E842B411FCD5370005FBD75 /* KospenUserMeasureCell.swift in Sources */,
 				B7B9A6E71E2F47EC006689C9 /* MySoalIntegratedTVCell.swift in Sources */,
 				B74D337F1DF6A2A200208A03 /* DBSettings.swift in Sources */,
 				B7B113AC1FB40F3100557DEF /* MainMenuV3CVC.swift in Sources */,
 				B7EF41A91E37072100262A0B /* MyHealthIntegratedTVCell.swift in Sources */,
 				9EC034BA1FB5A25D00C0B42A /* Product.swift in Sources */,
+				9E5C754F1FC66CF6002A064A /* KospenQuestionaireCell.swift in Sources */,
 				B7DC3A191E14EEE500951852 /* AboutTVC.swift in Sources */,
 				B73966291E1CA42300B270A1 /* MyKomunitiMainTVCell.swift in Sources */,
 				B73966321E1E27EB00B270A1 /* MyKomunitiMainAdminTVC.swift in Sources */,
@@ -1344,8 +1444,10 @@
 				B76D256D1E56F43800280415 /* SettingsExtendedTVCell.swift in Sources */,
 				B7E311831E486A95003949CF /* MyShopProductDetailsTVC.swift in Sources */,
 				B7B73ACA1E1B9C40000680FF /* SettingsTVC.swift in Sources */,
+				9E5C75551FC6A7B2002A064A /* BMIRecordCell.swift in Sources */,
 				B7DC3A171E14ED7100951852 /* AYTPlayerTVCell.swift in Sources */,
 				B739662B1E1CDBBC00B270A1 /* MyKomunitiDetailsTVC.swift in Sources */,
+				9E5C754B1FC53162002A064A /* RecordCell.swift in Sources */,
 				9E12E2C71F3B14E9003D15FA /* PhotosHolderVC.swift in Sources */,
 				9ED76EB31FBC113B00962E85 /* ProductImagePageVC.swift in Sources */,
 				B7DC3A291E15FE9B00951852 /* AWhatDBTVCell.swift in Sources */,
@@ -1353,8 +1455,9 @@
 				9E5998611F44095500542304 /* Location.swift in Sources */,
 				B7DC39E41E12847500951852 /* MMMenuGridCVCell.swift in Sources */,
 				9E12E2D11F3C63A7003D15FA /* Catergory.swift in Sources */,
-				B71BA9B61FBBE2B300CD44B1 /* MyHealthGlucoseTVC.swift in Sources */,
+				B71BA9B61FBBE2B300CD44B1 /* MyKospenTVC.swift in Sources */,
 				B7A3C6F91DE82F5600CB7864 /* LoginVC.swift in Sources */,
+				9EF6D39C1FC7CD4900EA25BB /* MyKospenProfileCell.swift in Sources */,
 				9EB639C41F2AEBBF00FF6543 /* AlertController.swift in Sources */,
 				B74F0EBD1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift in Sources */,
 				B74D337A1DF68ABB00208A03 /* DBColorSet.swift in Sources */,
@@ -1363,7 +1466,7 @@
 				9EE2E60B1F4EA0F500041DE3 /* TopScorer.swift in Sources */,
 				B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */,
 				B7B9A6E51E2F3FD5006689C9 /* MySoalMainTVC.swift in Sources */,
-				B7EC223C1FC40647006F31CD /* LoginV3VC.swift in Sources */,
+				9EDB9B4E1FC4063E00F03CC0 /* LoginV3VC.swift in Sources */,
 				9E12E2C81F3B14E9003D15FA /* PhotoHolderCell.swift in Sources */,
 				9E4462361F7CF29800F82591 /* ProdukTerkiniHolderCell.swift in Sources */,
 				B75C5AAA1E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift in Sources */,
@@ -1371,8 +1474,10 @@
 				9E4462231F78D83700F82591 /* Extension.swift in Sources */,
 				B718871B1FB2F2F20039BA06 /* AfterLoginV3NC.swift in Sources */,
 				9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */,
+				9E5C75471FC5305B002A064A /* ChartCell.swift in Sources */,
 				B7B113AF1FB4163500557DEF /* MainMenuProcess.swift in Sources */,
 				B7EC223F1FC40A9B006F31CD /* MyKomunitiMainV3TVC.swift in Sources */,
+				9E5C75581FC6CA94002A064A /* KospenTabbarController.swift in Sources */,
 				9E4462211F78CE3300F82591 /* MainMenuCVC.swift in Sources */,
 				B73966271E1CA3FF00B270A1 /* MyKomunitiMainTVC.swift in Sources */,
 				B73EF08C1E41B8F9001B3ADB /* MyShopIntegratedTVCell.swift in Sources */,
@@ -1385,6 +1490,7 @@
 				9EDD293A1F1731FF0004DA52 /* MyKomunitiPostCell.swift in Sources */,
 				B71887111FB18BA40039BA06 /* LoginV3ProcessorVC.swift in Sources */,
 				B76D256B1E56DBBA00280415 /* SettingsExtendedTVC.swift in Sources */,
+				9E5C755A1FC6D036002A064A /* MyKospenProfileTVC.swift in Sources */,
 				B7CAB5B51FB545E0002785AC /* SettingsV3TVC.swift in Sources */,
 				B73EF08A1E41B8B1001B3ADB /* MyShopMainMenuTVC.swift in Sources */,
 				9E12E2AF1F397BF5003D15FA /* MainMenuTVC.swift in Sources */,
@@ -1398,6 +1504,7 @@
 				B71BA9B41FBBDB0100CD44B1 /* MyHealthData.swift in Sources */,
 				9E12E2CA1F3B14E9003D15FA /* CategoryMenuTVC.swift in Sources */,
 				B794CF3D1E3994BF00C40BF9 /* ZDateTime.swift in Sources */,
+				9E5C75401FC47CB7002A064A /* MyKospenHeaderView.swift in Sources */,
 				9E603B371FB1952800E7B637 /* MyShopPopularCVC.swift in Sources */,
 				B791677A1E3605A400383CAD /* MySkoolDetailsTVC.swift in Sources */,
 				B74D33771DF6649300208A03 /* ZUIs.swift in Sources */,
@@ -1408,6 +1515,7 @@
 				B79167761E35D71000383CAD /* MySkoolMainTVC.swift in Sources */,
 				9E603B351FB1950300E7B637 /* MyShopTerkiniCVC.swift in Sources */,
 				9EB639C21F299F4900FF6543 /* GamesScoreboardCell.swift in Sources */,
+				9EC034B51FB4338900C0B42A /* dashboardv3-modules in Sources */,
 				B7DC39DA1E125F0900951852 /* BeforeLoginNC.swift in Sources */,
 				B7BB51861E24912400F9EB3E /* ZUISetup.swift in Sources */,
 				9E12E2AD1F39789E003D15FA /* MyQuizQuestionSelectTVCell.swift in Sources */,
@@ -1425,6 +1533,7 @@
 				9E12E2C61F3B14E9003D15FA /* MyPlaceAddPlaceTVCell.swift in Sources */,
 				B7DC39E01E1268E700951852 /* MMMenuListTVCell.swift in Sources */,
 				B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */,
+				9E2796531FD5593900B55F4C /* KospenProfile.swift in Sources */,
 				B718871D1FB2F33F0039BA06 /* BeforeLoginV3NC.swift in Sources */,
 				B7A837041E38923C004F7333 /* MyHealthBPDetailsTVCell.swift in Sources */,
 				B7D7C8A11FC5335B00909127 /* MyKomunitiData.swift in Sources */,

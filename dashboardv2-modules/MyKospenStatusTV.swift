@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyHealthGlucoseInfoGTV: UITableView {
+class MyKospenStatusTV: UITableView {
 
 
     /*
@@ -18,7 +18,8 @@ class MyHealthGlucoseInfoGTV: UITableView {
         // Drawing code
     }
     */
-
+    
+    
 }
 
 

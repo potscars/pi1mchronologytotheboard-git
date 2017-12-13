@@ -50,7 +50,7 @@ class Product {
             }
             
             guard let data = results as? NSDictionary else { return }
-            
+            print(data)
             guard let totalPage = data["last_page"] as? Int else { return }
             
             guard let currentPage = data["current_page"] as? Int, currentPage != totalPage else {
