@@ -44,6 +44,20 @@ extension UIColor {
     }
 }
 
+extension String {
+    func getDateInCleanFormat() -> String {
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = formatter.date(from: self)!
+        
+        formatter.dateFormat = "dd MMMM yyyy"
+        let newDateString = formatter.string(from: date)
+        
+        return newDateString
+    }
+}
+
 //MARK: - Myshop punya extension.
 extension UINavigationController {
     

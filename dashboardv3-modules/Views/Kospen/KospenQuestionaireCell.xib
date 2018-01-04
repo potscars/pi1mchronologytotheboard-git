@@ -35,6 +35,7 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="document_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-cZ-lLh">
                         <rect key="frame" x="32" y="83" width="64" height="64"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="64" id="XEQ-UN-G3V"/>
                             <constraint firstAttribute="width" constant="64" id="vzb-6f-EBV"/>

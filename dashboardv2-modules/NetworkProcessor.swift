@@ -73,7 +73,7 @@ class NetworkProcessor {
     
     //MARK: - Setting data to database with json data as parameters
     
-    func postRequestJSONFromUrl(_ params: [String: Any], completion: @escaping JSONDictionaryHandler) {
+    func postRequestJSONFromUrl(_ params: [String: Any] = [:], completion: @escaping JSONDictionaryHandler) {
         
         let sessions = URLSession.shared
         
@@ -81,15 +81,16 @@ class NetworkProcessor {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        do {
-            
-            request.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-        } catch let error {
-            
-            print(error.localizedDescription)
-            return
+        if !params.isEmpty {
+            do {
+                
+                request.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+            } catch let error {
+                
+                print(error.localizedDescription)
+                return
+            }
         }
-        
         
         let task = sessions.dataTask(with: request) { (data, response, error) in
             

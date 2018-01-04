@@ -27,6 +27,7 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-heart-with-pulse-100" translatesAutoresizingMaskIntoConstraints="NO" id="IyV-HC-TGA">
                         <rect key="frame" x="24" y="74.5" width="64" height="64"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="64" id="IyX-Gg-RVf"/>
                             <constraint firstAttribute="height" constant="64" id="aQk-eo-yha"/>
@@ -48,6 +49,9 @@
                         <state key="normal" title="Edit">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="editButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nBm-N7-LPx"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

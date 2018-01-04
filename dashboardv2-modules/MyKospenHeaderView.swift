@@ -13,5 +13,6 @@ class MyKospenHeaderView: UIView {
     
     @IBOutlet weak var bmiCharts: PieChartView!
     @IBOutlet weak var statusValueTableView: UITableView!
+    @IBOutlet weak var dateLabel: UILabel!
     
 }

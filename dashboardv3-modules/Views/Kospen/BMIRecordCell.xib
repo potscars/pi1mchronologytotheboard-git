@@ -27,12 +27,12 @@
                             <constraint firstAttribute="height" constant="44" id="ktq-q2-Uw6"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-To-tdp">
-                        <rect key="frame" x="252" y="23" width="60" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22.53" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-To-tdp">
+                        <rect key="frame" x="252" y="26" width="60" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="7wT-D6-ilQ"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -106,21 +106,32 @@
                             </stackView>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-t7-CuX">
-                        <rect key="frame" x="17.5" y="26" width="25.5" height="24"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J6y-gT-WXa">
+                        <rect key="frame" x="17" y="22" width="26.5" height="31.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-t7-CuX">
+                                <rect key="frame" x="0.0" y="0.0" width="26.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yca-oR-aTb">
+                                <rect key="frame" x="0.0" y="17" width="26.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ElU-t7-CuX" firstAttribute="centerX" secondItem="6Bx-7W-Ynt" secondAttribute="centerX" id="5Xo-Af-WfA"/>
+                    <constraint firstItem="J6y-gT-WXa" firstAttribute="centerY" secondItem="6Bx-7W-Ynt" secondAttribute="centerY" id="5AM-d7-MyT"/>
                     <constraint firstItem="VlW-P4-yJi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="DTm-m6-50k"/>
                     <constraint firstItem="VlW-P4-yJi" firstAttribute="leading" secondItem="6Bx-7W-Ynt" secondAttribute="trailing" constant="8" id="Ncc-RM-cpm"/>
                     <constraint firstItem="6Bx-7W-Ynt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="T0N-Ak-LYt"/>
                     <constraint firstItem="VlW-P4-yJi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WaZ-vR-WBs"/>
+                    <constraint firstItem="J6y-gT-WXa" firstAttribute="centerX" secondItem="6Bx-7W-Ynt" secondAttribute="centerX" id="Y9g-Wp-Jhd"/>
                     <constraint firstAttribute="trailing" secondItem="zg7-To-tdp" secondAttribute="trailing" constant="8" id="ZMa-MG-vXp"/>
-                    <constraint firstItem="ElU-t7-CuX" firstAttribute="centerY" secondItem="6Bx-7W-Ynt" secondAttribute="centerY" id="fmK-TI-GAQ"/>
                     <constraint firstItem="6Bx-7W-Ynt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lRf-x2-lBp"/>
                     <constraint firstItem="zg7-To-tdp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pnu-yU-nol"/>
                     <constraint firstItem="zg7-To-tdp" firstAttribute="leading" secondItem="VlW-P4-yJi" secondAttribute="trailing" constant="8" id="qo9-Ca-7qh"/>
@@ -131,8 +142,9 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bmiValueLabel" destination="zg7-To-tdp" id="ee3-r7-NgU"/>
+                <outlet property="dateDaysLabel" destination="yca-oR-aTb" id="h2r-Aw-jYO"/>
                 <outlet property="dateImageView" destination="6Bx-7W-Ynt" id="zPi-kq-lNE"/>
-                <outlet property="dateValueLabel" destination="ElU-t7-CuX" id="aKI-G2-CuV"/>
+                <outlet property="dateMonthLabel" destination="ElU-t7-CuX" id="1zF-tb-jef"/>
                 <outlet property="heightValueLabel" destination="JSp-j5-i6q" id="N6k-tY-FSE"/>
                 <outlet property="remarkValueLabel" destination="aM8-gL-xix" id="DEw-Su-v8S"/>
                 <outlet property="weightValueLabel" destination="9pY-o6-hn5" id="JkZ-SS-W4w"/>

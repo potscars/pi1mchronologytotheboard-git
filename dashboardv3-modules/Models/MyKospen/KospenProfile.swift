@@ -13,11 +13,15 @@ struct KospenProfileIdentifier {
     static let Intervensi = "Setuju intervensi"
     static let WaistMeasure = "Ukur lilit pinggang"
     static let Height = "Tinggi"
+    static let BloodPressure = "Tekanan Darah"
+    static let BloodSugarLevel = "Tahap Gula"
     static let OwnDiseases = "Sejarah penyakit sendiri"
     static let FamilyDiseases = "Sejarah penyakit keluarga"
     static let SmokingStatus = "Status merokok"
     static let isQuittingSmoke = "Ingin berhenti merokok"
     static let UpdatedAt = "Dikemaskini pada"
+    static let BeratBadan = "Berat Badan"
+    static let BMI = "BMI"
 }
 
 class KospenProfile {
@@ -31,11 +35,16 @@ class KospenProfile {
         let params = ["token" : dashToken]
         var dataTemp: [String: Any] = [:]
         
-        var intervensiTemp = "Tiada data"
+        var intervensiTemp = "-"
         var waistMeasureTemp: CGFloat = 0.0
-        var heightTemp = "Tiada data"
-        var smokingStatusTemp = "Tiada data"
-        var smokingQuittingStatusTemp = "Tiada data"
+        var heightTemp: CGFloat = 0.0
+        var smokingStatusTemp = "-"
+        var smokingQuittingStatusTemp = "-"
+        var bloodSugarLevel = 0
+        var sysDysTemp = "-"
+        var weightTemp = 0
+        var idTemp = 0
+        var hBMITemp = 0.0
         var ownDiseasesTemp: NSArray = []
         var familyDiseasesTemp: NSArray = []
         
@@ -55,6 +64,11 @@ class KospenProfile {
 
                 if let data = result["data"] as? NSDictionary {
                     print(data)
+                    
+                    if let id = data["id"] as? Int {
+                        idTemp = id
+                    }
+                    
                     if let intervensi_agree = data["intervention_agree"] as? Int {
 
                         if intervensi_agree == 1 {
@@ -68,8 +82,8 @@ class KospenProfile {
                         waistMeasureTemp = CGFloat(waist_measure)
                     }
 
-                    if let height = data.object(forKey: "height") {
-                        heightTemp = "\(height) m"
+                    if let height = data.object(forKey: "height") as? CGFloat {
+                        heightTemp = height
                     }
 
                     if let smoking_status = data["smoking_status"] as? Int {
@@ -106,12 +120,54 @@ class KospenProfile {
 
                         updatedAtTemp = dateFormatterString.string(from: date)
                     }
+                    
+                    if let wtRecords = data.object(forKey: "wt_records") as? NSArray {
+                        
+                        for wtRecord in wtRecords {
+                            
+                            if let bodyWeight = (wtRecord as AnyObject).object(forKey: "weight") as? Int {
+                                weightTemp = bodyWeight
+                            }
+                            
+                            if let bmi = (wtRecord as AnyObject).object(forKey: "bmi") as? Double {
+                                let bmiTemp = round(bmi * 100) / 100
+                                hBMITemp = bmiTemp
+                            }
+                        }
+                    }
+                    
+                    if let gluRecords = data.object(forKey: "glu_records") as? NSArray {
+                        
+                        for gluRecord in gluRecords {
+                            
+                            if let glucoseLevel = (gluRecord as AnyObject).object(forKey: "glucose_level") as? Int {
+                                bloodSugarLevel = glucoseLevel
+                            }
+                        }
+                    }
+                    
+                    if let bpRecords = data.object(forKey: "bp_records") as? NSArray {
+                        
+                        for bpRecord in bpRecords {
+                            
+                            var sysDys = ""
+                            
+                            if let sys = (bpRecord as AnyObject).object(forKey: "sys") as? Int {
+                                sysDys = "\(sys)/"
+                            }
+                            
+                            if let dys = (bpRecord as AnyObject).object(forKey: "dys") as? Int {
+                                sysDys += "\(dys)"
+                                sysDysTemp = sysDys
+                            }
+                        }
+                    }
 
-                    dataTemp = self.addingToDictionary(intervensiTemp, waistMeasure: waistMeasureTemp, height: heightTemp, smokingStatus: smokingStatusTemp, ownDiseases: ownDiseasesTemp, inheritedDiseases: familyDiseasesTemp, isWillingToQuitSmoking: smokingQuittingStatusTemp, updatedAt: updatedAtTemp)
+                    dataTemp = self.addingToDictionary(intervensiTemp, waistMeasure: waistMeasureTemp, height: heightTemp, smokingStatus: smokingStatusTemp, ownDiseases: ownDiseasesTemp, inheritedDiseases: familyDiseasesTemp, isWillingToQuitSmoking: smokingQuittingStatusTemp, updatedAt: updatedAtTemp, bloodSugarLevel: bloodSugarLevel, bloodPressure: sysDysTemp, weight: weightTemp, id: idTemp, bmi: hBMITemp)
 
                     completion(dataTemp, nil)
                 } else {
-                    dataTemp = self.addingToDictionary(intervensiTemp, waistMeasure: waistMeasureTemp, height: heightTemp, smokingStatus: smokingStatusTemp, ownDiseases: ownDiseasesTemp, inheritedDiseases: familyDiseasesTemp, isWillingToQuitSmoking: smokingQuittingStatusTemp, updatedAt: updatedAtTemp)
+                    dataTemp = self.addingToDictionary(intervensiTemp, waistMeasure: waistMeasureTemp, height: heightTemp, smokingStatus: smokingStatusTemp, ownDiseases: ownDiseasesTemp, inheritedDiseases: familyDiseasesTemp, isWillingToQuitSmoking: smokingQuittingStatusTemp, updatedAt: updatedAtTemp, bloodSugarLevel: bloodSugarLevel, bloodPressure: sysDysTemp, weight: weightTemp, id: idTemp, bmi: hBMITemp)
 
                     completion(dataTemp, nil)
                 }
@@ -120,7 +176,7 @@ class KospenProfile {
     }
     
     
-    func addingToDictionary(_ intervensi: String, waistMeasure: CGFloat, height: String, smokingStatus: String, ownDiseases: NSArray, inheritedDiseases: NSArray, isWillingToQuitSmoking: String, updatedAt: String) -> [String: Any] {
+    func addingToDictionary(_ intervensi: String, waistMeasure: CGFloat, height: CGFloat, smokingStatus: String, ownDiseases: NSArray, inheritedDiseases: NSArray, isWillingToQuitSmoking: String, updatedAt: String, bloodSugarLevel: Int, bloodPressure: String, weight: Int, id: Int, bmi: Double) -> [String: Any] {
         
         var tempProfileData: [String: Any] = [:]
         
@@ -132,6 +188,11 @@ class KospenProfile {
         tempProfileData.updateValue(ownDiseases, forKey: KospenProfileIdentifier.OwnDiseases)
         tempProfileData.updateValue(inheritedDiseases, forKey: KospenProfileIdentifier.FamilyDiseases)
         tempProfileData.updateValue(updatedAt, forKey: KospenProfileIdentifier.UpdatedAt)
+        tempProfileData.updateValue(bloodSugarLevel, forKey: KospenProfileIdentifier.BloodSugarLevel)
+        tempProfileData.updateValue(bloodPressure, forKey: KospenProfileIdentifier.BloodPressure)
+        tempProfileData.updateValue(weight, forKey: KospenProfileIdentifier.BeratBadan)
+        tempProfileData.updateValue(id, forKey: "MYHEALTH_ID")
+        tempProfileData.updateValue(bmi, forKey: KospenProfileIdentifier.BMI)
         
         return tempProfileData
     }

@@ -14,7 +14,8 @@ class BMIRecordCell: UITableViewCell {
     @IBOutlet weak var heightValueLabel: UILabel!
     @IBOutlet weak var remarkValueLabel: UILabel!
     @IBOutlet weak var dateImageView: UIImageView!
-    @IBOutlet weak var dateValueLabel: UILabel!
+    @IBOutlet weak var dateMonthLabel: UILabel!
+    @IBOutlet weak var dateDaysLabel: UILabel!
     @IBOutlet weak var bmiValueLabel: UILabel!
     
     override func awakeFromNib() {
@@ -28,4 +29,30 @@ class BMIRecordCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func updateUI(_ data: GraphData) {
+        
+        let roundedBMI = Double(round(100 * Double(data.bmi!))/100)
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = formatter.date(from: data.createdDate!)!
+        let components = Calendar.current.dateComponents([.day], from: date)
+        formatter.dateFormat = "MMM"
+        let monthKeypath = formatter.string(from: date)
+        
+        dateMonthLabel.text = "\(monthKeypath)"
+        dateDaysLabel.text = "\(components.day!)"
+        bmiValueLabel.text = "\(roundedBMI)"
+        weightValueLabel.text = "\(data.weight!) kg"
+    }
 }
+
+
+
+
+
+
+
+
+

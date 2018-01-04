@@ -21,6 +21,8 @@ private struct MainMenuIdentifier {
     static let GoToMySoal = "DB_GOTO_MYSOAL"
     static let GoToMySkool = "DB_GOTO_MYSKOOL"
     static let GoToMyHealth = "DB_GOTO_MYHEALTH"
+    static let GoToKospen = "GOTO_KOSPEN"
+    static let GoToKospenUpdate = "GOTO_KOSPEN_UPDATE"
     static let GoToMyShop = "DB_GOTO_MYSHOP"
     static let GoToMyPlaces = "DB_GOTO_MYPLACES"
     static let GoToMyGames = "DB_GOTO_MYGAMES"
@@ -222,7 +224,7 @@ extension MainMenuV3CVC : UICollectionViewDelegateFlowLayout{
         } else if currentIndex == 2 {
             performSegue(withIdentifier: MainMenuIdentifier.GoToMySkool, sender: self)
         } else if currentIndex == 3 {
-            performSegue(withIdentifier: MainMenuIdentifier.GoToMyHealth, sender: self)
+            performSegue(withIdentifier: MainMenuIdentifier.GoToKospen, sender: self)
         } else if currentIndex == 4 {
             performSegue(withIdentifier: MainMenuIdentifier.GoToMyShop, sender: self)
         } else if currentIndex == 5 {

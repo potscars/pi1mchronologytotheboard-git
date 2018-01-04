@@ -24,6 +24,13 @@ class KospenQuestionaireCell: UITableViewCell {
         answerSwitch.addTarget(self, action: #selector(switchTapped(_:)), for: .valueChanged)
     }
     
+    func updateUI(_ title: String, message: String, icon: UIImage) {
+        
+        titleLabel.text = title
+        explainationLabel.text = message
+        iconImageView.image = icon
+    }
+    
     @objc func switchTapped(_ sender: UISwitch) {
         
         if answerSwitch.isOn {

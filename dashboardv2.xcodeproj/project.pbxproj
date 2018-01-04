@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9835032DDB7124388F92994B /* Pods_dashboardv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA18EF89B5F8092672FDE70 /* Pods_dashboardv2.framework */; };
 		9E02B6971F1EF5A90028A230 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02B6961F1EF5A90028A230 /* LoadingSpinner.swift */; };
+		9E038BB71FF503B70039B62C /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E038BB61FF503B70039B62C /* TagView.swift */; };
+		9E038BBA1FF507A10039B62C /* KospenUserSicknessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E038BB81FF507A10039B62C /* KospenUserSicknessCell.swift */; };
+		9E038BBB1FF507A10039B62C /* KospenUserSicknessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E038BB91FF507A10039B62C /* KospenUserSicknessCell.xib */; };
 		9E12E2AA1F39789E003D15FA /* MyQuizMainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2A61F39789E003D15FA /* MyQuizMainTableVC.swift */; };
 		9E12E2AB1F39789E003D15FA /* MyQuizMainTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2A71F39789E003D15FA /* MyQuizMainTVCell.swift */; };
 		9E12E2AC1F39789E003D15FA /* MyQuizQuestionSelectTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2A81F39789E003D15FA /* MyQuizQuestionSelectTableVC.swift */; };
@@ -60,6 +63,8 @@
 		9E603B4C1FB1C42800E7B637 /* MyShopCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E603B4A1FB1C42800E7B637 /* MyShopCommentCell.xib */; };
 		9E842B411FCD5370005FBD75 /* KospenUserMeasureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */; };
 		9E842B421FCD5370005FBD75 /* KospenUserMeasureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */; };
+		9EA500511FF379C0008D4936 /* NumberPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA500501FF379C0008D4936 /* NumberPickerVC.swift */; };
+		9EABA3351FEA5E1900D0B9CB /* GraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABA3341FEA5E1900D0B9CB /* GraphData.swift */; };
 		9EB639C21F299F4900FF6543 /* GamesScoreboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */; };
 		9EB639C41F2AEBBF00FF6543 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C31F2AEBBF00FF6543 /* AlertController.swift */; };
 		9EC034B21FB2FD0E00C0B42A /* ErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034B01FB2FD0E00C0B42A /* ErrorCell.swift */; };
@@ -69,6 +74,7 @@
 		9EC034BA1FB5A25D00C0B42A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034B91FB5A25D00C0B42A /* Product.swift */; };
 		9EC034BD1FB97C5500C0B42A /* ErrorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034BB1FB97C5500C0B42A /* ErrorCollectionCell.swift */; };
 		9EC034BE1FB97C5500C0B42A /* ErrorCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC034BC1FB97C5500C0B42A /* ErrorCollectionCell.xib */; };
+		9EC4257E1FFB938C000597F5 /* Disease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4257D1FFB938C000597F5 /* Disease.swift */; };
 		9ED76EB31FBC113B00962E85 /* ProductImagePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB21FBC113B00962E85 /* ProductImagePageVC.swift */; };
 		9ED76EB51FBC116800962E85 /* ProductImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB41FBC116800962E85 /* ProductImageVC.swift */; };
 		9ED76EB71FBC1EBD00962E85 /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB61FBC1EBD00962E85 /* ProductHeaderView.swift */; };
@@ -77,6 +83,7 @@
 		9EDD293A1F1731FF0004DA52 /* MyKomunitiPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD29391F1731FF0004DA52 /* MyKomunitiPostCell.swift */; };
 		9EE2E60B1F4EA0F500041DE3 /* TopScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */; };
 		9EE6ECAA1F3D67950067C3C0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6ECA91F3D67950067C3C0 /* State.swift */; };
+		9EEC54AA1FFC9ABD00ED8FBB /* DiseasesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC54A91FFC9ABD00ED8FBB /* DiseasesListVC.swift */; };
 		9EF6D39C1FC7CD4900EA25BB /* MyKospenProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6D39B1FC7CD4900EA25BB /* MyKospenProfileCell.swift */; };
 		9EF6D39E1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */; };
 		B718870D1FB184830039BA06 /* LoginProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870C1FB184830039BA06 /* LoginProcess.swift */; };
@@ -211,6 +218,9 @@
 		3F4CB6297C663404E0A29DB3 /* Pods_dashboardv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dashboardv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C69D4011FB8AB2FD3E9460C /* Pods-dashboardv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashboardv2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dashboardv2/Pods-dashboardv2.debug.xcconfig"; sourceTree = "<group>"; };
 		9E02B6961F1EF5A90028A230 /* LoadingSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+		9E038BB61FF503B70039B62C /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		9E038BB81FF507A10039B62C /* KospenUserSicknessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KospenUserSicknessCell.swift; sourceTree = "<group>"; };
+		9E038BB91FF507A10039B62C /* KospenUserSicknessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KospenUserSicknessCell.xib; sourceTree = "<group>"; };
 		9E12E2A61F39789E003D15FA /* MyQuizMainTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQuizMainTableVC.swift; sourceTree = "<group>"; };
 		9E12E2A71F39789E003D15FA /* MyQuizMainTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQuizMainTVCell.swift; sourceTree = "<group>"; };
 		9E12E2A81F39789E003D15FA /* MyQuizQuestionSelectTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQuizQuestionSelectTableVC.swift; sourceTree = "<group>"; };
@@ -262,6 +272,8 @@
 		9E603B4A1FB1C42800E7B637 /* MyShopCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyShopCommentCell.xib; sourceTree = "<group>"; };
 		9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KospenUserMeasureCell.swift; sourceTree = "<group>"; };
 		9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KospenUserMeasureCell.xib; sourceTree = "<group>"; };
+		9EA500501FF379C0008D4936 /* NumberPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerVC.swift; sourceTree = "<group>"; };
+		9EABA3341FEA5E1900D0B9CB /* GraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphData.swift; sourceTree = "<group>"; };
 		9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesScoreboardCell.swift; sourceTree = "<group>"; };
 		9EB639C31F2AEBBF00FF6543 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		9EC034B01FB2FD0E00C0B42A /* ErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCell.swift; sourceTree = "<group>"; };
@@ -271,6 +283,7 @@
 		9EC034B91FB5A25D00C0B42A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9EC034BB1FB97C5500C0B42A /* ErrorCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCollectionCell.swift; sourceTree = "<group>"; };
 		9EC034BC1FB97C5500C0B42A /* ErrorCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorCollectionCell.xib; sourceTree = "<group>"; };
+		9EC4257D1FFB938C000597F5 /* Disease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disease.swift; sourceTree = "<group>"; };
 		9ED76EB21FBC113B00962E85 /* ProductImagePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImagePageVC.swift; sourceTree = "<group>"; };
 		9ED76EB41FBC116800962E85 /* ProductImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageVC.swift; sourceTree = "<group>"; };
 		9ED76EB61FBC1EBD00962E85 /* ProductHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
@@ -285,6 +298,7 @@
 		9EDD29391F1731FF0004DA52 /* MyKomunitiPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyKomunitiPostCell.swift; sourceTree = "<group>"; };
 		9EE2E60A1F4EA0F500041DE3 /* TopScorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScorer.swift; sourceTree = "<group>"; };
 		9EE6ECA91F3D67950067C3C0 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		9EEC54A91FFC9ABD00ED8FBB /* DiseasesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesListVC.swift; sourceTree = "<group>"; };
 		9EF6D39B1FC7CD4900EA25BB /* MyKospenProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenProfileCell.swift; sourceTree = "<group>"; };
 		9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenProfileUpdateTVC.swift; sourceTree = "<group>"; };
 		B718870C1FB184830039BA06 /* LoginProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProcess.swift; sourceTree = "<group>"; };
@@ -495,6 +509,8 @@
 			isa = PBXGroup;
 			children = (
 				9E2796521FD5593900B55F4C /* KospenProfile.swift */,
+				9EABA3341FEA5E1900D0B9CB /* GraphData.swift */,
+				9EC4257D1FFB938C000597F5 /* Disease.swift */,
 			);
 			path = MyKospen;
 			sourceTree = "<group>";
@@ -542,6 +558,7 @@
 		9E5C75511FC67176002A064A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9EA500521FF4D49E008D4936 /* TagView */,
 				9E5C75521FC67190002A064A /* Kospen */,
 			);
 			path = Views;
@@ -561,6 +578,8 @@
 				9EF6D39B1FC7CD4900EA25BB /* MyKospenProfileCell.swift */,
 				9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */,
 				9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */,
+				9E038BB81FF507A10039B62C /* KospenUserSicknessCell.swift */,
+				9E038BB91FF507A10039B62C /* KospenUserSicknessCell.xib */,
 			);
 			path = Kospen;
 			sourceTree = "<group>";
@@ -587,6 +606,14 @@
 				9E2B3C741FB9982100B54DF8 /* ProductDetails.swift */,
 			);
 			path = MyShop;
+			sourceTree = "<group>";
+		};
+		9EA500521FF4D49E008D4936 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				9E038BB61FF503B70039B62C /* TagView.swift */,
+			);
+			path = TagView;
 			sourceTree = "<group>";
 		};
 		9EC034AF1FB2FCF200C0B42A /* Error */ = {
@@ -640,6 +667,8 @@
 				9E5C75571FC6CA94002A064A /* KospenTabbarController.swift */,
 				9E5C75591FC6D036002A064A /* MyKospenProfileTVC.swift */,
 				9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */,
+				9EA500501FF379C0008D4936 /* NumberPickerVC.swift */,
+				9EEC54A91FFC9ABD00ED8FBB /* DiseasesListVC.swift */,
 			);
 			name = Kospen;
 			sourceTree = "<group>";
@@ -1243,6 +1272,7 @@
 				B7DC3A091E139F3B00951852 /* ic_mysoal@3x.png in Resources */,
 				B73BD7FD1E51AF6E0036EBEF /* ic_DBImportancePosFour in Resources */,
 				9E603B4C1FB1C42800E7B637 /* MyShopCommentCell.xib in Resources */,
+				9E038BBB1FF507A10039B62C /* KospenUserSicknessCell.xib in Resources */,
 				B7DC3A051E139F3B00951852 /* ic_myskool@2x.png in Resources */,
 				B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */,
 				B7DC3A001E139F3B00951852 /* ic_mykomuniti@3x.png in Resources */,
@@ -1400,6 +1430,7 @@
 				B76D256D1E56F43800280415 /* SettingsExtendedTVCell.swift in Sources */,
 				B7E311831E486A95003949CF /* MyShopProductDetailsTVC.swift in Sources */,
 				B7B73ACA1E1B9C40000680FF /* SettingsTVC.swift in Sources */,
+				9EA500511FF379C0008D4936 /* NumberPickerVC.swift in Sources */,
 				9E5C75551FC6A7B2002A064A /* BMIRecordCell.swift in Sources */,
 				B7DC3A171E14ED7100951852 /* AYTPlayerTVCell.swift in Sources */,
 				B739662B1E1CDBBC00B270A1 /* MyKomunitiDetailsTVC.swift in Sources */,
@@ -1415,6 +1446,7 @@
 				B7A3C6F91DE82F5600CB7864 /* LoginVC.swift in Sources */,
 				9EF6D39C1FC7CD4900EA25BB /* MyKospenProfileCell.swift in Sources */,
 				9EB639C41F2AEBBF00FF6543 /* AlertController.swift in Sources */,
+				9EC4257E1FFB938C000597F5 /* Disease.swift in Sources */,
 				B74F0EBD1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift in Sources */,
 				B74D337A1DF68ABB00208A03 /* DBColorSet.swift in Sources */,
 				B79167711E35BBAA00383CAD /* MySoalDetailsTVC.swift in Sources */,
@@ -1423,6 +1455,7 @@
 				B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */,
 				B7B9A6E51E2F3FD5006689C9 /* MySoalMainTVC.swift in Sources */,
 				9EDB9B4E1FC4063E00F03CC0 /* LoginV3VC.swift in Sources */,
+				9E038BB71FF503B70039B62C /* TagView.swift in Sources */,
 				9E12E2C81F3B14E9003D15FA /* PhotoHolderCell.swift in Sources */,
 				9E4462361F7CF29800F82591 /* ProdukTerkiniHolderCell.swift in Sources */,
 				B75C5AAA1E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift in Sources */,
@@ -1463,7 +1496,9 @@
 				9E603B371FB1952800E7B637 /* MyShopPopularCVC.swift in Sources */,
 				B791677A1E3605A400383CAD /* MySkoolDetailsTVC.swift in Sources */,
 				B74D33771DF6649300208A03 /* ZUIs.swift in Sources */,
+				9EEC54AA1FFC9ABD00ED8FBB /* DiseasesListVC.swift in Sources */,
 				9E5998631F4439BF00542304 /* Place.swift in Sources */,
+				9EABA3351FEA5E1900D0B9CB /* GraphData.swift in Sources */,
 				B79167731E35BBF500383CAD /* MySoalDetailsTVCell.swift in Sources */,
 				B7B07DF41FBEDB1F00F0743B /* CustomString.swift in Sources */,
 				B7A837001E3887B4004F7333 /* MyHealthMainTabVC.swift in Sources */,
@@ -1481,6 +1516,7 @@
 				9E02B6971F1EF5A90028A230 /* LoadingSpinner.swift in Sources */,
 				9E12E2B11F397CD8003D15FA /* DBStrings.swift in Sources */,
 				9EC034B71FB5576200C0B42A /* MyShopDetailsVC.swift in Sources */,
+				9E038BBA1FF507A10039B62C /* KospenUserSicknessCell.swift in Sources */,
 				B71887171FB2B9F90039BA06 /* MySoalProcess.swift in Sources */,
 				B73966301E1DF63500B270A1 /* ZNetwork.swift in Sources */,
 				B7DC3A1B1E14F42A00951852 /* DBImages.swift in Sources */,

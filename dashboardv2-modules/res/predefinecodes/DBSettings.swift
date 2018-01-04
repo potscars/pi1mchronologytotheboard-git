@@ -65,6 +65,8 @@ class DBSettings: NSObject {
     
     //Kospen
     static let kospenUserDetailsURL = "\(mainURL)/api/myhealth/myhealth-details"
+    static let kospenGrapghDetailsURL = "\(mainURL)/api/myhealth/myhealth-record-graph"
+    static let kospenDiseaseListURL = "\(mainURL)/api/myhealth/disease-list"
     
 }
 

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="medicalHistoryCell" rowHeight="212" id="KGk-i7-Jjw" customClass="KospenUserSicknessCell" customModule="dashboardv2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="211.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sejarah penyakit keluarga" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeI-cr-awN">
+                        <rect key="frame" x="24" y="24" width="272" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sejarah-sakit-sendiri" translatesAutoresizingMaskIntoConstraints="NO" id="Gk0-ID-WJO">
+                        <rect key="frame" x="24" y="66" width="64" height="64"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="rKw-Tg-wpA"/>
+                            <constraint firstAttribute="width" constant="64" id="zpc-UW-mkG"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvP-sA-Tgp" customClass="TagView" customModule="dashboardv2" customModuleProvider="target">
+                        <rect key="frame" x="96" y="66" width="200" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="47X-NO-gPW"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-ke-Ek9">
+                        <rect key="frame" x="214" y="174" width="50" height="29"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="q02-ab-lnZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <state key="normal" title="Edit">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="editTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3Yv-0g-13R"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HvP-sA-Tgp" firstAttribute="top" secondItem="Gk0-ID-WJO" secondAttribute="top" id="C9a-yC-Qgi"/>
+                    <constraint firstItem="YeI-cr-awN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="HH4-dl-asX"/>
+                    <constraint firstAttribute="bottom" secondItem="vQv-ke-Ek9" secondAttribute="bottom" constant="8.5" id="JtO-Ky-nB6"/>
+                    <constraint firstItem="Gk0-ID-WJO" firstAttribute="top" secondItem="YeI-cr-awN" secondAttribute="bottom" constant="16" id="KvS-BU-CcN"/>
+                    <constraint firstItem="vQv-ke-Ek9" firstAttribute="top" secondItem="HvP-sA-Tgp" secondAttribute="bottom" constant="8" id="MDq-tj-MfO"/>
+                    <constraint firstItem="HvP-sA-Tgp" firstAttribute="leading" secondItem="Gk0-ID-WJO" secondAttribute="trailing" constant="8" id="QLF-jF-Nky"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YeI-cr-awN" secondAttribute="trailing" constant="16" id="TMl-81-EaW"/>
+                    <constraint firstAttribute="trailing" secondItem="HvP-sA-Tgp" secondAttribute="trailing" constant="24" id="abo-8F-m2W"/>
+                    <constraint firstItem="YeI-cr-awN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="beT-Nu-OFB"/>
+                    <constraint firstItem="Gk0-ID-WJO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="f0g-XC-I9B"/>
+                    <constraint firstAttribute="trailing" secondItem="vQv-ke-Ek9" secondAttribute="trailing" constant="56" id="vgb-pV-U5V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="editButton" destination="vQv-ke-Ek9" id="VIh-Vn-gVt"/>
+                <outlet property="iconImageView" destination="Gk0-ID-WJO" id="lfh-ky-OCz"/>
+                <outlet property="tagView" destination="HvP-sA-Tgp" id="7ol-ND-sTr"/>
+                <outlet property="titleLabel" destination="YeI-cr-awN" id="2iE-R8-YFI"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="132"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sejarah-sakit-sendiri" width="512" height="512"/>
+    </resources>
+</document>

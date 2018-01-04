@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol KospenUserMeasureCellDelegate {
+    func didTappedMeasureEditButton(_ isHeight: Bool)
+}
+
 class KospenUserMeasureCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
@@ -15,10 +19,34 @@ class KospenUserMeasureCell: UITableViewCell {
     @IBOutlet weak var featuredImageView: UIImageView!
     @IBOutlet weak var editButton: UIButton!
     
+    var measureDelegate: KospenUserMeasureCellDelegate?
+    var isHeight: Bool!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         editButton.roundedCorners(3)
     }
+    
+    func updateUI(_ title: String, value: String, indicator: String, icon: UIImage) {
+        
+        titleLabel.text = title
+        valueLabel.text = "\(value) \(indicator)"
+        featuredImageView.image = icon
+        isHeight = indicator == "m" ? true : false
+    }
+    
+    @IBAction func editButtonTapped(_ sender: UIButton) {
+        measureDelegate?.didTappedMeasureEditButton(isHeight)
+    }
 }
+
+
+
+
+
+
+
+
+
+
