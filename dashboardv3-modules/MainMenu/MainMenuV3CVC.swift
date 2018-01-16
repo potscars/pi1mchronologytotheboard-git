@@ -226,7 +226,12 @@ extension MainMenuV3CVC : UICollectionViewDelegateFlowLayout{
         } else if currentIndex == 3 {
             performSegue(withIdentifier: MainMenuIdentifier.GoToKospen, sender: self)
         } else if currentIndex == 4 {
-            performSegue(withIdentifier: MainMenuIdentifier.GoToMyShop, sender: self)
+            
+            let storyboard = UIStoryboard(name: "MyShop", bundle: nil)
+            guard let myShopTabbar = storyboard.instantiateInitialViewController() as? MyShopTabBar else { return }
+            
+            present(myShopTabbar, animated: true)
+            
         } else if currentIndex == 5 {
             performSegue(withIdentifier: MainMenuIdentifier.GoToMyPlaces, sender: self)
         } else if currentIndex == 6 {

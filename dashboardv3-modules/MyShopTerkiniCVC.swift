@@ -32,6 +32,8 @@ class MyShopTerkiniCVC: UICollectionViewController {
         
         spinner = LoadingSpinner.init(view: self.view, isNavBar: true)
         
+        
+        setupNavigationBar()
         configureCollectionView()
         setupRefreshControl()
     }
@@ -91,16 +93,16 @@ class MyShopTerkiniCVC: UICollectionViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.changeMyShopNavigationBarColor()
-        navigationItem.title = "Produk Terkini"
-    }
-    
     func configureCollectionView() {
         self.collectionView?.registerMyShopNibNameToCollectionView()
         self.collectionView?.backgroundColor = DBColorSet.myShopBackgroundColor
+    }
+    
+    func setupNavigationBar() {
+        
+        navigationController?.myShopHomeButton()
+        navigationController?.changeMyShopNavigationBarColor()
+        navigationItem.title = "Produk Terkini"
     }
     
     func setupRefreshControl() {

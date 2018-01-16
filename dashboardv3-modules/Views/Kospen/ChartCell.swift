@@ -61,7 +61,7 @@ class ChartCell: UITableViewCell {
         var dataEntries: [ChartDataEntry] = []
 
         for (index, value) in bmiData.enumerated() {
-            print(dateArray[index])
+            //print(dateArray[index])
             let dataEntry = ChartDataEntry(x: Double(dateArray[index]), y: Double(value.bmi!))
             dataEntries.append(dataEntry)
         }
@@ -75,7 +75,7 @@ class ChartCell: UITableViewCell {
         var dataEntries: [ChartDataEntry] = []
         
         for (index, value) in glucoseData.enumerated() {
-            print(dateArray[index])
+            //print(dateArray[index])
             let dataEntry = ChartDataEntry(x: Double(dateArray[index]), y: Double(value.glucoseLevel!))
             dataEntries.append(dataEntry)
         }
@@ -88,7 +88,7 @@ class ChartCell: UITableViewCell {
         
         var dataEntries: [ChartDataEntry] = []
         
-        for (index, value) in bloodPressureData.enumerated() {
+        for (_, value) in bloodPressureData.enumerated() {
             let dataEntry = ChartDataEntry(x: Double(value.dys!), y: Double(value.sys!))
             dataEntries.append(dataEntry)
         }

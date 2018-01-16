@@ -40,16 +40,16 @@ class MyKospenTVC: UITableViewController {
     var glucoseData = [GraphData]()
     var bloodPressureData = [GraphData]()
     
-    
     var statusTableView: MyKospenStatusTV!
     var totalStatus = 0
     var isExpanded = false
+    var spinner: LoadingSpinner!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.changeKospenNavigationBarColor()
-        
+        spinner = LoadingSpinner.init(view: self.view, isNavBar: true)
         configureTableView()
     }
     
@@ -57,20 +57,27 @@ class MyKospenTVC: UITableViewController {
         super.viewDidAppear(animated)
         
         let kospenProfile = KospenProfile()
+        spinner.setLoadingScreen()
         
-        kospenProfile.fetchProfileData { (result, responses) in
+        if DBWebServices.checkConnectionToDashboard(viewController: self) {
             
-            guard responses == nil else { return }
-            
-            guard let dataResult = result else { return }
-            
-            DispatchQueue.main.async {
-                self.profileData = dataResult
-                self.totalStatus = 5
-                self.statusTableView.reloadData()
-                self.updateChart()
-                self.updateGraphView(self.profileData["MYHEALTH_ID"] as! Int)
+            kospenProfile.fetchProfileData { (result, responses) in
+                
+                guard responses == nil else { return }
+                
+                guard let dataResult = result else { return }
+                
+                DispatchQueue.main.async {
+                    self.profileData = dataResult
+                    self.totalStatus = 5
+                    self.statusTableView.reloadData()
+                    self.updateChart()
+                    self.updateGraphView(self.profileData["MYHEALTH_ID"] as! Int)
+                    self.spinner.removeLoadingScreen()
+                }
             }
+        } else {
+            //no internet
         }
     }
     
@@ -154,7 +161,7 @@ class MyKospenTVC: UITableViewController {
         let centerFontAttrib: NSAttributedString = NSAttributedString.init(string: "\(bmiTemp)\nBMI", attributes: attrib)
         
         myKospenHeaderView.bmiCharts.centerAttributedText = centerFontAttrib
-        
+
         // Disable chart description
         let desc: Description = myKospenHeaderView.bmiCharts.chartDescription!
         desc.enabled = false

@@ -14,11 +14,14 @@ class MyKospenProfileUpdateTVC: UITableViewController {
     var isSelfSickness = true
     
     var diseases = [Disease]()
-    var isDiseasesAvailable = true
+    var isDiseasesAvailable = false
+    
+    var spinner: LoadingSpinner!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        spinner = LoadingSpinner.init(view: self.view, isNavBar: true)
         setupTableView()
     }
     
@@ -26,24 +29,30 @@ class MyKospenProfileUpdateTVC: UITableViewController {
         super.viewDidAppear(animated)
         
         let disease = Disease.init()
-        
-        disease.fetchDiseasesData { (result, response) in
-            
-            guard response == nil else {
-                print(response!)
-                return
+        spinner.setLoadingScreen()
+        if DBWebServices.checkConnectionToDashboard(viewController: self) {
+            disease.fetchDiseasesData { (result, response) in
+                
+                guard response == nil else {
+                    print(response!)
+                    return
+                }
+                
+                guard let result = result else { return }
+                
+                DispatchQueue.main.async {
+                    print("ITS DONEE")
+                    self.diseases = result
+                    let familyIndexPath = IndexPath(row: 4, section: 0)
+                    let selfIndexPath = IndexPath(row: 5, section: 0)
+                    self.tableView.reloadRows(at: [familyIndexPath, selfIndexPath], with: .none)
+                    self.isDiseasesAvailable = true
+                    self.spinner.removeLoadingScreen()
+                }
             }
-            
-            guard let result = result else { return }
-            
-            DispatchQueue.main.async {
-                print("ITS DONEE")
-                self.diseases = result
-                let familyIndexPath = IndexPath(row: 4, section: 0)
-                let selfIndexPath = IndexPath(row: 5, section: 0)
-                self.tableView.reloadRows(at: [familyIndexPath, selfIndexPath], with: .none)
-                self.isDiseasesAvailable = false
-            }
+        } else {
+            spinner.removeLoadingScreen()
+            print("No internet connection..")
         }
     }
     
@@ -84,7 +93,7 @@ extension MyKospenProfileUpdateTVC {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return 7
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -97,6 +106,7 @@ extension MyKospenProfileUpdateTVC {
          4 - tinggi
          5 - penyakit keluarga
          6 - penyakit sendiri
+         7 - Update button
          */
         
         let index = indexPath.row
@@ -140,7 +150,7 @@ extension MyKospenProfileUpdateTVC {
             let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.MedicalHistoryCell, for: indexPath) as! KospenUserSicknessCell
             
             cell.selectionStyle = .none
-            cell.editButton.isHidden = isDiseasesAvailable
+            cell.editButton.isUserInteractionEnabled = isDiseasesAvailable
             cell.sicknessDelegate = self
             cell.updateUI("Sejarah penyakit keluarga", icon: #imageLiteral(resourceName: "famili-sakit-history"), type: "family")
             if isFamilySickness {
@@ -149,12 +159,12 @@ extension MyKospenProfileUpdateTVC {
             }
             
             return cell
-        } else {
+        } else if index == 5 {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.MedicalHistoryCell, for: indexPath) as! KospenUserSicknessCell
             
             cell.selectionStyle = .none
-            cell.editButton.isHidden = isDiseasesAvailable
+            cell.editButton.isUserInteractionEnabled = isDiseasesAvailable
             cell.sicknessDelegate = self
             cell.updateUI("Sejarah penyakit sendiri", icon: #imageLiteral(resourceName: "sejarah-sakit-sendiri"),  type: "self")
             if isSelfSickness {
@@ -163,6 +173,21 @@ extension MyKospenProfileUpdateTVC {
             }
             
             return cell
+        } else {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "updateButtonIdentifier", for: indexPath) as! ButtonUpdateCell
+            
+            cell.updateButtonDelegate = self
+            
+            return cell
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 6 {
+            return 68.0
+        } else {
+            return UITableViewAutomaticDimension
         }
     }
     
@@ -191,6 +216,12 @@ extension MyKospenProfileUpdateTVC: KospenUserSicknessDelegate {
     }
 }
 
+extension MyKospenProfileUpdateTVC: ButtonUpdateDelegate {
+    
+    func didUpdateButtonTapped() {
+        print("Tapped!")
+    }
+}
 
 
 

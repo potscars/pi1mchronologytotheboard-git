@@ -25,6 +25,7 @@ class MyShopTempatanCVC: UICollectionViewController {
         
         spinner = LoadingSpinner.init(view: self.view, isNavBar: true)
         
+        navigationController?.myShopHomeButton()
         configureCollectionView()
         setupRefreshControl()
     }
@@ -192,7 +193,7 @@ extension MyShopTempatanCVC: UICollectionViewDelegateFlowLayout {
         let itemWidth = (view.frame.width - 24) / 2
         
         //kalau error akan return size yang ini.
-        guard isError == false else { return CGSize(width: self.view.frame.width - 16, height: 100) }
+        guard isError == false else { return CGSize(width: self.view.frame.width - 16, height: 300) }
         
         return CGSize(width: itemWidth, height: 200.0)
     }

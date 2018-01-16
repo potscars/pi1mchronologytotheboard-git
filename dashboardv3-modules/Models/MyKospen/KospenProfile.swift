@@ -59,11 +59,10 @@ class KospenProfile {
             }
 
             guard let result = result else { return }
-            print(result)
+
             if let status = result["status"] as? Int, status == 1 {
 
                 if let data = result["data"] as? NSDictionary {
-                    print(data)
                     
                     if let id = data["id"] as? Int {
                         idTemp = id

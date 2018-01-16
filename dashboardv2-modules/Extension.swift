@@ -68,8 +68,19 @@ extension UINavigationController {
         self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     
-    func changeKospenNavigationBarColor() {
+    func myShopHomeButton() {
         
+        let homeButton = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_home_white"), style: .done, target: self, action: #selector(homeButtonTapped(_:)))
+        
+        navigationBar.topItem?.leftBarButtonItem = homeButton
+    }
+    
+    @objc func homeButtonTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
+    
+    func changeKospenNavigationBarColor() {
+
         self.navigationBar.barTintColor = DBColorSet.myHealthColor
         self.navigationBar.tintColor = UIColor.white
         self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]

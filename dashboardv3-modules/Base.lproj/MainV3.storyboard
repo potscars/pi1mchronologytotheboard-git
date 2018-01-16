@@ -217,7 +217,7 @@
             <objects>
                 <navigationController storyboardIdentifier="LoggedInV3NC" id="0c8-0s-kFF" customClass="AfterLoginV3NC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UDI-IN-RTK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -610,6 +610,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="updateButtonIdentifier" rowHeight="66" id="PPX-Zg-8oX" customClass="ButtonUpdateCell" customModule="dashboardv2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PPX-Zg-8oX" id="7om-yR-bO5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3t-Re-yng">
+                                            <rect key="frame" x="16" y="8" width="288" height="50"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="6OC-xV-UgU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <state key="normal" title="Update">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="updateButtonTapped:" destination="PPX-Zg-8oX" eventType="touchUpInside" id="z8e-vQ-uBa"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="o3t-Re-yng" firstAttribute="leading" secondItem="7om-yR-bO5" secondAttribute="leading" constant="16" id="i22-l5-0MW"/>
+                                        <constraint firstItem="o3t-Re-yng" firstAttribute="top" secondItem="7om-yR-bO5" secondAttribute="top" constant="8" id="pbv-FI-SwL"/>
+                                        <constraint firstAttribute="trailing" secondItem="o3t-Re-yng" secondAttribute="trailing" constant="16" id="qmS-LB-FcK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="updateButton" destination="o3t-Re-yng" id="NR4-sR-AlT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="glG-lR-M8i" id="s2B-0c-nkP"/>
                             <outlet property="delegate" destination="glG-lR-M8i" id="Jmv-XH-ppz"/>
@@ -621,7 +655,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4K-in-Prg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5169" y="-53"/>
+            <point key="canvasLocation" x="5167.5" y="-53.87323943661972"/>
         </scene>
         <!--Number PickerVC-->
         <scene sceneID="o47-S6-r99">
@@ -820,7 +854,7 @@
                     <tabBarItem key="tabBarItem" title="Glukosa" image="ic_favorite" id="ylV-B6-hoK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cfY-iG-bz9">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -25,6 +25,7 @@ class MyShopPopularCVC: UICollectionViewController {
         
         spinner = LoadingSpinner.init(view: self.view, isNavBar: true)
         
+        navigationController?.myShopHomeButton()
         configureCollectionView()
         setupRefreshControl()
     }

@@ -18,11 +18,5 @@ class MyShopTabBar: UITabBarController {
     
     func configureTabbar() {
         UITabBar.appearance().tintColor = DBColorSet.myShopColor
-        let homeButton = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_home_white"), style: .done, target: self, action: #selector(homeButtonTapped(_:)))
-        navigationItem.leftBarButtonItem = homeButton
-    }
-    
-    @objc func homeButtonTapped(_ sender: UIBarButtonItem) {
-        print("Tapped")
     }
 }
