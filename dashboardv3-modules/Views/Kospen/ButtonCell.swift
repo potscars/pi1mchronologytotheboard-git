@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ButtonUpdateDelegate {
-    func didUpdateButtonTapped(_ type: String, button: UIButton)
+    func didUpdateButtonTapped()
 }
 
 class ButtonUpdateCell: UITableViewCell {
@@ -17,27 +17,15 @@ class ButtonUpdateCell: UITableViewCell {
     @IBOutlet weak var updateButton: UIButton!
     
     var updateButtonDelegate: ButtonUpdateDelegate?
-    var buttonType: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         updateButton.roundedCorners(5)
-        
-    }
-    
-    func updateUI(buttonName: String, buttonColor: UIColor) {
-        
-        buttonType = buttonName
-        updateButton.setTitle(buttonName, for: .normal)
-        updateButton.backgroundColor = buttonColor
+        updateButton.backgroundColor = DBColorSet.myHealthColor
     }
     
     @IBAction func updateButtonTapped (_ sender: Any) {
-        updateButtonDelegate?.didUpdateButtonTapped(buttonType, button: updateButton)
+        updateButtonDelegate?.didUpdateButtonTapped()
     }
 }
-
-
-
-

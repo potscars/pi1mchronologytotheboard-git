@@ -62,7 +62,9 @@
 		9E603B4C1FB1C42800E7B637 /* MyShopCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E603B4A1FB1C42800E7B637 /* MyShopCommentCell.xib */; };
 		9E842B411FCD5370005FBD75 /* KospenUserMeasureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */; };
 		9E842B421FCD5370005FBD75 /* KospenUserMeasureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */; };
+		9EA45BD1200F072200F52090 /* MyKospenProfileUpdateTVC+datasource:delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA45BD0200F072200F52090 /* MyKospenProfileUpdateTVC+datasource:delegate.swift */; };
 		9EA500511FF379C0008D4936 /* NumberPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA500501FF379C0008D4936 /* NumberPickerVC.swift */; };
+		9EA7E6AF200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7E6AE200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift */; };
 		9EABA3351FEA5E1900D0B9CB /* GraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABA3341FEA5E1900D0B9CB /* GraphData.swift */; };
 		9EB639C21F299F4900FF6543 /* GamesScoreboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */; };
 		9EB639C41F2AEBBF00FF6543 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C31F2AEBBF00FF6543 /* AlertController.swift */; };
@@ -74,6 +76,7 @@
 		9EC034BD1FB97C5500C0B42A /* ErrorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034BB1FB97C5500C0B42A /* ErrorCollectionCell.swift */; };
 		9EC034BE1FB97C5500C0B42A /* ErrorCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC034BC1FB97C5500C0B42A /* ErrorCollectionCell.xib */; };
 		9EC4257E1FFB938C000597F5 /* Disease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4257D1FFB938C000597F5 /* Disease.swift */; };
+		9EC49895200DF682008AE3D7 /* MyKospenTVC+datasource:delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC49894200DF682008AE3D7 /* MyKospenTVC+datasource:delegate.swift */; };
 		9EC646722004A1FF00413408 /* ButtonUpdateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC646712004A1FF00413408 /* ButtonUpdateCell.swift */; };
 		9ED76EB31FBC113B00962E85 /* ProductImagePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB21FBC113B00962E85 /* ProductImagePageVC.swift */; };
 		9ED76EB51FBC116800962E85 /* ProductImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76EB41FBC116800962E85 /* ProductImageVC.swift */; };
@@ -97,7 +100,7 @@
 		B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B71887211FB300550039BA06 /* ic_abstbg1.png */; };
 		B71BA9B41FBBDB0100CD44B1 /* MyHealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */; };
 		B71BA9B61FBBE2B300CD44B1 /* MyKospenTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B51FBBE2B300CD44B1 /* MyKospenTVC.swift */; };
-		B71BA9B81FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B71FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift */; };
+		B71BA9B81FBBE67300CD44B1 /* MyKospenStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B71FBBE67300CD44B1 /* MyKospenStatusCell.swift */; };
 		B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A51E42D53400F1BF99 /* ic_chat.png */; };
 		B72B91A81E42D53400F1BF99 /* ic_view.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A61E42D53400F1BF99 /* ic_view.png */; };
 		B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */; };
@@ -276,7 +279,9 @@
 		9E603B4A1FB1C42800E7B637 /* MyShopCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyShopCommentCell.xib; sourceTree = "<group>"; };
 		9E842B3F1FCD5370005FBD75 /* KospenUserMeasureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KospenUserMeasureCell.swift; sourceTree = "<group>"; };
 		9E842B401FCD5370005FBD75 /* KospenUserMeasureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KospenUserMeasureCell.xib; sourceTree = "<group>"; };
+		9EA45BD0200F072200F52090 /* MyKospenProfileUpdateTVC+datasource:delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyKospenProfileUpdateTVC+datasource:delegate.swift"; sourceTree = "<group>"; };
 		9EA500501FF379C0008D4936 /* NumberPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerVC.swift; sourceTree = "<group>"; };
+		9EA7E6AE200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyKospenProfileUpdateTVC+customDelegate.swift"; sourceTree = "<group>"; };
 		9EABA3341FEA5E1900D0B9CB /* GraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphData.swift; sourceTree = "<group>"; };
 		9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesScoreboardCell.swift; sourceTree = "<group>"; };
 		9EB639C31F2AEBBF00FF6543 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
@@ -288,6 +293,7 @@
 		9EC034BB1FB97C5500C0B42A /* ErrorCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCollectionCell.swift; sourceTree = "<group>"; };
 		9EC034BC1FB97C5500C0B42A /* ErrorCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorCollectionCell.xib; sourceTree = "<group>"; };
 		9EC4257D1FFB938C000597F5 /* Disease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disease.swift; sourceTree = "<group>"; };
+		9EC49894200DF682008AE3D7 /* MyKospenTVC+datasource:delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyKospenTVC+datasource:delegate.swift"; sourceTree = "<group>"; };
 		9EC646712004A1FF00413408 /* ButtonUpdateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonUpdateCell.swift; sourceTree = "<group>"; };
 		9ED76EB21FBC113B00962E85 /* ProductImagePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImagePageVC.swift; sourceTree = "<group>"; };
 		9ED76EB41FBC116800962E85 /* ProductImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageVC.swift; sourceTree = "<group>"; };
@@ -317,7 +323,7 @@
 		B71887211FB300550039BA06 /* ic_abstbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_abstbg1.png; path = "[[Resources]]/ic_abstbg1.png"; sourceTree = SOURCE_ROOT; };
 		B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthData.swift; sourceTree = "<group>"; };
 		B71BA9B51FBBE2B300CD44B1 /* MyKospenTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenTVC.swift; sourceTree = "<group>"; };
-		B71BA9B71FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenSummaryReviewCell.swift; sourceTree = "<group>"; };
+		B71BA9B71FBBE67300CD44B1 /* MyKospenStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKospenStatusCell.swift; sourceTree = "<group>"; };
 		B72B91A51E42D53400F1BF99 /* ic_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chat.png; path = "[[Resources]]/ic_chat.png"; sourceTree = SOURCE_ROOT; };
 		B72B91A61E42D53400F1BF99 /* ic_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_view.png; path = "[[Resources]]/ic_view.png"; sourceTree = SOURCE_ROOT; };
 		B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopLatestProdTVC.swift; sourceTree = "<group>"; };
@@ -628,6 +634,16 @@
 			path = TagView;
 			sourceTree = "<group>";
 		};
+		9EA7E6B020104E45004E0808 /* KospenUpdateTVC */ = {
+			isa = PBXGroup;
+			children = (
+				9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */,
+				9EA45BD0200F072200F52090 /* MyKospenProfileUpdateTVC+datasource:delegate.swift */,
+				9EA7E6AE200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift */,
+			);
+			name = KospenUpdateTVC;
+			sourceTree = "<group>";
+		};
 		9EC034AF1FB2FCF200C0B42A /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,11 +689,12 @@
 			isa = PBXGroup;
 			children = (
 				B71BA9B51FBBE2B300CD44B1 /* MyKospenTVC.swift */,
-				B71BA9B71FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift */,
+				9EC49894200DF682008AE3D7 /* MyKospenTVC+datasource:delegate.swift */,
+				B71BA9B71FBBE67300CD44B1 /* MyKospenStatusCell.swift */,
 				B7B07DEF1FBECB5100F0743B /* MyKospenStatusTV.swift */,
 				9E5C753F1FC47CB7002A064A /* MyKospenHeaderView.swift */,
 				9E5C75571FC6CA94002A064A /* KospenTabbarController.swift */,
-				9EF6D39D1FC7D94900EA25BB /* MyKospenProfileUpdateTVC.swift */,
+				9EA7E6B020104E45004E0808 /* KospenUpdateTVC */,
 				9EA500501FF379C0008D4936 /* NumberPickerVC.swift */,
 				9EEC54A91FFC9ABD00ED8FBB /* DiseasesListVC.swift */,
 			);
@@ -1420,7 +1437,7 @@
 			files = (
 				B71887151FB2B9E90039BA06 /* MySkoolProcess.swift in Sources */,
 				B78E628A1DF7E00900D9767D /* ZDeviceInfo.swift in Sources */,
-				B71BA9B81FBBE67300CD44B1 /* MyKospenSummaryReviewCell.swift in Sources */,
+				B71BA9B81FBBE67300CD44B1 /* MyKospenStatusCell.swift in Sources */,
 				B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */,
 				B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */,
 				9E603B3B1FB1955600E7B637 /* MyShopTempatanCVC.swift in Sources */,
@@ -1476,6 +1493,7 @@
 				B7DC3A291E15FE9B00951852 /* AWhatDBTVCell.swift in Sources */,
 				9E12E2CC1F3C0917003D15FA /* MyPlaceSearchResultVC.swift in Sources */,
 				9E5998611F44095500542304 /* Location.swift in Sources */,
+				9EA7E6AF200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift in Sources */,
 				B7DC39E41E12847500951852 /* MMMenuGridCVCell.swift in Sources */,
 				9E12E2D11F3C63A7003D15FA /* Catergory.swift in Sources */,
 				B71BA9B61FBBE2B300CD44B1 /* MyKospenTVC.swift in Sources */,
@@ -1524,6 +1542,7 @@
 				B73966361E1E3C2700B270A1 /* ZParsers.swift in Sources */,
 				B7A29D4C1E44263B00836C19 /* ZImages.swift in Sources */,
 				B7DC3A271E15014200951852 /* ABuildInfoTVCell.swift in Sources */,
+				9EA45BD1200F072200F52090 /* MyKospenProfileUpdateTVC+datasource:delegate.swift in Sources */,
 				9E4462331F7CEE8A00F82591 /* MyShopMenuBar.swift in Sources */,
 				B71BA9B41FBBDB0100CD44B1 /* MyHealthData.swift in Sources */,
 				9E12E2CA1F3B14E9003D15FA /* CategoryMenuTVC.swift in Sources */,
@@ -1552,6 +1571,7 @@
 				9E02B6971F1EF5A90028A230 /* LoadingSpinner.swift in Sources */,
 				9E12E2B11F397CD8003D15FA /* DBStrings.swift in Sources */,
 				9EC034B71FB5576200C0B42A /* MyShopDetailsVC.swift in Sources */,
+				9EC49895200DF682008AE3D7 /* MyKospenTVC+datasource:delegate.swift in Sources */,
 				9E038BBA1FF507A10039B62C /* KospenUserSicknessCell.swift in Sources */,
 				B71887171FB2B9F90039BA06 /* MySoalProcess.swift in Sources */,
 				B73966301E1DF63500B270A1 /* ZNetwork.swift in Sources */,

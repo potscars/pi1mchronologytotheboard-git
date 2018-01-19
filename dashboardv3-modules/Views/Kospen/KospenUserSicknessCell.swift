@@ -21,6 +21,11 @@ class KospenUserSicknessCell: UITableViewCell {
     
     var isFamily: Bool!
     var sicknessDelegate: KospenUserSicknessDelegate?
+    var diseasesArrayTemp: [String]! {
+        didSet {
+            tagView.titles = diseasesArrayTemp
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,10 +33,19 @@ class KospenUserSicknessCell: UITableViewCell {
         editButton.roundedCorners(5)
     }
     
-    func updateUI(_ title: String, icon: UIImage, type: String) {
+    func updateUI(_ title: String, icon: UIImage, type: String, diseases: NSArray) {
+        
+        var diseasesAffected = [String]()
+        
+        for disease in diseases {
+            if let newDisease = (disease as AnyObject).object(forKey: "name") as? String {
+                diseasesAffected.append(newDisease)
+            }
+        }
         
         titleLabel.text = title
         iconImageView.image = icon
+        tagView.titles = diseasesAffected
         isFamily = type == "family" ? true : false
     }
     

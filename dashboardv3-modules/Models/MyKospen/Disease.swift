@@ -13,14 +13,16 @@ class Disease {
     var id: Int?
     var name: String?
     var slug: String?
+    var isExtraInfo: Int?
     
     init() { }
     
-    init(_ id: Int, name: String, slug: String) {
+    init(_ id: Int, name: String, slug: String, isExtraInfo: Int) {
         
         self.id = id
         self.name = name
         self.slug = slug
+        self.isExtraInfo = isExtraInfo
     }
     
     func fetchDiseasesData(completion: @escaping ([Disease]?, String?)->()) {
@@ -46,6 +48,7 @@ class Disease {
                     var hID = 0
                     var hName = "Not Available"
                     var hSlug = "Not Available"
+                    var hExtraInfo = -1
                     
                     for data in datas {
                         
@@ -61,7 +64,11 @@ class Disease {
                             hSlug = slug
                         }
                         
-                        diseases.append(Disease.init(hID, name: hName, slug: hSlug))
+                        if let extraInfo = (data as AnyObject).object(forKey: "is_extra_info") as? Int {
+                            hExtraInfo = extraInfo
+                        }
+                        
+                        diseases.append(Disease.init(hID, name: hName, slug: hSlug, isExtraInfo: hExtraInfo))
                     }
                     
                     completion(diseases, nil)

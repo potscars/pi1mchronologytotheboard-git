@@ -217,7 +217,7 @@
             <objects>
                 <navigationController storyboardIdentifier="LoggedInV3NC" id="0c8-0s-kFF" customClass="AfterLoginV3NC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UDI-IN-RTK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -486,41 +486,8 @@
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="descriptionCell" rowHeight="87" id="STy-x3-hRQ">
-                                <rect key="frame" x="0.0" y="228" width="320" height="87"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="STy-x3-hRQ" id="Tam-kF-bmn">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anda mantap!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-9x-scr">
-                                            <rect key="frame" x="8" y="8" width="304" height="14.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzl-l4-TrC">
-                                            <rect key="frame" x="8" y="30" width="304" height="48"/>
-                                            <string key="text">RAMPaperSwitch is a drop-in replacement of UISwitch. You just need to set the onTintColor property of the switch, and it will automatically paint over its superview with the selected color.</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="xzl-l4-TrC" secondAttribute="trailing" constant="8" id="2E8-Na-aNZ"/>
-                                        <constraint firstItem="xzl-l4-TrC" firstAttribute="top" secondItem="YoF-9x-scr" secondAttribute="bottom" constant="8" id="2xX-IX-PAo"/>
-                                        <constraint firstItem="xzl-l4-TrC" firstAttribute="leading" secondItem="Tam-kF-bmn" secondAttribute="leading" constant="8" id="438-kd-Ywc"/>
-                                        <constraint firstItem="YoF-9x-scr" firstAttribute="leading" secondItem="Tam-kF-bmn" secondAttribute="leading" constant="8" id="Efq-l3-zdT"/>
-                                        <constraint firstItem="YoF-9x-scr" firstAttribute="top" secondItem="Tam-kF-bmn" secondAttribute="top" constant="8" id="mhG-r7-db4"/>
-                                        <constraint firstAttribute="bottom" secondItem="xzl-l4-TrC" secondAttribute="bottom" constant="8.5" id="qrg-Qf-frK"/>
-                                        <constraint firstAttribute="trailing" secondItem="YoF-9x-scr" secondAttribute="trailing" constant="8" id="s2T-Wp-ypz"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="stringCell" rowHeight="31" id="EeA-Cs-dfj">
-                                <rect key="frame" x="0.0" y="315" width="320" height="31"/>
+                                <rect key="frame" x="0.0" y="228" width="320" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EeA-Cs-dfj" id="hJa-5L-fC3">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
@@ -543,7 +510,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recordTitleCell" rowHeight="41" id="bRE-gn-WQl">
-                                <rect key="frame" x="0.0" y="346" width="320" height="41"/>
+                                <rect key="frame" x="0.0" y="259" width="320" height="41"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bRE-gn-WQl" id="jEd-zK-pWe">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="40.5"/>
@@ -576,6 +543,26 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="imageViewCell" rowHeight="200" id="hmi-XX-k7g">
+                                <rect key="frame" x="0.0" y="300" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hmi-XX-k7g" id="rbJ-KC-sqg">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myhealth-bp-guide" translatesAutoresizingMaskIntoConstraints="NO" id="RiL-ax-rDe">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RiL-ax-rDe" firstAttribute="top" secondItem="rbJ-KC-sqg" secondAttribute="top" id="G34-DB-85c"/>
+                                        <constraint firstItem="RiL-ax-rDe" firstAttribute="leading" secondItem="rbJ-KC-sqg" secondAttribute="leading" id="UdW-Zq-fOO"/>
+                                        <constraint firstAttribute="bottom" secondItem="RiL-ax-rDe" secondAttribute="bottom" id="Zqz-Cw-qrM"/>
+                                        <constraint firstAttribute="trailing" secondItem="RiL-ax-rDe" secondAttribute="trailing" id="gee-Nv-BxQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="ubI-Fy-ZXu" id="Yd4-mF-ivP"/>
@@ -590,17 +577,18 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Update" id="VCB-Ue-Gjf">
                             <connections>
-                                <segue destination="glG-lR-M8i" kind="show" identifier="GOTO_KOSPEN_UPDATE" id="9Q7-sq-5Pw"/>
+                                <segue destination="glG-lR-M8i" kind="presentation" identifier="GOTO_KOSPEN_UPDATE" id="9Q7-sq-5Pw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="myKospenHeaderView" destination="Bqq-6f-BjF" id="rFY-Ri-Cxo"/>
+                        <outlet property="updateButton" destination="VCB-Ue-Gjf" id="Q7Q-wJ-QVf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHj-EW-fZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4305" y="-53"/>
+            <point key="canvasLocation" x="4305" y="-53.87323943661972"/>
         </scene>
         <!--My Kospen Profile UpdateTVC-->
         <scene sceneID="qPu-V2-Ib1">
@@ -683,15 +671,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3v2-h7-yog">
-                                        <rect key="frame" x="32" y="44" width="208" height="168"/>
+                                        <rect key="frame" x="32" y="44" width="208" height="160"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="168" id="40j-1u-60z"/>
+                                            <constraint firstAttribute="height" constant="160" id="40j-1u-60z"/>
                                         </constraints>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKC-mH-PS4">
-                                        <rect key="frame" x="0.0" y="220" width="272" height="30"/>
+                                        <rect key="frame" x="0.0" y="210" width="272" height="40"/>
                                         <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="273-OP-qyq"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                         <state key="normal" title="Done">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -750,7 +741,7 @@
                                 <rect key="frame" x="24" y="84" width="272" height="400"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9DZ-Rs-nPx">
-                                        <rect key="frame" x="0.0" y="30" width="272" height="340"/>
+                                        <rect key="frame" x="0.0" y="30" width="272" height="330"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="diseaseCell" rowHeight="44" id="SkL-22-EXm">
@@ -787,10 +778,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MZu-50-D5G">
-                                        <rect key="frame" x="0.0" y="370" width="272" height="30"/>
+                                        <rect key="frame" x="0.0" y="360" width="272" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHx-ea-fOC">
-                                                <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="40"/>
                                                 <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                 <state key="normal" title="Done">
@@ -801,7 +792,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82K-SQ-Juz">
-                                                <rect key="frame" x="136" y="0.0" width="136" height="30"/>
+                                                <rect key="frame" x="136" y="0.0" width="136" height="40"/>
                                                 <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -811,6 +802,9 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="TB5-Sg-fUz"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -840,6 +834,7 @@
                     </view>
                     <connections>
                         <outlet property="customView" destination="2yR-dx-1it" id="Eyt-2K-fq5"/>
+                        <outlet property="doneButton" destination="PHx-ea-fOC" id="7m6-FU-jIV"/>
                         <outlet property="tableView" destination="9DZ-Rs-nPx" id="yaZ-Kg-DIy"/>
                     </connections>
                 </viewController>
@@ -854,7 +849,7 @@
                     <tabBarItem key="tabBarItem" title="Glukosa" image="ic_favorite" id="ylV-B6-hoK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cfY-iG-bz9">
-                        <rect key="frame" x="0.0" y="20" width="320" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -988,6 +983,7 @@
         <image name="ic_logodb.png" width="500" height="547"/>
         <image name="ic_mykomuniti.png" width="60" height="60"/>
         <image name="ic_wifi_noconn.png" width="300" height="300"/>
+        <image name="myhealth-bp-guide" width="610" height="449"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w0r-rZ-GNa"/>

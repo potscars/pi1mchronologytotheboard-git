@@ -18,6 +18,12 @@ class BMIRecordCell: UITableViewCell {
     @IBOutlet weak var dateDaysLabel: UILabel!
     @IBOutlet weak var bmiValueLabel: UILabel!
     
+    var height: String! {
+        didSet {
+            heightValueLabel.text = height
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

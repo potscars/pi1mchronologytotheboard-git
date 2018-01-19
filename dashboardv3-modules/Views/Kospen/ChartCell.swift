@@ -51,6 +51,14 @@ class ChartCell: UITableViewCell {
         let lineChartDataSet = LineChartDataSet(values: data, label: nameLabel)
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
         
+        lineChartDataSet.axisDependency = .left
+        lineChartDataSet.setColor(UIColor.green)
+        lineChartDataSet.drawCirclesEnabled = false
+        lineChartDataSet.fillAlpha = 1
+        lineChartDataSet.drawFilledEnabled = true
+        lineChartDataSet.fillColor = .orange
+        lineChartDataSet.drawCircleHoleEnabled = false
+        
         chartView.data = lineChartData
     }
     
@@ -61,7 +69,7 @@ class ChartCell: UITableViewCell {
         var dataEntries: [ChartDataEntry] = []
 
         for (index, value) in bmiData.enumerated() {
-            //print(dateArray[index])
+
             let dataEntry = ChartDataEntry(x: Double(dateArray[index]), y: Double(value.bmi!))
             dataEntries.append(dataEntry)
         }
@@ -71,11 +79,9 @@ class ChartCell: UITableViewCell {
     func updateGlucoseCharts(_ glucoseData: [GraphData], dateArray: [Int]) {
         
         setupChartView(0, yAxisMaximum: 10, xAxisMinimum: 1, xAxisMaximum: 30)
-        
         var dataEntries: [ChartDataEntry] = []
         
         for (index, value) in glucoseData.enumerated() {
-            //print(dateArray[index])
             let dataEntry = ChartDataEntry(x: Double(dateArray[index]), y: Double(value.glucoseLevel!))
             dataEntries.append(dataEntry)
         }

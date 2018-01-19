@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol NumberPickerDelegate {
+    func didSelectNumber(_ value: String, isHeight: Bool)
+}
+
 class NumberPickerVC: UIViewController {
 
     @IBOutlet weak var numberPickerView: UIPickerView!
@@ -15,6 +19,7 @@ class NumberPickerVC: UIViewController {
     @IBOutlet weak var customView: UIView!
     
     var pickerData: [[String]]!
+    var numberPickerDelegate: NumberPickerDelegate?
     
     var isHeight = false
     
@@ -46,7 +51,11 @@ class NumberPickerVC: UIViewController {
         }
     }
     
+    var pickedValue: String = "0"
+    
     @IBAction func doneButtonTapped(_ sender: Any) {
+        guard pickedValue != "0" else { return }
+        numberPickerDelegate?.didSelectNumber(pickedValue, isHeight: isHeight)
         self.dismiss(animated: true)
     }
 }
@@ -63,6 +72,22 @@ extension NumberPickerVC: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[component][row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        updateNumberValue()
+    }
+    
+    func updateNumberValue() {
+        let firstValue = pickerData[0][numberPickerView.selectedRow(inComponent: 0)]
+        let secondValue = pickerData[1][numberPickerView.selectedRow(inComponent: 1)]
+        let thirdValue = pickerData[2][numberPickerView.selectedRow(inComponent: 2)]
+        let forthValue = pickerData[3][numberPickerView.selectedRow(inComponent: 3)]
+        
+        let updatedValue = "\(firstValue)\(secondValue)\(thirdValue)\(forthValue)"
+        pickedValue = updatedValue
+        
     }
 }
 

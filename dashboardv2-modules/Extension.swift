@@ -39,6 +39,9 @@ extension UIView {
 }
 
 extension UIColor {
+    
+    static let lightRed = rgb(255, green: 80, blue: 80)
+    
     static func rgb(_ red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
     }

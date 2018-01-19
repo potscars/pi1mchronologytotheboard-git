@@ -9,20 +9,6 @@
 import UIKit
 import Charts
 
-class MyKospenSummaryReviewCell: UITableViewCell {
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-}
-
 class MyKospenStatusCell: UITableViewCell {
     
     @IBOutlet weak var featuredImageView: UIImageView!
@@ -50,6 +36,14 @@ class MyKospenStatusCell: UITableViewCell {
         
         featuredImageView.roundedCorners(featuredImageView.frame.height / 2)
         ZGraphics().createImageWithWords("\(value)", secondValue: indicator, imageView: featuredImageView, fontSize: fontSize)
+        statusLabel.text = status
+    }
+    
+    func updateStatusMerokokCell(_ status: String, value: Int, fontSize: CGFloat = 12) {
+        
+        featuredImageView.roundedCorners(featuredImageView.frame.height / 2)
+        let decision = value == 1 ? "Ya" : "Tidak"
+        ZGraphics().createImageWithWords(decision, imageView: featuredImageView, fontSize: fontSize)
         statusLabel.text = status
     }
 }

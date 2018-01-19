@@ -9,6 +9,8 @@
 import UIKit
 import Charts
 
+
+
 struct KospenIdentifier {
     
     static let SummaryReviewCell = "SummaryReviewCell"
@@ -23,12 +25,13 @@ struct KospenIdentifier {
     static let ProfileDetailsCell = "profileDetailsCell"
     static let KospenUserMeasureCell = "kospenUserMeasureCell"
     static let MedicalHistoryCell = "medicalHistoryCell"
+    static let ImageViewCell = "imageViewCell"
 }
 
 class MyKospenTVC: UITableViewController {
     
     @IBOutlet weak var myKospenHeaderView: MyKospenHeaderView!
-    @IBOutlet weak var profileTableView: UITableView!
+    @IBOutlet weak var updateButton: UIBarButtonItem!
     
     let nameArrays = ["Blood Sugar Level","Body Weight","Body Height","Blood Pressure","Smoking Status"]
     let unitArrays = ["mg","kg","cm","mm/Hg",""]
@@ -48,8 +51,8 @@ class MyKospenTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.changeKospenNavigationBarColor()
         spinner = LoadingSpinner.init(view: self.view, isNavBar: true)
+        configureNavBar()
         configureTableView()
     }
     
@@ -71,13 +74,14 @@ class MyKospenTVC: UITableViewController {
                     self.profileData = dataResult
                     self.totalStatus = 5
                     self.statusTableView.reloadData()
+                    self.updateButton.isEnabled = true
                     self.updateChart()
                     self.updateGraphView(self.profileData["MYHEALTH_ID"] as! Int)
                     self.spinner.removeLoadingScreen()
                 }
             }
         } else {
-            //no internet
+            self.spinner.removeLoadingScreen()
         }
     }
     
@@ -93,7 +97,7 @@ class MyKospenTVC: UITableViewController {
             DispatchQueue.main.async {
                 self.bmiData = dataResult
                 print(self.bmiData.count)
-                self.tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
+                self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
             }
         }
         
@@ -103,7 +107,7 @@ class MyKospenTVC: UITableViewController {
             DispatchQueue.main.async {
                 self.glucoseData = dataResult
                 print(self.glucoseData.count)
-                self.tableView.reloadSections(IndexSet(integer: 2), with: .automatic)
+                self.tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
             }
         }
         
@@ -113,9 +117,15 @@ class MyKospenTVC: UITableViewController {
             DispatchQueue.main.async {
                 self.bloodPressureData = dataResult
                 print(self.bloodPressureData.count)
-                self.tableView.reloadSections(IndexSet(integer: 3), with: .automatic)
+                self.tableView.reloadSections(IndexSet(integer: 2), with: .automatic)
             }
         }
+    }
+    
+    func configureNavBar() {
+        updateButton.isEnabled = false
+        navigationController?.changeKospenNavigationBarColor()
+        navigationItem.title = "Kospen"
     }
     
     func configureTableView() {
@@ -139,7 +149,6 @@ class MyKospenTVC: UITableViewController {
         statusTableView.dataSource = self
         statusTableView.delegate = self
         statusTableView.separatorStyle = .none
-
     }
     
     func updateChart() {
@@ -190,242 +199,17 @@ class MyKospenTVC: UITableViewController {
     @IBAction func homeButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-}
-
-extension MyKospenTVC {
     
-    // MARK: - Table view data source
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        let sectionCount = tableView == self.tableView ? sectionName.count + 1 : 1
-        return sectionCount
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard tableView == self.tableView else { return nil }
-        
-        if section != 0 {
+        if segue.identifier == "GOTO_KOSPEN_UPDATE" {
             
-            return sectionName[section - 1]
-        }
-        
-        return nil
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        if tableView == self.tableView {
-            if section == 0 {
-                return 1
-            } else if section == 1 {
-                return bmiData.count > 0 ? bmiData.count + 2 : 0
-            } else if section == 2 {
-                return glucoseData.count > 0 ? glucoseData.count + 2 : 0
-            } else {
-                return bloodPressureData.count > 0 ? bloodPressureData.count + 2 : 0
-            }
-        } else if tableView == statusTableView {
-            return totalStatus
-        } else {
-            return 7
-        }
-        
-    }
-    
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        /*
-         section 0 - description
-         section 1 - bmi value
-         section 2 - blood sugar level
-         section 3 - blood pressure
-         */
-        
-        let index = indexPath.row
-        
-        if tableView == statusTableView {
-            
-            /*
-             0 - intervensi
-             1 - lilit pinggang
-             2 - tinggi
-             3 - penyakit sendiri
-             4 - status merokok
-             5 - penyakit keluarga
-             6 - ingin berhenti merokok
-             7 - dikemaskini
-             */
-            
-            return populateStatusDataIntoCell(tableView, indexPath: indexPath)
-            
-        } else {
-            
-            
-            if indexPath.section == 0 {
-                
-                let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.DescriptionCell, for: indexPath)
-                cell.selectionStyle = .none
-                
-                return cell
-            } else if indexPath.section == 1 {
-                
-                if index == 0 {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.ChartCell, for: indexPath) as! ChartCell
-                    
-                    let dateArray = getDateArray(bmiData)
-                    cell.selectionStyle = .none
-                    cell.updateBMICharts(bmiData, dateArray: dateArray)
-                    return cell
-                } else if index == 1 {
-                    
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StringCell, for: indexPath)
-                    cell.selectionStyle = .none
-                    return cell
-                } else {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.BMIRecordCell, for: indexPath) as! BMIRecordCell
-                    cell.selectionStyle = .none
-                    cell.updateUI(bmiData[indexPath.row - 2])
-                    
-                    return cell
-                }
-                
-            } else if indexPath.section == 2 {
-                if index == 0 {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.ChartCell, for: indexPath) as! ChartCell
-                    let dateArray = getDateArray(glucoseData)
-                    cell.selectionStyle = .none
-                    cell.updateGlucoseCharts(glucoseData, dateArray: dateArray)
-                    return cell
-                } else if index == 1 {
-                    
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StringCell, for: indexPath)
-                    cell.selectionStyle = .none
-                    return cell
-                } else {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.RecordCell, for: indexPath) as! RecordCell
-                    cell.selectionStyle = .none
-                    cell.updateUI(glucoseData[indexPath.row - 2])
-                    return cell
-                }
-            } else {
-                if index == 0 {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.ChartCell, for: indexPath) as! ChartCell
-                    cell.selectionStyle = .none
-                    cell.updateBloodPressureCharts(bloodPressureData, dateArray: [])
-                    return cell
-                } else if index == 1 {
-                    
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StringCell, for: indexPath)
-                    cell.selectionStyle = .none
-                    return cell
-                } else {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.RecordCell, for: indexPath) as! RecordCell
-                    cell.selectionStyle = .none
-                    cell.updateUI(bloodPressureData[indexPath.row - 2])
-                    return cell
-                }
+            if let updateVC = segue.destination as? MyKospenProfileUpdateTVC {
+                updateVC.profileData = profileData
             }
         }
     }
-    
-    //make an array for date indicator for each section.
-    private func getDateArray(_ graphData: [GraphData]) -> [Int] {
-        
-        var intTemp = [Int]()
-        
-        for data in graphData {
-            
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-            let date = formatter.date(from: data.createdDate!)!
-            let components = Calendar.current.dateComponents([.day], from: date)
-            intTemp.append(components.day!)
-        }
-        
-        return intTemp
-    }
-    
-    private func getDateTitle(_ dateString: String) -> String {
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let date = formatter.date(from: dateString)!
-        
-        formatter.dateFormat = "MMMM yyyy"
-        let newDateString = formatter.string(from: date)
-        
-        return newDateString
-    }
-    
-    private func setupTitleCell(_ cell: UITableViewCell, dateString: String, titleString: String = "") {
-        
-        cell.selectionStyle = .none
-        let monthName = cell.viewWithTag(1) as! UILabel
-        let bmiLabel = cell.viewWithTag(2) as! UILabel
-        monthName.text = dateString
-        bmiLabel.text = ""
-    }
-    
-    func populateStatusDataIntoCell(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        let index = indexPath.row
-        
-        if index == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StatusValueCell, for: indexPath) as! MyKospenStatusCell
-            
-            cell.selectionStyle = .none
-            cell.updateUIWithString(KospenProfileIdentifier.BloodSugarLevel, value: "\(profileData[KospenProfileIdentifier.BloodSugarLevel] ?? "-")")
-            
-            return cell
-        } else if index == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StatusValueCell, for: indexPath) as! MyKospenStatusCell
-            
-            cell.selectionStyle = .none
-            cell.updateUIWithIntValue(KospenProfileIdentifier.BeratBadan, value: profileData[KospenProfileIdentifier.BeratBadan] as! Int, indicator: "kg")
-            
-            return cell
-        } else if index == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StatusValueCell, for: indexPath) as! MyKospenStatusCell
-            
-            cell.selectionStyle = .none
-            cell.updateUIWithCGFloatValue(KospenProfileIdentifier.Height, value: profileData[KospenProfileIdentifier.Height] as! CGFloat, indicator: "m")
-            
-            return cell
-        } else if index == 3 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StatusValueCell, for: indexPath) as! MyKospenStatusCell
-            
-            cell.selectionStyle = .none
-            cell.updateUIWithString(KospenProfileIdentifier.BloodPressure, value: profileData[KospenProfileIdentifier.BloodPressure] as! String, fontSize: 10)
-            
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: KospenIdentifier.StatusValueCell, for: indexPath) as! MyKospenStatusCell
-            
-            cell.selectionStyle = .none
-            cell.updateUIWithString(KospenProfileIdentifier.SmokingStatus, value: profileData[KospenProfileIdentifier.SmokingStatus] as! String)
-            
-            return cell
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //ip5 175.0
-        
-        if tableView == statusTableView {
-            return 35.0
-        } else {
-            //let height: CGFloat = UIScreen.main.nativeBounds.height <= 1136 ? 180.0 : 200.0
-            
-            return UITableViewAutomaticDimension
-        }
-    }
 }
-
-
-
-
 
 
 

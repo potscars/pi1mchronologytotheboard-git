@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol KospenQuestionaireDelegate {
+    func didTappedOnTheSwitch(_ value: Int, type: KospenEtc.Question)
+}
+
 class KospenQuestionaireCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
@@ -17,6 +21,9 @@ class KospenQuestionaireCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var editButton: UIButton!
     
+    var type: KospenEtc.Question!
+    var questionDelegate: KospenQuestionaireDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -24,45 +31,31 @@ class KospenQuestionaireCell: UITableViewCell {
         answerSwitch.addTarget(self, action: #selector(switchTapped(_:)), for: .valueChanged)
     }
     
-    func updateUI(_ title: String, message: String, icon: UIImage) {
+    func updateUI(_ title: String, message: String, icon: UIImage, agreement: Int, type: KospenEtc.Question) {
         
+        self.type = type
         titleLabel.text = title
         explainationLabel.text = message
         iconImageView.image = icon
+        answerSwitch.isOn = agreement == 1 ? true : false
     }
-    
+    /*
+     
+     1 mean agree or yes
+     2 mean disagree or not
+ 
+     */
     @objc func switchTapped(_ sender: UISwitch) {
         
-        if answerSwitch.isOn {
-            
-            UIView.animate(withDuration: 1.0, animations: {
-                self.expandedColorView.backgroundColor = DBColorSet.myShopColor
-                self.expandedColorView.transform = CGAffineTransform(scaleX: 20, y: 20)
-                self.toggleColor()
-            }, completion: { (true) in
-                
-            })
-        } else {
-            
-            UIView.animate(withDuration: 1.0, animations: {
-                
-                self.expandedColorView.backgroundColor = .clear
-                self.expandedColorView.transform = .identity
-                self.toggleColor()
-            })
-        }
+        let decidedSwitchValue = answerSwitch.isOn ? 1 : 2
+        questionDelegate?.didTappedOnTheSwitch(decidedSwitchValue, type: self.type)
     }
-    
-    //toggle the view background color.
-    func toggleColor() {
-        
-        let color: UIColor = titleLabel.textColor == .white ? .black : .white
-        self.titleLabel.textColor = color
-        self.explainationLabel.textColor = color
-        self.iconImageView.tintColor = color
-    }
-    
 }
+
+
+
+
+
 
 
 

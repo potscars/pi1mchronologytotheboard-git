@@ -35,11 +35,11 @@ class KospenProfile {
         let params = ["token" : dashToken]
         var dataTemp: [String: Any] = [:]
         
-        var intervensiTemp = "-"
+        var intervensiTemp = -1
         var waistMeasureTemp: CGFloat = 0.0
         var heightTemp: CGFloat = 0.0
-        var smokingStatusTemp = "-"
-        var smokingQuittingStatusTemp = "-"
+        var smokingStatusTemp = -1
+        var smokingQuittingStatusTemp = -1
         var bloodSugarLevel = 0
         var sysDysTemp = "-"
         var weightTemp = 0
@@ -70,11 +70,7 @@ class KospenProfile {
                     
                     if let intervensi_agree = data["intervention_agree"] as? Int {
 
-                        if intervensi_agree == 1 {
-                            intervensiTemp = "Setuju"
-                        } else {
-                            intervensiTemp = "Tidak setuju"
-                        }
+                        intervensiTemp = intervensi_agree
                     }
 
                     if let waist_measure = data.object(forKey: "measure_waist") as? Int {
@@ -87,19 +83,11 @@ class KospenProfile {
 
                     if let smoking_status = data["smoking_status"] as? Int {
 
-                        if smoking_status == 1 {
-                            smokingStatusTemp = "Ya"
-                        } else {
-                            smokingStatusTemp = "Tidak"
-                        }
+                        smokingStatusTemp = smoking_status
                     }
 
                     if let smokeQuittingStatus = data["want_to_quit_smoking"] as? Int {
-                        if smokeQuittingStatus == 1 {
-                            smokingQuittingStatusTemp = "Ya"
-                        } else {
-                            smokingQuittingStatusTemp = "Tidak"
-                        }
+                        smokingQuittingStatusTemp = smokeQuittingStatus
                     }
 
                     if let ownDiseases = data["disease_self"] as? NSArray {
@@ -175,7 +163,7 @@ class KospenProfile {
     }
     
     
-    func addingToDictionary(_ intervensi: String, waistMeasure: CGFloat, height: CGFloat, smokingStatus: String, ownDiseases: NSArray, inheritedDiseases: NSArray, isWillingToQuitSmoking: String, updatedAt: String, bloodSugarLevel: Int, bloodPressure: String, weight: Int, id: Int, bmi: Double) -> [String: Any] {
+    func addingToDictionary(_ intervensi: Int, waistMeasure: CGFloat, height: CGFloat, smokingStatus: Int, ownDiseases: NSArray, inheritedDiseases: NSArray, isWillingToQuitSmoking: Int, updatedAt: String, bloodSugarLevel: Int, bloodPressure: String, weight: Int, id: Int, bmi: Double) -> [String: Any] {
         
         var tempProfileData: [String: Any] = [:]
         

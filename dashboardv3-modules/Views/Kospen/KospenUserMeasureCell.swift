@@ -21,6 +21,11 @@ class KospenUserMeasureCell: UITableViewCell {
     
     var measureDelegate: KospenUserMeasureCellDelegate?
     var isHeight: Bool!
+    var unitValue: String! {
+        didSet {
+            valueLabel.text = unitValue
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

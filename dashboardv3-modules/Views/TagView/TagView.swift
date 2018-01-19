@@ -22,11 +22,13 @@ class TagView: UIView {
     
     func updateUI() {
         
+        //check dulu ada tak subview sebelum ni, kalau ada remove dulu before add new one.
         if viewCollection.count > 0 {
-            viewCollection.removeAll()
+            print("View more than 0")
             for hView in viewCollection {
                 hView.removeFromSuperview()
             }
+            viewCollection.removeAll()
         }
         
         for title in titles {
@@ -81,25 +83,12 @@ class TagView: UIView {
         hLabel.frame = CGRect(x: 6.0, y: 0, width: 0, height: 0)
         hLabel.sizeToFit()
         
-//        let hButton = UIButton()
-//        hButton.setTitle("X", for: .normal)
-//        hButton.titleLabel?.font = UIFont.systemFont(ofSize: fontSize - 2.0)
-//        hButton.titleLabel?.textAlignment = .center
-//        hButton.frame = CGRect(x: hLabel.frame.width + 8.0, y: (hLabel.frame.size.height / 2.0) - (7.5), width: fontSize + 1, height: fontSize + 1)
-        
-//        hButton.backgroundColor = .lightGray
-//        hButton.layer.cornerRadius = hButton.frame.height / 2
-//        hButton.clipsToBounds = true
-        
         let labelSize = hLabel.frame.size
-        //let buttonSize = hButton.frame.size
         hView.frame = CGRect(x: 0.0, y: 0.0, width: labelSize.width + 10.0, height: labelSize.height)
         
         hView.layer.cornerRadius = hLabel.frame.height / 2
         hView.clipsToBounds = true
-        
         hView.addSubview(hLabel)
-        //hView.addSubview(hButton)
         
         return hView
     }
