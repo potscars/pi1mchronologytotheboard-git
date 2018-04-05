@@ -29,6 +29,7 @@ class KospenProfile {
     func fetchProfileData(completion: @escaping ([String: Any]?, String?) -> ()) {
         
         let dashToken = UserDefaults.standard.object(forKey: "SuccessLoggerDashboardToken") as! String
+        print(dashToken)
         
         let networkProcessor = NetworkProcessor.init(DBSettings.kospenUserDetailsURL)
         
@@ -63,31 +64,34 @@ class KospenProfile {
             if let status = result["status"] as? Int, status == 1 {
 
                 if let data = result["data"] as? NSDictionary {
-                    
+                    print("it's insideeee.")
                     if let id = data["id"] as? Int {
                         idTemp = id
                     }
                     
-                    if let intervensi_agree = data["intervention_agree"] as? Int {
-
-                        intervensiTemp = intervensi_agree
+                    if let intervensi_agree = data["intervention_agree"] as? String {
+                        print("intervention")
+                        intervensiTemp = Int(intervensi_agree)!
                     }
 
-                    if let waist_measure = data.object(forKey: "measure_waist") as? Int {
-                        waistMeasureTemp = CGFloat(waist_measure)
+                    if let waist_measure = data.object(forKey: "measure_waist") as? String {
+                        print("measure waist")
+                        guard let n = NumberFormatter().number(from: waist_measure) else { return }
+                        waistMeasureTemp = CGFloat(n)
                     }
 
-                    if let height = data.object(forKey: "height") as? CGFloat {
-                        heightTemp = height
+                    if let height = data.object(forKey: "height") as? String {
+                        guard let n = NumberFormatter().number(from: height) else { return }
+                        heightTemp = CGFloat(n)
                     }
 
-                    if let smoking_status = data["smoking_status"] as? Int {
+                    if let smoking_status = data["smoking_status"] as? String {
 
-                        smokingStatusTemp = smoking_status
+                        smokingStatusTemp = Int(smoking_status)!
                     }
 
-                    if let smokeQuittingStatus = data["want_to_quit_smoking"] as? Int {
-                        smokingQuittingStatusTemp = smokeQuittingStatus
+                    if let smokeQuittingStatus = data["want_to_quit_smoking"] as? String {
+                        smokingQuittingStatusTemp = Int(smokeQuittingStatus)!
                     }
 
                     if let ownDiseases = data["disease_self"] as? NSArray {
@@ -112,12 +116,13 @@ class KospenProfile {
                         
                         for wtRecord in wtRecords {
                             
-                            if let bodyWeight = (wtRecord as AnyObject).object(forKey: "weight") as? Int {
-                                weightTemp = bodyWeight
+                            if let bodyWeight = (wtRecord as AnyObject).object(forKey: "weight") as? String {
+                                weightTemp = Int(bodyWeight)!
                             }
                             
-                            if let bmi = (wtRecord as AnyObject).object(forKey: "bmi") as? Double {
-                                let bmiTemp = round(bmi * 100) / 100
+                            if let bmi = (wtRecord as AnyObject).object(forKey: "bmi") as? String {
+                                let bmiDouble = Double(bmi)!
+                                let bmiTemp = round(bmiDouble * 100) / 100
                                 hBMITemp = bmiTemp
                             }
                         }
@@ -127,8 +132,8 @@ class KospenProfile {
                         
                         for gluRecord in gluRecords {
                             
-                            if let glucoseLevel = (gluRecord as AnyObject).object(forKey: "glucose_level") as? Int {
-                                bloodSugarLevel = glucoseLevel
+                            if let glucoseLevel = (gluRecord as AnyObject).object(forKey: "glucose_level") as? String {
+                                bloodSugarLevel = Int(glucoseLevel)!
                             }
                         }
                     }
@@ -139,11 +144,13 @@ class KospenProfile {
                             
                             var sysDys = ""
                             
-                            if let sys = (bpRecord as AnyObject).object(forKey: "sys") as? Int {
+                            if let sysString = (bpRecord as AnyObject).object(forKey: "sys") as? String {
+                                let sys = Int(sysString)!
                                 sysDys = "\(sys)/"
                             }
                             
-                            if let dys = (bpRecord as AnyObject).object(forKey: "dys") as? Int {
+                            if let dysString = (bpRecord as AnyObject).object(forKey: "dys") as? String {
+                                let dys = Int(dysString)!
                                 sysDys += "\(dys)"
                                 sysDysTemp = sysDys
                             }

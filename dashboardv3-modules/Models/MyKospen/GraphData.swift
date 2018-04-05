@@ -82,28 +82,31 @@ class GraphData {
                     
                     for data in datas {
                         
-                        if let hWeight = (data as AnyObject).object(forKey: "weight") as? CGFloat {
-                            weightTemp = hWeight
+                        if let hWeight = (data as AnyObject).object(forKey: "weight") as? String {
+                            guard let n = NumberFormatter().number(from: hWeight) else { return }
+                            weightTemp = CGFloat(n)
                         }
                         
-                        if let hBMI = (data as AnyObject).object(forKey: "bmi") as? CGFloat {
-                            bmiTemp = hBMI
+                        if let hBMI = (data as AnyObject).object(forKey: "bmi") as? String {
+                            guard let n = NumberFormatter().number(from: hBMI) else { return }
+                            bmiTemp = CGFloat(n)
                         }
                         
                         if let hDate = (data as AnyObject).object(forKey: "created_at") as? String {
                             dateTemp = hDate
                         }
                         
-                        if let hGlucose = (data as AnyObject).object(forKey: "glucose_level") as? CGFloat {
-                            glucoseTemp = hGlucose
+                        if let hGlucose = (data as AnyObject).object(forKey: "glucose_level") as? String {
+                            guard let n = NumberFormatter().number(from: hGlucose) else { return }
+                            glucoseTemp = CGFloat(n)
                         }
                         
-                        if let hSys = (data as AnyObject).object(forKey: "sys") as? Int {
-                            sysTemp = hSys
+                        if let hSys = (data as AnyObject).object(forKey: "sys") as? String {
+                            sysTemp = Int(hSys)!
                         }
                         
-                        if let hDys = (data as AnyObject).object(forKey: "dys") as? Int {
-                            dysTemp = hDys
+                        if let hDys = (data as AnyObject).object(forKey: "dys") as? String {
+                            dysTemp = Int(hDys)!
                         }
                         
                         if self.type == "wt" {

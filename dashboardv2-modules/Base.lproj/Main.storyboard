@@ -1279,7 +1279,7 @@
         <!--Maps-->
         <scene sceneID="ORf-bb-eFi">
             <objects>
-                <viewController id="p9Z-5u-0dl" customClass="MyPlaceMainVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPlaceMainVC" id="p9Z-5u-0dl" customClass="MyPlaceMainVC" customModule="dashboardv2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0bd-Fk-rt3"/>
                         <viewControllerLayoutGuide type="bottom" id="hA7-iE-Wz5"/>

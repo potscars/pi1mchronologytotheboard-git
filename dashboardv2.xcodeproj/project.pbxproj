@@ -28,12 +28,18 @@
 		9E12E2CC1F3C0917003D15FA /* MyPlaceSearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2CB1F3C0917003D15FA /* MyPlaceSearchResultVC.swift */; };
 		9E12E2CE1F3C62F1003D15FA /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2CD1F3C62F1003D15FA /* NetworkProcessor.swift */; };
 		9E12E2D11F3C63A7003D15FA /* Catergory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E2D01F3C63A7003D15FA /* Catergory.swift */; };
+		9E16E8192076022900BEF0CA /* MyKospenStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B71FBBE67300CD44B1 /* MyKospenStatusCell.swift */; };
+		9E16E81A2076023500BEF0CA /* MySkoolProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887141FB2B9E90039BA06 /* MySkoolProcess.swift */; };
+		9E16E81B2076023C00BEF0CA /* ZDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78E62891DF7E00900D9767D /* ZDeviceInfo.swift */; };
+		9E16E81C2076024400BEF0CA /* DBPrefObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F0EBE1E278AF1003887E4 /* DBPrefObject.swift */; };
+		9E16E81D2076048100BEF0CA /* AfterLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D71E1258F200951852 /* AfterLoginNC.swift */; };
+		9E16E81E207604BE00BEF0CA /* AImportanceDBTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73BD8051E51B12F0036EBEF /* AImportanceDBTVCell.swift */; };
+		9E16E81F207604CA00BEF0CA /* MyShopMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462301F7CEE2D00F82591 /* MyShopMainMenuVC.swift */; };
 		9E2796531FD5593900B55F4C /* KospenProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2796521FD5593900B55F4C /* KospenProfile.swift */; };
 		9E2B3C751FB9982100B54DF8 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B3C741FB9982100B54DF8 /* ProductDetails.swift */; };
 		9E4462211F78CE3300F82591 /* MainMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462201F78CE3300F82591 /* MainMenuCVC.swift */; };
 		9E4462231F78D83700F82591 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462221F78D83700F82591 /* Extension.swift */; };
 		9E44622F1F7CE4CE00F82591 /* MyShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E44622E1F7CE4CE00F82591 /* MyShop.storyboard */; };
-		9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462301F7CEE2D00F82591 /* MyShopMainMenuVC.swift */; };
 		9E4462331F7CEE8A00F82591 /* MyShopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462321F7CEE8A00F82591 /* MyShopMenuBar.swift */; };
 		9E4462361F7CF29800F82591 /* ProdukTerkiniHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4462351F7CF29800F82591 /* ProdukTerkiniHolderCell.swift */; };
 		9E51D6E61F206A540048337E /* GamesScoreboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51D6E51F206A540048337E /* GamesScoreboardController.swift */; };
@@ -66,6 +72,7 @@
 		9EA500511FF379C0008D4936 /* NumberPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA500501FF379C0008D4936 /* NumberPickerVC.swift */; };
 		9EA7E6AF200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7E6AE200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift */; };
 		9EABA3351FEA5E1900D0B9CB /* GraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABA3341FEA5E1900D0B9CB /* GraphData.swift */; };
+		9EB5B61C202C3E3C00CC6D0E /* LocationLatLong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5B61B202C3E3C00CC6D0E /* LocationLatLong.swift */; };
 		9EB639C21F299F4900FF6543 /* GamesScoreboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */; };
 		9EB639C41F2AEBBF00FF6543 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB639C31F2AEBBF00FF6543 /* AlertController.swift */; };
 		9EC034B21FB2FD0E00C0B42A /* ErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC034B01FB2FD0E00C0B42A /* ErrorCell.swift */; };
@@ -92,7 +99,6 @@
 		B718870D1FB184830039BA06 /* LoginProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870C1FB184830039BA06 /* LoginProcess.swift */; };
 		B718870F1FB18B640039BA06 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718870E1FB18B640039BA06 /* LoginData.swift */; };
 		B71887111FB18BA40039BA06 /* LoginV3ProcessorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887101FB18BA40039BA06 /* LoginV3ProcessorVC.swift */; };
-		B71887151FB2B9E90039BA06 /* MySkoolProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887141FB2B9E90039BA06 /* MySkoolProcess.swift */; };
 		B71887171FB2B9F90039BA06 /* MySoalProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71887161FB2B9F90039BA06 /* MySoalProcess.swift */; };
 		B718871B1FB2F2F20039BA06 /* AfterLoginV3NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871A1FB2F2F20039BA06 /* AfterLoginV3NC.swift */; };
 		B718871D1FB2F33F0039BA06 /* BeforeLoginV3NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718871C1FB2F33F0039BA06 /* BeforeLoginV3NC.swift */; };
@@ -100,7 +106,6 @@
 		B71887221FB300560039BA06 /* ic_abstbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B71887211FB300550039BA06 /* ic_abstbg1.png */; };
 		B71BA9B41FBBDB0100CD44B1 /* MyHealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B31FBBDB0100CD44B1 /* MyHealthData.swift */; };
 		B71BA9B61FBBE2B300CD44B1 /* MyKospenTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B51FBBE2B300CD44B1 /* MyKospenTVC.swift */; };
-		B71BA9B81FBBE67300CD44B1 /* MyKospenStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BA9B71FBBE67300CD44B1 /* MyKospenStatusCell.swift */; };
 		B72B91A71E42D53400F1BF99 /* ic_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A51E42D53400F1BF99 /* ic_chat.png */; };
 		B72B91A81E42D53400F1BF99 /* ic_view.png in Resources */ = {isa = PBXBuildFile; fileRef = B72B91A61E42D53400F1BF99 /* ic_view.png */; };
 		B72B91AB1E4311E700F1BF99 /* MyShopLatestProdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B91AA1E4311E700F1BF99 /* MyShopLatestProdTVC.swift */; };
@@ -120,7 +125,6 @@
 		B73BD7FF1E51AF6E0036EBEF /* ic_DBImportancePosSix in Resources */ = {isa = PBXBuildFile; fileRef = B73BD7F91E51AF6E0036EBEF /* ic_DBImportancePosSix */; };
 		B73BD8001E51AF6E0036EBEF /* ic_DBImportancePosThree in Resources */ = {isa = PBXBuildFile; fileRef = B73BD7FA1E51AF6E0036EBEF /* ic_DBImportancePosThree */; };
 		B73BD8011E51AF6E0036EBEF /* ic_DBImportancePosTwo in Resources */ = {isa = PBXBuildFile; fileRef = B73BD7FB1E51AF6E0036EBEF /* ic_DBImportancePosTwo */; };
-		B73BD8061E51B12F0036EBEF /* AImportanceDBTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73BD8051E51B12F0036EBEF /* AImportanceDBTVCell.swift */; };
 		B73EF08A1E41B8B1001B3ADB /* MyShopMainMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73EF0891E41B8B1001B3ADB /* MyShopMainMenuTVC.swift */; };
 		B73EF08C1E41B8F9001B3ADB /* MyShopIntegratedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73EF08B1E41B8F9001B3ADB /* MyShopIntegratedTVCell.swift */; };
 		B74D33751DF5167000208A03 /* ic_logodb.png in Resources */ = {isa = PBXBuildFile; fileRef = B74D33741DF5167000208A03 /* ic_logodb.png */; };
@@ -131,12 +135,10 @@
 		B74D33811DF6AAE300208A03 /* DBWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74D33801DF6AAE300208A03 /* DBWebServices.swift */; };
 		B74DADA61FA868FA00951F2E /* DataSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DADA51FA868FA00951F2E /* DataSecurity.swift */; };
 		B74F0EBD1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F0EBC1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift */; };
-		B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F0EBE1E278AF1003887E4 /* DBPrefObject.swift */; };
 		B75C5AA81E3AEC3C009FD4E6 /* MyHealthBWDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75C5AA71E3AEC3C009FD4E6 /* MyHealthBWDetailsTVC.swift */; };
 		B75C5AAA1E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75C5AA91E3AEC58009FD4E6 /* MyHealthBWDetailsTVCell.swift */; };
 		B76D256B1E56DBBA00280415 /* SettingsExtendedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D256A1E56DBBA00280415 /* SettingsExtendedTVC.swift */; };
 		B76D256D1E56F43800280415 /* SettingsExtendedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D256C1E56F43800280415 /* SettingsExtendedTVCell.swift */; };
-		B78E628A1DF7E00900D9767D /* ZDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78E62891DF7E00900D9767D /* ZDeviceInfo.swift */; };
 		B79167711E35BBAA00383CAD /* MySoalDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79167701E35BBAA00383CAD /* MySoalDetailsTVC.swift */; };
 		B79167731E35BBF500383CAD /* MySoalDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79167721E35BBF500383CAD /* MySoalDetailsTVCell.swift */; };
 		B79167761E35D71000383CAD /* MySkoolMainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79167751E35D71000383CAD /* MySkoolMainTVC.swift */; };
@@ -178,7 +180,6 @@
 		B7D7C8A71FC7C9A800909127 /* ic_annoucement.png in Resources */ = {isa = PBXBuildFile; fileRef = B7D7C8A61FC7C9A700909127 /* ic_annoucement.png */; };
 		B7D8DE111F7CB13000C0B6C7 /* MainV3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE0F1F7CB13000C0B6C7 /* MainV3.storyboard */; };
 		B7D8DE161F7CB8ED00C0B6C7 /* ic_loadingColor.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7D8DE151F7CB8ED00C0B6C7 /* ic_loadingColor.gif */; };
-		B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D71E1258F200951852 /* AfterLoginNC.swift */; };
 		B7DC39DA1E125F0900951852 /* BeforeLoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39D91E125F0900951852 /* BeforeLoginNC.swift */; };
 		B7DC39DE1E12678E00951852 /* MMImageTransTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39DD1E12678E00951852 /* MMImageTransTVCell.swift */; };
 		B7DC39E01E1268E700951852 /* MMMenuListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC39DF1E1268E700951852 /* MMMenuListTVCell.swift */; };
@@ -283,6 +284,7 @@
 		9EA500501FF379C0008D4936 /* NumberPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerVC.swift; sourceTree = "<group>"; };
 		9EA7E6AE200F8125004E0808 /* MyKospenProfileUpdateTVC+customDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyKospenProfileUpdateTVC+customDelegate.swift"; sourceTree = "<group>"; };
 		9EABA3341FEA5E1900D0B9CB /* GraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphData.swift; sourceTree = "<group>"; };
+		9EB5B61B202C3E3C00CC6D0E /* LocationLatLong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLatLong.swift; sourceTree = "<group>"; };
 		9EB639C11F299F4900FF6543 /* GamesScoreboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesScoreboardCell.swift; sourceTree = "<group>"; };
 		9EB639C31F2AEBBF00FF6543 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		9EC034B01FB2FD0E00C0B42A /* ErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCell.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 			children = (
 				9E12E2D01F3C63A7003D15FA /* Catergory.swift */,
 				9E5998601F44095500542304 /* Location.swift */,
+				9EB5B61B202C3E3C00CC6D0E /* LocationLatLong.swift */,
 				9EE6ECA91F3D67950067C3C0 /* State.swift */,
 				9E5998621F4439BF00542304 /* Place.swift */,
 				9E5998641F45835E00542304 /* SearchedResultCell.swift */,
@@ -1255,7 +1258,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Ingeniworks Sdn Bhd";
 				TargetAttributes = {
 					B7A3C6F21DE82F5600CB7864 = {
@@ -1435,14 +1438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71887151FB2B9E90039BA06 /* MySkoolProcess.swift in Sources */,
-				B78E628A1DF7E00900D9767D /* ZDeviceInfo.swift in Sources */,
-				B71BA9B81FBBE67300CD44B1 /* MyKospenStatusCell.swift in Sources */,
-				B74F0EBF1E278AF1003887E4 /* DBPrefObject.swift in Sources */,
-				B7DC39D81E1258F200951852 /* AfterLoginNC.swift in Sources */,
 				9E603B3B1FB1955600E7B637 /* MyShopTempatanCVC.swift in Sources */,
-				B73BD8061E51B12F0036EBEF /* AImportanceDBTVCell.swift in Sources */,
-				9E4462311F7CEE2D00F82591 /* MyShopMainMenuVC.swift in Sources */,
 				B7B07DF01FBECB5100F0743B /* MyKospenStatusTV.swift in Sources */,
 				9E603B391FB1954000E7B637 /* MyShopTinggiPernilaianCVC.swift in Sources */,
 				B739662D1E1CDBE900B270A1 /* MyKomunitiDetailsTVCell.swift in Sources */,
@@ -1458,6 +1454,7 @@
 				9EC034BD1FB97C5500C0B42A /* ErrorCollectionCell.swift in Sources */,
 				B718871F1FB2F35C0039BA06 /* InitialVC.swift in Sources */,
 				9E12E2CE1F3C62F1003D15FA /* NetworkProcessor.swift in Sources */,
+				9E16E8192076022900BEF0CA /* MyKospenStatusCell.swift in Sources */,
 				9ED76EB71FBC1EBD00962E85 /* ProductHeaderView.swift in Sources */,
 				9E5998681F45A06D00542304 /* MyPlaceSearchedResultDetails.swift in Sources */,
 				9E12E2C01F3B14DF003D15FA /* MyPlaceAddPlaceVC.swift in Sources */,
@@ -1484,9 +1481,11 @@
 				B7B73ACA1E1B9C40000680FF /* SettingsTVC.swift in Sources */,
 				9EA500511FF379C0008D4936 /* NumberPickerVC.swift in Sources */,
 				9E5C75551FC6A7B2002A064A /* BMIRecordCell.swift in Sources */,
+				9E16E81B2076023C00BEF0CA /* ZDeviceInfo.swift in Sources */,
 				B7DC3A171E14ED7100951852 /* AYTPlayerTVCell.swift in Sources */,
 				B739662B1E1CDBBC00B270A1 /* MyKomunitiDetailsTVC.swift in Sources */,
 				9EC646722004A1FF00413408 /* ButtonUpdateCell.swift in Sources */,
+				9EB5B61C202C3E3C00CC6D0E /* LocationLatLong.swift in Sources */,
 				9E5C754B1FC53162002A064A /* RecordCell.swift in Sources */,
 				9E12E2C71F3B14E9003D15FA /* PhotosHolderVC.swift in Sources */,
 				9ED76EB31FBC113B00962E85 /* ProductImagePageVC.swift in Sources */,
@@ -1504,6 +1503,7 @@
 				B74F0EBD1E2732AD003887E4 /* MyKomunitiLoadMoreDataTVCell.swift in Sources */,
 				B74D337A1DF68ABB00208A03 /* DBColorSet.swift in Sources */,
 				B79167711E35BBAA00383CAD /* MySoalDetailsTVC.swift in Sources */,
+				9E16E81D2076048100BEF0CA /* AfterLoginNC.swift in Sources */,
 				9E12E2AA1F39789E003D15FA /* MyQuizMainTableVC.swift in Sources */,
 				9EE2E60B1F4EA0F500041DE3 /* TopScorer.swift in Sources */,
 				B7BB51831E234DB900F9EB3E /* MyKomunitiLoadingTVCell.swift in Sources */,
@@ -1520,6 +1520,7 @@
 				9E5C75471FC5305B002A064A /* ChartCell.swift in Sources */,
 				B7B113AF1FB4163500557DEF /* MainMenuProcess.swift in Sources */,
 				B7EC223F1FC40A9B006F31CD /* MyKomunitiMainV3TVC.swift in Sources */,
+				9E16E81C2076024400BEF0CA /* DBPrefObject.swift in Sources */,
 				9E5C75581FC6CA94002A064A /* KospenTabbarController.swift in Sources */,
 				9E4462211F78CE3300F82591 /* MainMenuCVC.swift in Sources */,
 				B73966271E1CA3FF00B270A1 /* MyKomunitiMainTVC.swift in Sources */,
@@ -1562,6 +1563,7 @@
 				9EB639C21F299F4900FF6543 /* GamesScoreboardCell.swift in Sources */,
 				9EC034B51FB4338900C0B42A /* dashboardv3-modules in Sources */,
 				B7DC39DA1E125F0900951852 /* BeforeLoginNC.swift in Sources */,
+				9E16E81F207604CA00BEF0CA /* MyShopMainMenuVC.swift in Sources */,
 				B7BB51861E24912400F9EB3E /* ZUISetup.swift in Sources */,
 				9E12E2AD1F39789E003D15FA /* MyQuizQuestionSelectTVCell.swift in Sources */,
 				9E603B4B1FB1C42800E7B637 /* MyShopCommentCell.swift in Sources */,
@@ -1570,6 +1572,7 @@
 				9E5998651F45835E00542304 /* SearchedResultCell.swift in Sources */,
 				9E02B6971F1EF5A90028A230 /* LoadingSpinner.swift in Sources */,
 				9E12E2B11F397CD8003D15FA /* DBStrings.swift in Sources */,
+				9E16E81A2076023500BEF0CA /* MySkoolProcess.swift in Sources */,
 				9EC034B71FB5576200C0B42A /* MyShopDetailsVC.swift in Sources */,
 				9EC49895200DF682008AE3D7 /* MyKospenTVC+datasource:delegate.swift in Sources */,
 				9E038BBA1FF507A10039B62C /* KospenUserSicknessCell.swift in Sources */,
@@ -1578,6 +1581,7 @@
 				B7DC3A1B1E14F42A00951852 /* DBImages.swift in Sources */,
 				B7EF41A71E3706F000262A0B /* MyHealthBloodPressureTVC.swift in Sources */,
 				9E12E2C61F3B14E9003D15FA /* MyPlaceAddPlaceTVCell.swift in Sources */,
+				9E16E81E207604BE00BEF0CA /* AImportanceDBTVCell.swift in Sources */,
 				B7DC39E01E1268E700951852 /* MMMenuListTVCell.swift in Sources */,
 				B7AB812B1E53FBBB00A8E76F /* SettingsIntegratedTVCell.swift in Sources */,
 				9E2796531FD5593900B55F4C /* KospenProfile.swift in Sources */,
@@ -1635,6 +1639,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1642,6 +1647,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1655,6 +1661,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1675,6 +1682,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1685,6 +1693,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6CSE68LD7S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AlamofireImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Charts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Cosmos\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DKImagePickerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ImageSlideshow\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Kingfisher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NVActivityIndicatorView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/youtube-ios-player-helper\"",
+					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
+					"\"${PODS_ROOT}/GooglePlaces/Frameworks\"",
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = Globals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ingeniworks.dashboardi;

@@ -23,6 +23,7 @@ class DBSettings: NSObject {
     static let mySkoolMainURL: String = "http://myskool.pi1m.my"
     static let myShopMainURL: String = "http://myshop.pi1m.my"
     static let adminMainURL: String = "http://admin.pi1m.my"
+    static let myPlaceRootURL: String = "http://myplace.myapp.my"
     
     //Main URL - Debug
     static let myAppURL: String = "http://dashboard.myapp.my"
@@ -68,7 +69,16 @@ class DBSettings: NSObject {
     static let kospenGrapghDetailsURL = "\(mainURL)/api/myhealth/myhealth-record-graph"
     static let kospenDiseaseListURL = "\(mainURL)/api/myhealth/disease-list"
     static let kospenAddUpdateDiseaseURL = "\(mainURL)/api/myhealth/add-myhealth-detail"
+    
+    //MyPlace
+    static let myPlaceSearchLocationLatLongURL = "\(myPlaceRootURL)/api/search/locationLatLon/"
 }
+
+
+
+
+
+
 
 
 

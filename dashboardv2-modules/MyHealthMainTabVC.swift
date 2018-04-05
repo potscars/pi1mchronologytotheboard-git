@@ -27,8 +27,13 @@ class MyHealthMainTabVC: UITabBarController {
         let tokens: String = UserDefaults.standard.object(forKey: "SuccessLoggerDashboardToken") as! String
         np.postRequestJSONFromUrl(["token":tokens], completion: { (result, response) in
             
-            let mykspn: MyHealthKospenData = MyHealthKospenData.init(resultFromServer: result! as NSDictionary)
-            print("kospen data: \(mykspn.height), glu data: \(mykspn.glucoseRecord.object(atIndex: 0).diabetes), wtrec data:\(mykspn.weightRecord.object(atIndex: 0).bmi), bprec data: \(mykspn.bloodPressureRecord.object(atIndex: 0).dyastolic)")
+            guard let result = result else {
+                print("Error getting myhealth data..")
+                return
+            }
+            print(result)
+            let mykspn: MyHealthKospenData = MyHealthKospenData.init(resultFromServer: result as NSDictionary)
+            print("kospen data: \(mykspn.height), glu data: \(mykspn.glucoseRecord.totalData), wtrec data:\(mykspn.weightRecord), bprec data: \(mykspn.bloodPressureRecord.totalData).dyastolic)")
             
         })
 

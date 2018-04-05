@@ -233,7 +233,14 @@ extension MainMenuV3CVC : UICollectionViewDelegateFlowLayout{
             present(myShopTabbar, animated: true)
             
         } else if currentIndex == 5 {
-            performSegue(withIdentifier: MainMenuIdentifier.GoToMyPlaces, sender: self)
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let myPlaceVC = storyboard.instantiateViewController(withIdentifier: "MyPlaceMainVC") as? MyPlaceMainVC else { return }
+            
+            let navController = UINavigationController(rootViewController: myPlaceVC)
+            
+            present(navController, animated: true)
+            
         } else if currentIndex == 6 {
             performSegue(withIdentifier: MainMenuIdentifier.GoToMyGames, sender: self)
         }

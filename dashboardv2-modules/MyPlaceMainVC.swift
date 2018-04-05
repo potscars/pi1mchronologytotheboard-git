@@ -10,6 +10,7 @@ import UIKit
 import GoogleMaps
 import MapKit
 import GooglePlaces
+import SDWebImage
 
 class MyPlaceMainVC: UIViewController {
     
@@ -65,6 +66,65 @@ class MyPlaceMainVC: UIViewController {
         self.navigationItem.leftBarButtonItem = homeButton
         self.navigationItem.rightBarButtonItem = addButton
         
+    }
+    
+    func setupMarkerOnTheMap(withLat lat: Double, withLong long: Double) {
+        
+        LocationLatLong.fetchData(withLat: lat, withLong: long) { (result, error)  in
+            
+            guard error == nil else {
+                print(error)
+                return
+            }
+            guard let result = result else { return }
+            
+            DispatchQueue.main.async {
+                
+                let markerLocations = result.data
+                
+                for markerLocation in markerLocations {
+                    
+                    let trimmedLat = (markerLocation.lat).trimmingCharacters(in: .whitespacesAndNewlines)
+                    let trimmedLng = (markerLocation.lng).trimmingCharacters(in: .whitespacesAndNewlines)
+                    
+                    guard let latDouble = Double(trimmedLat) else { return }
+                    guard let longDouble = Double(trimmedLng) else { return }
+                    let markerCoordinate = CLLocationCoordinate2D(latitude: latDouble, longitude: longDouble)
+                    print(markerCoordinate)
+                    let marker = GMSMarker()
+                    marker.position = markerCoordinate
+                    //self.locationMarker = GMSMarker(position: markerCoordinate)
+                    //self.getImageFromURL(path: result.data[0].types[0].icon_path)
+                    marker.icon = GMSMarker.markerImage(with: .purple)
+                    marker.appearAnimation = .pop
+                    marker.map = self.mapView
+                }
+                
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.view.layoutIfNeeded()
+                })
+            }
+        }
+    }
+    
+    //call image using url, and use the image data and turn it into image.
+    func getImageFromURL(path: String) {
+        
+        let urlString = "\(DBSettings.myPlaceRootURL)/\(path)"
+        guard let url = URL(string: urlString) else { return }
+        let session = URLSession.init(configuration: .default)
+        
+        session.dataTask(with: url) { (data, response, error) in
+            
+            guard error == nil else { return }
+            guard let data = data else { return }
+            
+            DispatchQueue.main.async {
+                print(urlString)
+                let image = UIImage(data: data)
+                self.locationMarker.icon = image
+            }
+        }.resume()
     }
     
     @objc func dismissMyPlace() {
@@ -157,7 +217,6 @@ class MyPlaceMainVC: UIViewController {
         alertController.addAction(cancelButton)
         
         present(alertController, animated: true, completion: nil)
-        
     }
     
     func setupLocationMarker(_ coordinate: CLLocationCoordinate2D, title: String) {
@@ -387,6 +446,8 @@ extension MyPlaceMainVC: CLLocationManagerDelegate {
             mapView.camera = camera
             
             reverseGeocodeCoordinate(coordinate: location.coordinate)
+            
+            setupMarkerOnTheMap(withLat: location.coordinate.latitude, withLong: location.coordinate.longitude)
             
             self.locationManager.stopUpdatingLocation()
             

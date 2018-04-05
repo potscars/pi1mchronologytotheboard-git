@@ -273,7 +273,6 @@ class NetworkProcessor {
             return "\(statusCode): Error"
         }
     }
-    
 }
 
 extension Data {

@@ -39,24 +39,68 @@ class LoginProcessingVC: UIViewController {
     {
         print("[LPVC] Processing login with data is \(data)...")
         
-        let breakDown = data.value(forKey: "object") as! NSDictionary
+        var email = ""
+        var fullname = ""
+        var icNumber = ""
+        var message = ""
+        var siteId = ""
+        var siteName = ""
+        var siteCode = ""
+        var token = ""
         
-        let isSuccess = Int(breakDown.value(forKey: "success") as! Int)
+        guard let breakDown = data.value(forKey: "object") as? NSDictionary else {
+            print("There is no data available..")
+            return
+        }
+        
+        guard let isSuccess = breakDown.value(forKey: "success") as? Int else { return }
         
         if(isSuccess == 1) {
             
             print("[LPVC] Login is success...")
             
+            if let tempEmail = breakDown.value(forKey: "email") as? String {
+                email = tempEmail
+            }
+            
+            if let tempFullname = breakDown.value(forKey: "full_name") as? String {
+                fullname = tempFullname
+            }
+            
+            if let tempIcNumber = breakDown.value(forKey: "ic_no") as? String {
+                icNumber = tempIcNumber
+            }
+            
+            if let tempMessage = breakDown.value(forKey: "message") as? String {
+                message = tempMessage
+            }
+            
+            if let tempSiteId = breakDown.value(forKey: "site_id") as? String {
+                siteId = tempSiteId
+            }
+            
+            if let tempSiteName = breakDown.value(forKey: "site_name") as? String {
+                siteName = tempSiteName
+            }
+            
+            if let tempSiteCode = breakDown.value(forKey: "sitecode") as? String {
+                siteCode = tempSiteCode
+            }
+            
+            if let tempToken = breakDown.value(forKey: "token") as? String {
+                token = tempToken
+            }
+            
             UserDefaults.standard.set(true, forKey: "SuccessLoggerIsLogin")
-            UserDefaults.standard.set(breakDown.value(forKey: "email") ?? "", forKey: "SuccessLoggerEmail")
-            UserDefaults.standard.set(breakDown.value(forKey: "full_name") ?? "", forKey: "SuccessLoggerFullName")
-            UserDefaults.standard.set(breakDown.value(forKey: "ic_no") ?? "", forKey: "SuccessLoggerICNo")
-            UserDefaults.standard.set(breakDown.value(forKey: "message") ?? "", forKey: "SuccessLoggerMessage")
-            UserDefaults.standard.set(breakDown.value(forKey: "site_id") ?? "", forKey: "SuccessLoggerSiteID")
-            UserDefaults.standard.set(breakDown.value(forKey: "site_name") ?? "", forKey: "SuccessLoggerSiteName")
-            UserDefaults.standard.set(breakDown.value(forKey: "sitecode") ?? "" , forKey: "SuccessLoggerSiteCode")
-            UserDefaults.standard.set(breakDown.value(forKey: "success") ?? 1, forKey: "SuccessLoggerLoginStatus")
-            UserDefaults.standard.set(breakDown.value(forKey: "token") ?? "", forKey: "SuccessLoggerDashboardToken")
+            UserDefaults.standard.set( email, forKey: "SuccessLoggerEmail")
+            UserDefaults.standard.set( fullname, forKey: "SuccessLoggerFullName")
+            UserDefaults.standard.set( icNumber, forKey: "SuccessLoggerICNo")
+            UserDefaults.standard.set( message, forKey: "SuccessLoggerMessage")
+            UserDefaults.standard.set( siteId, forKey: "SuccessLoggerSiteID")
+            UserDefaults.standard.set( siteName, forKey: "SuccessLoggerSiteName")
+            UserDefaults.standard.set( siteCode, forKey: "SuccessLoggerSiteCode")
+            UserDefaults.standard.set(isSuccess, forKey: "SuccessLoggerLoginStatus")
+            UserDefaults.standard.set( token, forKey: "SuccessLoggerDashboardToken")
             
             //Perform to get MySoal Token
             DBWebServices.getMySoalToken(registeredNotification: tokenMySoalRetrieval.rawValue)
@@ -86,7 +130,7 @@ class LoginProcessingVC: UIViewController {
             UserDefaults.standard.set(false, forKey: "SuccessLoggerIsLogin")
             UserDefaults.standard.set(false, forKey: "RememberLogger")
             UserDefaults.standard.set(breakDown.value(forKey: "message"), forKey: "FailedLoggerMessage")
-            UserDefaults.standard.set(breakDown.value(forKey: "success"), forKey: "FailedLoggerLoginStatus")
+            UserDefaults.standard.set(isSuccess, forKey: "FailedLoggerLoginStatus")
             
             ZUIs.showOKDialogBox(viewController: self, dialogTitle: DBStrings.DB_PROCESS_ERROR_TITLE_MS, dialogMessage: DBStrings.DB_PROCESS_ERROR_DESC_MS, afterDialogDismissed: "BACK_TO_PREVIOUS_VIEWCONTROLLER")
  

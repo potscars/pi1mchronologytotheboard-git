@@ -22,6 +22,7 @@ class MyHealthKospenData: NSObject {
     init(resultFromServer: NSDictionary) {
         self.resultFromServer = resultFromServer
         self.data = self.resultFromServer.value(forKey: "data") as? NSDictionary ?? [:]
+        
         self.glucoseRecord = MyHealthKospenGlucoseArrays.init(gdArray: self.data.value(forKey: "glu_records") as? NSArray ?? [])
         self.weightRecord = MyHealthKospenWeightArrays.init(wtArray: self.data.value(forKey: "wt_records") as? NSArray ?? [])
         self.bloodPressureRecord = MyHealthKospenBloodPressureArrays.init(bpArray: self.data.value(forKey: "bp_records") as? NSArray ?? [])

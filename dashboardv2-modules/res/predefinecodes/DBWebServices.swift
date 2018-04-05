@@ -261,11 +261,12 @@ class DBWebServices: NSObject {
     static func getMyQuizGetQuestions(token: String, registeredNotification: String) {
         
         let getTokenParams = String(format: "%@", token)
-        let getTokenURL = NSURL.init(string: "\(DBSettings.myQuizGetQuestionURL)/\(getTokenParams)")
         
-        print("[DBWebServices] Token params",getTokenParams," URL set: ",getTokenURL?.description ?? "")
+        guard let getTokenURL = NSURL.init(string: "\(DBSettings.myQuizGetQuestionURL)/\(getTokenParams)") else { return }
         
-        ZNetwork.performGetData(urlWithParameters: getTokenURL!, notificationName: registeredNotification)
+        print("[DBWebServices] Token params",getTokenParams," URL set: ",getTokenURL.description ?? "")
+        
+        ZNetwork.performGetData(urlWithParameters: getTokenURL, notificationName: registeredNotification)
     }
     
     static func getMyQuizSendAnswers(token: String, data: NSDictionary, registeredNotification: String) {
@@ -277,9 +278,9 @@ class DBWebServices: NSObject {
     
     static func getMyQuizVerifyEvent(token: String, registeredNotification: String) {
         
-        let myQuizAnswerURL = NSURL.init(string: "\(DBSettings.myQuizVerifyUserAndEvent)/\(token)")!
+        guard let myQuizAnswerURL = NSURL.init(string: "\(DBSettings.myQuizVerifyUserAndEvent)/\(token)") else { return }
         
-        ZNetwork.performGetData(urlWithParameters: myQuizAnswerURL, notificationName: registeredNotification)
+        _ = ZNetwork.performGetData(urlWithParameters: myQuizAnswerURL, notificationName: registeredNotification)
     }
     
     static func getMyQuizVerifyUser(token: String, phoneNo: String, flag: Int, registeredNotification: String) {
